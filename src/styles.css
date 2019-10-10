@@ -7,11 +7,19 @@
     font-style: normal;
 }
 
+.terumoLight {
+    font-family: 'LatoLight';
+}
+
 @font-face {
     font-family: 'LatoRegular';
     src: url('assets/fonts/Lato-Regular.woff2') format('woff2'), url('assets/fonts/Lato-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+.terumoRegular {
+    font-family: 'LatoRegular';
 }
 
 @font-face {
@@ -21,11 +29,19 @@
     font-style: normal;
 }
 
+.terumoSemibold {
+    font-family: 'LatoSemibold';
+}
+
 @font-face {
     font-family: 'LatoBold';
     src: url('assets/fonts/Lato-Bold.woff2') format('woff2'), url('assets/fonts/Lato-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+}
+
+.terumoBold {
+    font-family: 'LatoBold';
 }
 
 @font-face {
@@ -84,4 +100,17 @@ body {
 
 main {
     flex: 1 0 auto;
+}
+
+.links-icon {
+    display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .links-text {
+        display: none !important;
+    }
+    .links-icon {
+        display: block !important;
+    }
 }

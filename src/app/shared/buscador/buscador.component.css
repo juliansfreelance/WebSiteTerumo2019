@@ -1,0 +1,13 @@
+.search-wrapper input {
+    margin: 0px !important;
+}
+
+.input-field input[type=search]::placeholder {
+    color: #fafafa!important;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.input-field input[type=search]::placeholder:focus {
+    color: #d1d1d1!important;
+}
