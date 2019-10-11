@@ -14,12 +14,14 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const instances1 = M.Sidenav.init(document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true });
+    M.Sidenav.init( document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true } );
+    M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), { constrainWidth: false, coverTrigger: false } );
+    M.Collapsible.init( document.querySelectorAll('.collapsible'), {} );
   }
 
   onchangeText(texto: string) {
     this.textoBuscarHeader = texto;
-    this.search.emit(this.textoBuscarHeader);
+    this.search.emit(this.textoBuscarHeader);    
   }
 
 }
