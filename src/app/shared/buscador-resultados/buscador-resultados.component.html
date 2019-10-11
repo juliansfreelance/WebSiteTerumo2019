@@ -1,0 +1,35 @@
+<div class="container" *ngIf="textoBuscar">
+    <div class="row">
+        <div class="col s12 m6">
+            <ul class="collection">
+                <a class="collection-item avatar" *ngFor="let s of (solutions | buscador:textoBuscar:'texto') as result"
+                    (click)="selectSolution(s)">
+                    <!--<img src="assets/img/home-1.png" alt="" class="circle"> routerLink="{{s.url}}"-->
+                    <i class="material-icons circle">folder</i>
+                    <span class="title"> <strong>{{ s.texto }}:</strong></span>
+                    <p>
+                        {{ s.description | parrafo : 50 }}
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></a>
+                </a>
+            </ul>
+        </div>
+        <div class="col s12 m6">
+            <div class="card" *ngIf="solution">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/img/index-1.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">{{ solution.texto }}<i
+                            class="material-icons right">arrow_upward</i></span>
+                    <p><a href="#">Ir</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{ solution.texto }}<i
+                            class="material-icons right">close</i></span>
+                    <p>{{ solution.description | parrafo : 350 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

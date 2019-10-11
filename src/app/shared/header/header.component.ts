@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import * as M from '../../../assets/js/materialize.min.js';
 
 @Component({
@@ -8,10 +8,18 @@ import * as M from '../../../assets/js/materialize.min.js';
 })
 export class HeaderComponent implements OnInit {
 
+  @Output() search = new EventEmitter<string>();
+  @Input() textoBuscarHeader: string;
+
   constructor() { }
 
   ngOnInit() {
-    const instances1 = M.Sidenav.init( document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true } );
+    const instances1 = M.Sidenav.init(document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true });
+  }
+
+  onchangeText(texto: string) {
+    this.textoBuscarHeader = texto;
+    this.search.emit(this.textoBuscarHeader);
   }
 
 }

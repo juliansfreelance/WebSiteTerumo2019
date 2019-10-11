@@ -3,7 +3,8 @@
         <a href="#" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"> </a>
         <ul class="right black-text">
             <li><a href="sass.html" class="links-text terumo-text terumoBold">Sitios web Grupo Terumo >></a></li>
-            <li><a href="sass.html" class="links-icon terumo-text terumoBold"><i class="material-icons">language</i></a></li>
+            <li><a href="sass.html" class="links-icon terumo-text terumoBold"><i class="material-icons">language</i></a>
+            </li>
         </ul>
     </div>
 
@@ -18,7 +19,7 @@
             </ul>
         </div>
         <ul class="right-align">
-            <app-buscador></app-buscador>
+            <app-buscador [textoBuscar]="textoBuscarHeader" (changeText)="onchangeText($event)"></app-buscador>
         </ul>
     </div>
 </nav>
