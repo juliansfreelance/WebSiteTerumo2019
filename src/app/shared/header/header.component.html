@@ -1,31 +1,30 @@
 <nav class="fixed">
     <div class="nav-wrapper white">
-        <a href="#" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Colombia</span></a>
+        <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg"
+                style="height: 30px;"><span>Colombia</span></a>
         <ul class="right black-text">
-            <li><a href="sass.html" class="links-text terumo-text terumoBold">Sitios web Grupo Terumo >></a></li>
-            <li><a href="sass.html" class="links-icon terumo-text terumoBold"><i class="material-icons">language</i></a>
+            <li><a (click)="goTo('')" class="links-text terumo-text terumoBold">Sitios web Grupo Terumo >></a></li>
+            <li><a (click)="goTo('')" class="links-icon terumo-text terumoBold"><i
+                        class="material-icons">language</i></a>
             </li>
         </ul>
     </div>
 
     <div class="nav-wrapper terumo lighten">
         <div class="container">
-            <a href="#" style="margin: 0px" data-target="Menu-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a (click)="goTo('')" style="margin: 0px" data-target="Menu-mobile" class="sidenav-trigger"><i
+                    class="material-icons">menu</i></a>
             <ul class="left" class="hide-on-med-and-down">
-                <li><a href="" class="dropdown-trigger terumoBold" data-target='Nosotros'>NOSOTROS</a></li>
-                <li><a href="" class="dropdown-trigger terumoBold" data-target='Soluciones'>SOLUCIONES</a></li>
-                <li><a href="" class="terumoBold">EVENTOS</a></li>
-                <li><a href="" class="terumoBold">SOPORTE</a></li>
-                <li><a href="" class="terumoBold">CONTACTENOS</a></li>
+                <li><a (click)="goTo('')" class="dropdown-trigger terumoBold" data-target='Nosotros'>NOSOTROS</a></li>
+                <li><a (click)="goTo('')" class="dropdown-trigger terumoBold" data-target='Soluciones'>SOLUCIONES</a>
+                </li>
+                <li><a (click)="goTo('')" class="terumoBold">EVENTOS</a></li>
+                <li><a (click)="goTo('')" class="terumoBold">SOPORTE</a></li>
+                <li><a (click)="goTo('contactanos')" class="terumoBold">CONTACTENOS</a></li>
             </ul>
         </div>
-<<<<<<< HEAD
-        <ul class="right-align">
-            <app-buscador [textoBuscar]="textoBuscarHeader" (changeText)="onchangeText($event)"></app-buscador>
-=======
         <ul class="right">
-            <app-buscador></app-buscador>
->>>>>>> daae3a1094eb70c2b5eb503f8a8b3c735421e181
+            <app-buscador [textoBuscar]="textoBuscarHeader" (changeText)="onchangeText($event)"></app-buscador>
         </ul>
     </div>
 </nav>
@@ -55,7 +54,8 @@
     <li>
         <ul class="collapsible collapsible-accordion">
             <li>
-                <a class="collapsible-header terumoBold">SOLUCIONES<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="collapsible-header terumoBold">SOLUCIONES<i
+                        class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul>
                         <li><a class="sidenav-close">Intervencionismo</a></li>
@@ -67,28 +67,28 @@
         </ul>
     </li>
     <li class="divider"></li>
-    <li><a href="" class="terumoBold">EVENTOS</a></li>
+    <li><a (click)="goTo('')" class="terumoBold">EVENTOS</a></li>
     <li class="divider"></li>
-    <li><a href="" class="terumoBold">SOPORTE</a></li>
+    <li><a (click)="goTo('')" class="terumoBold">SOPORTE</a></li>
     <li class="divider"></li>
-    <li><a href="" class="terumoBold">CONTACTENOS</a></li>
+    <li><a class="terumoBold" (click)="goTo('contactanos')">CONTACTENOS</a></li>
     <li class="divider"></li>
 </ul>
 
 <ul id='Nosotros' class='dropdown-content'>
-    <li><a href="">Acerca de nosotros</a></li>
+    <li><a (click)="goTo('')">Acerca de nosotros</a></li>
     <li class="divider"></li>
-    <li><a href="">Red Global</a></li>
+    <li><a (click)="goTo('')">Red Global</a></li>
     <li class="divider"></li>
-    <li><a href="">Responsabilidad Corporativa</a></li>
+    <li><a (click)="goTo('')">Responsabilidad Corporativa</a></li>
 </ul>
 
 <ul id='Soluciones' class='dropdown-content'>
-    <li><a href="">Intervencionismo</a></li>
+    <li><a (click)="goTo('')">Intervencionismo</a></li>
     <li class="divider"></li>
-    <li><a href="">Aortic</a></li>
+    <li><a (click)="goTo('')">Aortic</a></li>
     <li class="divider"></li>
-    <li><a href="">Cardio Vascular</a></li>
+    <li><a (click)="goTo('')">Cardio Vascular</a></li>
     <li class="divider"></li>
-    <li><a href="">Dispositivo médico de infusión</a></li>
+    <li><a (click)="goTo('')">Dispositivo médico de infusión</a></li>
 </ul>

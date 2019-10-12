@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import * as M from '../../../assets/js/materialize.min.js';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,7 @@ export class HeaderComponent implements OnInit {
   @Output() search = new EventEmitter<string>();
   @Input() textoBuscarHeader: string;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
     M.Sidenav.init( document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true } );
@@ -24,4 +25,7 @@ export class HeaderComponent implements OnInit {
     this.search.emit(this.textoBuscarHeader);    
   }
 
+  goTo(texto: string){
+    this.router.navigate([texto]);
+  }
 }
