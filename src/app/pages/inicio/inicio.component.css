@@ -1,0 +1,35 @@
+.line {
+  background-color: #008f66;
+  height: 5px;
+  width: 100%;
+}
+.line-2 {
+  background-color: #b3ddd1;
+  height: 6px;
+  width: 100%;
+}
+
+.line-3 {
+  background-color: #aaaaa8;
+  height: 6px;
+  width: 100%;
+}
+.gradiente-left {
+  background: linear-gradient(70deg, #008f66, white);
+}
+
+.gradiente-right {
+  background: linear-gradient(70deg, white, #008f66);
+}
+
+.historia {
+  background-image: url("../../../assets/img/home-3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+strong {
+  color: #008f66;
+}

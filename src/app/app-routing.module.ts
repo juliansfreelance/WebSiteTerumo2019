@@ -8,7 +8,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 const routes: Routes = [
   {
     path: '',
-    component: ContactoComponent,
+    component: InicioComponent,
     //Temporal cambiar a diseño cuando esté hecho
     pathMatch: 'full'
   },

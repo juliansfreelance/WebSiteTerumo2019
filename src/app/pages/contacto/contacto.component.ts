@@ -29,11 +29,11 @@ export class ContactoComponent implements OnInit {
   }
 
   initMap() {
-    var lati = 4.687675
-    var long = -74.0491866
+    var lati = 4.6828899
+    var long = -74.0437217
     var uluru = {lat: lati, lng: long}
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 15,
         center: uluru
     });
     var marker = new google.maps.Marker({
