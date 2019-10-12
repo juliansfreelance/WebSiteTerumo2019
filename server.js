@@ -1,14 +1,16 @@
-const express = require('express'),
-path= require['path'];
-
+//Install express server
+const express = require('express');
+const path = require('path');
+ 
 const app = express();
-
-app.use(express.static('./dist/terumo2019'));
-
-app.get('/*', (req, res) =>{
-    res.sendFile(path.join(__dirname,'/dist/terumo2019/index.html'));
+ 
+// Serve only the static files form the angularapp directory
+app.use(express.static(__dirname + '/terumo2019'));
+ 
+app.get('/*', function(req,res) {
+ 
+res.sendFile(path.join(__dirname+'/terumo2019/index.html'));
 });
-
-app.listen(process.env.PORT || 8080, ()=>{
-    console.log('Server started');
-})
+ 
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
