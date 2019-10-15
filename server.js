@@ -14,3 +14,5 @@ res.sendFile(path.join(__dirname+'/terumo2019/index.html'));
  
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
+
+//LINK: https://grokonez.com/frontend/angular/angular-deployment/how-to-deploy-angular-application-on-heroku-hosting-with-git-repository

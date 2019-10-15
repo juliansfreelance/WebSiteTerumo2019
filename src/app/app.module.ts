@@ -16,6 +16,11 @@ import { HttpClientModule } from "@angular/common/http";
 import { BuscadorPipe } from './pipes/buscador.pipe';
 import { ParrafoPipe } from './pipes/parrafo.pipe';
 import { EmailService } from './services/email.service';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { ResCorporativaComponent } from './pages/res-corporativa/res-corporativa.component';
+import { InicioCardioComponent } from './pages/solutions/cardiovascular/inicio-cardio/inicio-cardio.component';
+import { AsideComponent } from './shared/aside/aside.component';
+import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { EmailService } from './services/email.service';
     BuscadorResultadosComponent,
     ContactoComponent,
     BuscadorPipe,
-    ParrafoPipe
+    ParrafoPipe,
+    NosotrosComponent,
+    ResCorporativaComponent,
+    InicioCardioComponent,
+    AsideComponent,
+    BeatingHeartComponent
   ],
   imports: [
     BrowserModule,
