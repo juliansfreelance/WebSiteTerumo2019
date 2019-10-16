@@ -22,6 +22,8 @@ import { ResCorporativaComponent } from './pages/res-corporativa/res-corporativa
 import { InicioCardioComponent } from './pages/solutions/cardiovascular/inicio-cardio/inicio-cardio.component';
 import { AsideComponent } from './shared/aside/aside.component';
 import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
+import { PerfusionComponent } from './pages/solutions/cardiovascular/productos/perfusion/perfusion.component';
+import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/estrategia-comercial/estrategia-comercial.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { BeatingHeartComponent } from './pages/solutions/cardiovascular/producto
     ResCorporativaComponent,
     InicioCardioComponent,
     AsideComponent,
-    BeatingHeartComponent
+    BeatingHeartComponent,
+    PerfusionComponent,
+    EstrategiaComercialComponent
   ],
   imports: [
     BrowserModule,

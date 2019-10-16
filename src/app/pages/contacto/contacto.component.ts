@@ -41,9 +41,9 @@ export class ContactoComponent implements OnInit {
   private setCurrentLocation() {
     if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition((position) => {
-        this.latitude = 4.6828899;
-        this.longitude = -74.0437217;
-        this.zoom = 15;
+        this.latitude = 4.687157;
+        this.longitude = -74.056041;
+        this.zoom = 18;
       });
     }
   }

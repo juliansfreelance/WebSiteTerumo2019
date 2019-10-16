@@ -1,0 +1,11 @@
+.main-tittle{
+    padding-right: 30%;
+}
+.fondo {
+    background: linear-gradient(to right, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.1) 100%),url(../../../../../assets/img/solutions/cardiovascular/estrategia-comercial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 80%;
+    width: 100%;
+    height: 100%;
+}

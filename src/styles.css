@@ -159,3 +159,12 @@ main {
   background: #d32b2a;
   height: 11px;
 }
+
+.separador-cardio-small {
+  background: #d32b2a;
+  height: 5px;
+}
+
+.titulo-bold {
+  font-weight: bold;
+}

@@ -6,7 +6,9 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ResCorporativaComponent } from './pages/res-corporativa/res-corporativa.component';
 import { InicioCardioComponent } from './pages/solutions/cardiovascular/inicio-cardio/inicio-cardio.component';
-//import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
+import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
+import { PerfusionComponent } from './pages/solutions/cardiovascular/productos/perfusion/perfusion.component';
+import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/estrategia-comercial/estrategia-comercial.component';
 
 
 const routes: Routes = [
@@ -23,6 +25,7 @@ const routes: Routes = [
     path: 'nosotros',
     component: NosotrosComponent,
   },
+  //16 de Octubre 2019
   {
     path: 'resp-corporativa',
     component: ResCorporativaComponent,
@@ -30,6 +33,18 @@ const routes: Routes = [
   {
     path: 'cardiovascular',
     component: InicioCardioComponent,
+    /*children: [{
+      path: 'perfusion',
+      component: PerfusionComponent
+    }]*/
+  },
+  {
+    path: 'estrategia-comercial',
+    component: EstrategiaComercialComponent
+  },
+  {
+    path: 'perfusion',
+    component: PerfusionComponent
   }
 ];
 @NgModule({
