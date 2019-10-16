@@ -6,13 +6,13 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ResCorporativaComponent } from './pages/res-corporativa/res-corporativa.component';
 import { InicioCardioComponent } from './pages/solutions/cardiovascular/inicio-cardio/inicio-cardio.component';
+//import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: InicioComponent,
-    //Temporal cambiar a diseño cuando esté hecho
     pathMatch: 'full'
   },
   {
@@ -24,7 +24,7 @@ const routes: Routes = [
     component: NosotrosComponent,
   },
   {
-    path: 'res-corporativa',
+    path: 'resp-corporativa',
     component: ResCorporativaComponent,
   },
   {

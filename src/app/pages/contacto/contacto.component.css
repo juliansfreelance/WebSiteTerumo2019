@@ -4,3 +4,6 @@ strong {
 .main-tittle{
   margin-left: 10%;
 }
+agm-map {
+    height: 300px;
+}

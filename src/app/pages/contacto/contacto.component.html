@@ -74,8 +74,10 @@
                 <strong>Ubicación</strong>
             </h5>
         </div>
-        <div class="col s12">
-            <div id="map" style=" height: 300px; width: 100%;" class="container"></div>
+        <div class="col s12 container">
+            <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+            </agm-map>
         </div>
     </div>
 </div>

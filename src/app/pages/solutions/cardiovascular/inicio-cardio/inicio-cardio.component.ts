@@ -11,7 +11,7 @@ export class InicioCardioComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    M.Slider.init(document.querySelectorAll('.slider'), { height: 500, interval: 4000, indicators: false });
+    M.Slider.init(document.querySelectorAll('.slider'), { indicators: false });
   }
 
 }

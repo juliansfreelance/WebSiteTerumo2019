@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -43,7 +44,11 @@ import { BeatingHeartComponent } from './pages/solutions/cardiovascular/producto
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDtFij2OgJyzhlDHZthxHGTlh452YPhDSo',
+      libraries: ['places']
+    })
   ],
   providers: [EmailService],
   bootstrap: [AppComponent]
