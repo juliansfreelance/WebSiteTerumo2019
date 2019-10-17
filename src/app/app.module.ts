@@ -22,8 +22,11 @@ import { ResCorporativaComponent } from './pages/res-corporativa/res-corporativa
 import { InicioCardioComponent } from './pages/solutions/cardiovascular/inicio-cardio/inicio-cardio.component';
 import { AsideComponent } from './shared/aside/aside.component';
 import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
-import { PerfusionComponent } from './pages/solutions/cardiovascular/productos/perfusion/perfusion.component';
+import { PerfusionComponent } from './pages/solutions/cardiovascular/productos/perfusion/perfusion/perfusion.component';
 import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/estrategia-comercial/estrategia-comercial.component';
+import { CapioxFxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx/capiox-fx.component';
+import { CapioxRxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-rx/capiox-rx.component';
+import { CapioxFxAdvComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx-adv/capiox-fx-adv.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/e
     AsideComponent,
     BeatingHeartComponent,
     PerfusionComponent,
-    EstrategiaComercialComponent
+    EstrategiaComercialComponent,
+    CapioxFxComponent,
+    CapioxRxComponent,
+    CapioxFxAdvComponent
   ],
   imports: [
     BrowserModule,

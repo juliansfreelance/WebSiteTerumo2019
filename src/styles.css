@@ -162,9 +162,17 @@ main {
 
 .separador-cardio-small {
   background: #d32b2a;
-  height: 5px;
+  height: 4px;
 }
 
 .titulo-bold {
   font-weight: bold;
+}
+
+.line-right{
+  border-right: 5px solid #81C7B3;
+}
+
+.justify-align{
+  text-align: justify;
 }
