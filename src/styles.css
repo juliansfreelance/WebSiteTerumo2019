@@ -51,11 +51,19 @@
     font-style: normal;
 }
 
+.terumoOpenRe {
+    font-family: 'OpenSansRegular';
+}
+
 @font-face {
     font-family: 'OpenSansSemiBold';
     src: url('assets/fonts/OpenSans-SemiBold.woff2') format('woff2'), url('assets/fonts/OpenSans-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+}
+
+.terumoOpenSe {
+    font-family: 'OpenSansRegular';
 }
 
 @font-face {
@@ -113,9 +121,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    /* background: #EBEBEB; */
+}
+
 body {
     font-family: 'LatoRegular';
-    background: #EBEBEB;
     display: flex;
     min-height: 100vh;
     flex-direction: column;

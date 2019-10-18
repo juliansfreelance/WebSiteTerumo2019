@@ -1,7 +1,8 @@
-<div class="search-wrapper">
-    <div class="input-field">
-        <input id="search" type="search" placeholder="Buscar" [(ngModel)]="textoBuscar" (ngModelChange)="buscar($event)"
-            [ngModelOptions]="{standalone: true}" required>
-        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+<nav style="box-shadow: none;">
+    <div class="nav-wrapper terumo lighten">
+        <div class="input-field">
+            <input id="search" type="search" placeholder="Buscar" [(ngModel)]="textoBuscar" (ngModelChange)="buscar($event)" [ngModelOptions]="{standalone: true}" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+        </div>
     </div>
-</div>
+</nav>

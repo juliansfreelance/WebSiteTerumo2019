@@ -1,5 +1,6 @@
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
-import * as Materialize from '../../../assets/js/materialize.min.js';
+import * as M from '../../../assets/js/materialize.min.js';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscador',
@@ -9,22 +10,21 @@ import * as Materialize from '../../../assets/js/materialize.min.js';
 export class BuscadorComponent implements OnInit {
 
   @Output() changeText = new EventEmitter<string>();
-  @Input() textoBuscar: string = "";
+  @Input() textoBuscar: string = '';
+  modal:any = null;
+  instance: any = null;
 
   constructor() { }
 
   ngOnInit() {
-    /* const instance = Materialize.Autocomplete.init(document.querySelectorAll('.autocomplete'), {
-       data: {
-         "Aortic": null,
-         "Microsoft": null,
-         "Google": 'https://placehold.it/250x250'
-       } 
-     });*/
+    M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {});
+    this.modal = M.Modal.init(document.querySelectorAll('.modal'), {});
+    this.instance = M.Modal.getInstance(this.modal);
   }
 
   buscar(event: any) {
     this.changeText.emit(event);
+    this.instance.open();
   }
 
 }

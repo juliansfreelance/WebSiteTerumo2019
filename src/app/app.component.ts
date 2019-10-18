@@ -12,7 +12,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
   onchangeText(text: string) {
     this.searchText = text;
   }

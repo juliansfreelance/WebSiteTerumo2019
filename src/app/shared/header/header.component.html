@@ -1,33 +1,32 @@
-<nav class="fixed">
-    <div class="nav-wrapper white">
-        <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg"
-                style="height: 30px;"><span>Colombia</span></a>
-        <ul class="right black-text">
-            <li><a (click)="goTo('')" class="links-text terumo-text terumoBold">Sitios web Grupo Terumo >></a></li>
-            <li><a (click)="goTo('')" class="links-icon terumo-text terumoBold"><i
-                        class="material-icons">language</i></a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="nav-wrapper terumo lighten">
-        <div class="container">
-            <a (click)="goTo('')" style="margin: 0px" data-target="Menu-mobile" class="sidenav-trigger"><i
-                    class="material-icons">menu</i></a>
-            <ul class="left" class="hide-on-med-and-down">
-                <li><a (click)="goTo('')" class="dropdown-trigger terumoBold" data-target='Nosotros'>NOSOTROS</a></li>
-                <li><a (click)="goTo('')" class="dropdown-trigger terumoBold" data-target='Soluciones'>SOLUCIONES</a>
-                </li>
-                <li><a (click)="goTo('')" class="terumoBold">EVENTOS</a></li>
-                <li><a (click)="goTo('')" class="terumoBold">SOPORTE</a></li>
-                <li><a (click)="goTo('contactanos')" class="terumoBold">CONTACTENOS</a></li>
+<div class="navbar-fixed">
+    <nav class="z-depth-2">
+        <div class="nav-wrapper white">
+            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Colombia</span></a>
+            <ul class="right black-text">
+                <li><a (click)="goTo('')" class="links-text terumo-text terumoBold">Sitios web Grupo Terumo >></a></li>
+                <li><a (click)="goTo('')" class="links-icon terumo-text terumoBold"><i class="material-icons">language</i></a></li>
             </ul>
         </div>
-        <ul class="right">
-            <app-buscador [textoBuscar]="textoBuscarHeader" (changeText)="onchangeText($event)"></app-buscador>
-        </ul>
-    </div>
-</nav>
+
+        <div class="nav-wrapper terumo lighten">
+            <div class="container">
+                <a (click)="goTo('')" data-target="Menu-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left" class="hide-on-med-and-down">
+                    <li><a (click)="goTo('')" class="dropdown-trigger terumoBold" data-target='Nosotros'>NOSOTROS</a></li>
+                    <li><a (click)="goTo('')" class="dropdown-trigger terumoBold" data-target='Soluciones'>SOLUCIONES</a></li>
+                    <li><a (click)="goTo('')" class="terumoBold">EVENTOS</a></li>
+                    <li><a (click)="goTo('')" class="terumoBold">SOPORTE</a></li>
+                    <li><a (click)="goTo('contactanos')" class="terumoBold">CONTACTENOS</a></li>
+                </ul>
+            </div>
+            <ul class="r">
+                <li>
+                    <app-buscador [textoBuscar]="textoBuscarHeader" (changeText)="onchangeText($event)"></app-buscador>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 <ul id="Menu-mobile" class="sidenav">
     <li>

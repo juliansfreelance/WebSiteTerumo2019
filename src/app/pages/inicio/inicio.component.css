@@ -1,35 +1,226 @@
-.line {
-  background-color: #008f66;
-  height: 5px;
-  width: 100%;
+header {
+    display: block;
 }
+
+.background-skyleft {
+    background-color: #008f66;
+    background: linear-gradient(45deg, rgba(0, 89, 64, .7) 0%, rgba(255, 255, 255, 0) 100%), url(../../../assets/img/home-1.jpg);
+    background-blend-mode: multiply;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: 60% right;
+    color: #fff;
+}
+
+.skyleft {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+}
+
+.background-skyright {
+    background-color: rgba(255, 255, 255, 0);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(0, 89, 64, .7) 100%), url(../../../assets/img/home-3.jpg);
+    background-blend-mode: multiply;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: 60% left;
+    color: #fff;
+}
+
+.skyright {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+    margin-top: -10px;
+}
+
+.taparight {
+    position: absolute;
+    margin-top: -441px;
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+
+.intro {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    height: 480px;
+    margin: 0 auto -32px;
+    padding: 48px 0 0;
+    color: #fff;
+}
+
+.introRight {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    height: 410px;
+    padding: 48px 0 0;
+    color: #fff;
+    margin-top: -20px;
+    opacity: 0.5;
+}
+
+.ofinas {
+    background: url(../../../assets/img/oficinas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.line {
+    background-color: #008f66;
+    height: 5px;
+    width: 100%;
+}
+
 .line-2 {
-  background-color: #b3ddd1;
-  height: 6px;
-  width: 100%;
+    background-color: #b3ddd1;
+    height: 6px;
+    width: 100%;
 }
 
 .line-3 {
-  background-color: #aaaaa8;
-  height: 6px;
-  width: 100%;
+    background-color: #aaaaa8;
+    height: 6px;
+    width: 100%;
 }
+
 .gradiente-left {
-  background: linear-gradient(70deg, #008f66, white);
+    background: linear-gradient(70deg, #008f66, white);
 }
 
 .gradiente-right {
-  background: linear-gradient(70deg, white, #008f66);
+    background: linear-gradient(70deg, white, #008f66);
 }
 
 .historia {
-  background-image: url("../../../assets/img/home-3.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-image: url("../../../assets/img/home-3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 strong {
-  color: #008f66;
+    color: #008f66;
+}
+
+@media only screen and (min-width: 1024px) {
+    .background-skyleft {
+        content: '';
+        background-color: #008f66;
+        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../assets/img/home-1_2.png);
+        background-blend-mode: multiply;
+        background-size: 100%, auto 100%;
+        background-repeat: no-repeat;
+        background-position: center, right;
+    }
+    .background-skyright {
+        content: '';
+        background-color: rgba(255, 255, 255, 0);
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(0, 143, 102, 0.8) 100%), url(../../../assets/img/home-3.jpg);
+        background-blend-mode: multiply;
+        background-size: 100%, auto 100%;
+        background-repeat: no-repeat;
+        background-position: center, left;
+    }
+    .skyleft {
+        -webkit-transform: skewY(3deg);
+        transform: skewY(3deg);
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+    }
+    .introRight {
+        height: 440px;
+    }
+    .intro h3 {
+        text-align: center !important;
+        margin-top: -60px;
+    }
+    .introRight h3 {
+        text-align: center !important;
+        margin-top: -60px;
+    }
+    .taparight {
+        margin-top: -462px;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .background-skyleft {
+        content: '';
+        background-color: rgba(0, 143, 102, 0.2);
+        background: #005940, url(../../../assets/img/home-1.jpg);
+        background-size: 100%, cover;
+    }
+    .background-skyleft {
+        content: '';
+        background-color: rgba(0, 143, 102, 0.2);
+        background: #005940, url(../../../assets/img/home-1.jpg);
+        background-size: 100%, cover;
+    }
+    .skyleft {
+        height: 290px;
+    }
+    .skyright {
+        height: 240px;
+    }
+    .intro {
+        height: 290px;
+    }
+    .introRight {
+        height: 270px;
+    }
+    .intro h3 {
+        text-align: center !important;
+        margin-top: -40px;
+    }
+    .introRight h3 {
+        text-align: center !important;
+        margin-top: -40px;
+    }
+    .taparight {
+        margin-top: -302px;
+        width: 100%;
+        height: 40px;
+    }
 }

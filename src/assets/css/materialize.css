@@ -4644,7 +4644,7 @@ nav .input-field label.active i {
 
 .navbar-fixed {
     position: relative;
-    height: 56px;
+    height: 112px;
     z-index: 997;
 }
 
@@ -4664,7 +4664,7 @@ nav .input-field label.active i {
         line-height: 64px;
     }
     .navbar-fixed {
-        height: 64px;
+        height: 128px;
     }
 }
 
@@ -6889,8 +6889,9 @@ textarea.materialize-textarea+label:after,
 .input-field input[type=search] {
     display: block;
     line-height: inherit;
-    -webkit-transition: .3s background-color;
-    transition: .3s background-color;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+    margin: 0;
 }
 
 .nav-wrapper .input-field input[type=search] {
