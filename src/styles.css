@@ -1,52 +1,56 @@
 @charset "UTF-8";
 @import "assets/css/materialize.css";
 @font-face {
-    font-family: 'LatoLight';
-    src: url('assets/fonts/Lato-Bold.woff') format('woff2'), url('assets/fonts/Lato-Light.woff') format('woff');
+    font-family: "LatoLight";
+    src: url("assets/fonts/Lato-Bold.woff") format("woff2"), url("assets/fonts/Lato-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
 
 .terumoLight {
-    font-family: 'LatoLight';
+    font-family: "LatoLight";
 }
 
 @font-face {
-    font-family: 'LatoRegular';
-    src: url('assets/fonts/Lato-Regular.woff2') format('woff2'), url('assets/fonts/Lato-Regular.woff') format('woff');
+    font-family: "LatoRegular";
+    src: url("assets/fonts/Lato-Regular.woff2") format("woff2"), url("assets/fonts/Lato-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 .terumoRegular {
-    font-family: 'LatoRegular';
+    font-family: "LatoRegular";
 }
 
 @font-face {
-    font-family: 'LatoSemibold';
-    src: url('assets/fonts/Lato-Semibold.woff2') format('woff2'), url('assets/fonts/Lato-Semibold.woff') format('woff');
+    font-family: "LatoSemibold";
+    src: url("assets/fonts/Lato-Semibold.woff2") format("woff2"), url("assets/fonts/Lato-Semibold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
 
 .terumoSemibold {
-    font-family: 'LatoSemibold';
+    font-family: "LatoSemibold";
 }
 
 @font-face {
-    font-family: 'LatoBold';
-    src: url('assets/fonts/Lato-Bold.woff2') format('woff2'), url('assets/fonts/Lato-Bold.woff') format('woff');
+    font-family: "LatoBold";
+    src: url("assets/fonts/Lato-Bold.woff2") format("woff2"), url("assets/fonts/Lato-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
 
 .terumoBold {
-    font-family: 'LatoBold';
+    font-family: "LatoBold";
+}
+
+.terumoP {
+    font-family: "OpenSansRegular";
 }
 
 @font-face {
-    font-family: 'OpenSansRegular';
-    src: url('assets/fonts/OpenSans-Regular.woff2') format('woff2'), url('assets/fonts/OpenSans-Regular.woff') format('woff');
+    font-family: "OpenSansRegular";
+    src: url("assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("assets/fonts/OpenSans-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -56,8 +60,8 @@
 }
 
 @font-face {
-    font-family: 'OpenSansSemiBold';
-    src: url('assets/fonts/OpenSans-SemiBold.woff2') format('woff2'), url('assets/fonts/OpenSans-SemiBold.woff') format('woff');
+    font-family: "OpenSansSemiBold";
+    src: url("assets/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("assets/fonts/OpenSans-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
@@ -67,14 +71,14 @@
 }
 
 @font-face {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     font-style: normal;
     font-weight: 400;
-    src: url('assets/fonts/Material-Icon.woff2') format('woff2');
+    src: url("assets/fonts/Material-Icon.woff2") format("woff2");
 }
 
 .material-icons {
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     font-weight: normal;
     font-style: normal;
     font-size: 24px;
@@ -85,7 +89,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -moz-font-feature-settings: 'liga';
+    -moz-font-feature-settings: "liga";
     -moz-osx-font-smoothing: grayscale;
 }
 
@@ -101,7 +105,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     border: none;
     border-radius: 2.5px;
 }
@@ -126,7 +130,8 @@ html {
 }
 
 body {
-    font-family: 'LatoRegular';
+    font-family: "LatoRegular";
+    background: #ebebeb;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -143,7 +148,7 @@ main {
 .brand-logo span {
     margin-left: 10px;
     font-size: 1rem;
-    font-family: 'LatoRegular';
+    font-family: "LatoRegular";
     color: #000000;
 }
 
@@ -155,3 +160,109 @@ main {
         display: block !important;
     }
 }
+
+.separador {
+    height: 11px;
+}
+
+.titulo-bold {
+    font-weight: bold;
+}
+
+.line-right {
+    border-right: 5px solid #81c7b3;
+}
+
+.line-left {
+    border-left: 5px solid #81c7b3;
+    padding-left: 5%;
+}
+
+.justify-align {
+    text-align: justify;
+}
+
+.slider-text {
+    padding-right: 35%;
+}
+
+strong {
+    color: #008f66;
+    font-weight: bold;
+}
+
+
+/*@START: Cardio */
+
+li {
+    list-style-type: disc !important;
+}
+
+.separador-cardio {
+    background: #d32b2a;
+    height: 11px;
+}
+
+.separador-cardio-small {
+    background: #d32b2a;
+    height: 4px;
+}
+
+.video_fx {
+    margin-top: 5% !important;
+    border: 6px solid #adadadc7 !important;
+    /*#eeeeee*/
+}
+
+.aside-line-red {
+    border-left: 5px solid #d32b2a;
+    padding-left: 5%;
+}
+
+.space-line {
+    margin: 4% 0 4% 0;
+}
+
+.space-box {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+/*@START: Aside*/
+
+.cuadro {
+    border: 1px solid #dfdfde;
+    border-radius: 5px;
+    padding: 5px 8px 5px 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.aside-text {
+    margin-left: 8%;
+    padding-right: 5px;
+}
+
+
+/*@END: Aside*/
+
+
+/*@START: Clases sobre-escritas */
+
+.progress {
+    background-color: #adadadc7 !important;
+}
+
+.progress .determinate {
+    background-color: #d32b2a !important;
+}
+
+
+/*@END: Clases sobre-escritas */
+
+
+/*@END: Cardio */

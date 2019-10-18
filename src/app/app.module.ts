@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -16,6 +17,19 @@ import { HttpClientModule } from "@angular/common/http";
 import { BuscadorPipe } from './pipes/buscador.pipe';
 import { ParrafoPipe } from './pipes/parrafo.pipe';
 import { EmailService } from './services/email.service';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { ResCorporativaComponent } from './pages/res-corporativa/res-corporativa.component';
+import { InicioCardioComponent } from './pages/solutions/cardiovascular/inicio-cardio/inicio-cardio.component';
+import { AsideComponent } from './shared/aside/aside.component';
+import { BeatingHeartComponent } from './pages/solutions/cardiovascular/productos/beating-heart/beating-heart.component';
+import { PerfusionComponent } from './pages/solutions/cardiovascular/productos/perfusion/perfusion/perfusion.component';
+import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/estrategia-comercial/estrategia-comercial.component';
+import { CapioxFxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx/capiox-fx.component';
+import { CapioxRxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-rx/capiox-rx.component';
+import { CapioxFxAdvComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx-adv/capiox-fx-adv.component';
+import { CorazonPulmonComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/corazon-pulmon/corazon-pulmon.component';
+import { TerumoSystemComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/terumo-system/terumo-system.component';
+import { TerumoAdvSystemComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/terumo-adv-system/terumo-adv-system.component';
 
 @NgModule({
   declarations: [
@@ -27,13 +41,30 @@ import { EmailService } from './services/email.service';
     BuscadorResultadosComponent,
     ContactoComponent,
     BuscadorPipe,
-    ParrafoPipe
+    ParrafoPipe,
+    NosotrosComponent,
+    ResCorporativaComponent,
+    InicioCardioComponent,
+    AsideComponent,
+    BeatingHeartComponent,
+    PerfusionComponent,
+    EstrategiaComercialComponent,
+    CapioxFxComponent,
+    CapioxRxComponent,
+    CapioxFxAdvComponent,
+    CorazonPulmonComponent,
+    TerumoSystemComponent,
+    TerumoAdvSystemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDtFij2OgJyzhlDHZthxHGTlh452YPhDSo',
+      libraries: ['places']
+    })
   ],
   providers: [EmailService],
   bootstrap: [AppComponent]
