@@ -14,6 +14,7 @@ import { CapioxFxComponent } from './pages/solutions/cardiovascular/productos/pe
 import { CapioxFxAdvComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx-adv/capiox-fx-adv.component';
 import { CorazonPulmonComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/corazon-pulmon/corazon-pulmon.component';
 import { TerumoSystemComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/terumo-system/terumo-system.component';
+import { TerumoAdvSystemComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/terumo-adv-system/terumo-adv-system.component';
 
 
 const routes: Routes = [
@@ -71,7 +72,7 @@ const routes: Routes = [
       //END Avance
     ]
   },
-  //@START Avance
+  //@START Avance 18 de Octubre 
   {
     path: 'corazon-pulmon',
     component: CorazonPulmonComponent,
@@ -83,9 +84,14 @@ const routes: Routes = [
       {
         path: 'terumo-system',
         component: TerumoSystemComponent
+      },
+      {
+        path: 'terumo-adv-system',
+        component: TerumoAdvSystemComponent
       }
     ]
   }
+  //@END Avance 18 de Octubre
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

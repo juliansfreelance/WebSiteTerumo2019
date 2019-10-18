@@ -1,30 +1,72 @@
 p,
 h4,
 h5 {
-  text-align: justify;
+    text-align: justify;
 }
 
 .section-1 {
-  background-color: #d9eee8;
+    background-color: #d9eee8;
+}
+
+.img1 {
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
+}
+
+.img2 {
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
+}
+
+.img3 {
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
+}
+
+.img4 {
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
+}
+
+.imagen-circle {
+    border-radius: 50%;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*margin-left: calc(50% - 100px);*/
+    transition: all .5s ease-in-out;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .imagen {
-  border-radius: 50%;
-  background-color: grey;
-  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
-  width: 250px;
-  height: 250px;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*margin-left: calc(50% - 100px);*/
+    transition: all .5s ease-in-out;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
-.imagen-1{
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
+.diseno div .terumoP {
+    text-align: center;
+    color: gray;
+    /*font-style: italic;*/
+    font-size: 14px;
 }
-.imagen-2{
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
+
+.responsive-img {
+    margin-top: 5%;
 }
-.imagen-3{
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
-}
-.imagen-1{
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
+
+@media only screen and (min-width: 992px) and (max-width: 1224px) {
+    .imagen-circle {
+        width: 160px;
+        height: 160px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
