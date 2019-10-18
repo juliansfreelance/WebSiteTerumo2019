@@ -131,7 +131,7 @@ html {
 
 body {
     font-family: "LatoRegular";
-    background: #ebebeb;
+    /*background: #ebebeb;*/
     display: flex;
     min-height: 100vh;
     flex-direction: column;
