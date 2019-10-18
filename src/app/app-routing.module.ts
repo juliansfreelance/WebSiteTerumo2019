@@ -12,6 +12,8 @@ import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/e
 import { CapioxRxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-rx/capiox-rx.component';
 import { CapioxFxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx/capiox-fx.component';
 import { CapioxFxAdvComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx-adv/capiox-fx-adv.component';
+import { CorazonPulmonComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/corazon-pulmon/corazon-pulmon.component';
+import { TerumoSystemComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/terumo-system/terumo-system.component';
 
 
 const routes: Routes = [
@@ -45,12 +47,15 @@ const routes: Routes = [
     path: 'estrategia-comercial',
     component: EstrategiaComercialComponent
   },
-
   {
     path: 'perfusion',
     component: PerfusionComponent,
     children: [
       //Avance 17 de octubre de 2019
+      {
+        path: '',
+        component: CapioxRxComponent,
+      },
       {
         path: 'capiox-rx',
         component: CapioxRxComponent,
@@ -64,6 +69,21 @@ const routes: Routes = [
         component: CapioxFxAdvComponent
       }
       //END Avance
+    ]
+  },
+  //@START Avance
+  {
+    path: 'corazon-pulmon',
+    component: CorazonPulmonComponent,
+    children: [
+      {
+        path: '',
+        component: TerumoSystemComponent
+      },
+      {
+        path: 'terumo-system',
+        component: TerumoSystemComponent
+      }
     ]
   }
 ];

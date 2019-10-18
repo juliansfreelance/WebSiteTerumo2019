@@ -1,0 +1,30 @@
+p,
+h4,
+h5 {
+  text-align: justify;
+}
+
+.section-1 {
+  background-color: #d9eee8;
+}
+
+.imagen {
+  border-radius: 50%;
+  background-color: grey;
+  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
+  width: 250px;
+  height: 250px;
+}
+
+.imagen-1{
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
+}
+.imagen-2{
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
+}
+.imagen-3{
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
+}
+.imagen-1{
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
+}

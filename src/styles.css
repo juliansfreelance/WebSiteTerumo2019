@@ -155,6 +155,28 @@ main {
   height: 11px;
 }
 
+.titulo-bold {
+  font-weight: bold;
+}
+
+.line-right {
+  border-right: 5px solid #81c7b3;
+}
+
+.justify-align {
+  text-align: justify;
+}
+
+.slider-text {
+  padding-right: 35%;
+}
+strong {
+  color: #008f66;
+  font-weight: bold;
+}
+
+/*@START: Cardio */
+
 .separador-cardio {
   background: #d32b2a;
   height: 11px;
@@ -165,14 +187,20 @@ main {
   height: 4px;
 }
 
-.titulo-bold {
-  font-weight: bold;
+.video_fx {
+  margin-top: 5% !important;
+  border: 6px solid #adadadc7 !important;
+  /*#eeeeee*/
 }
 
-.line-right{
-  border-right: 5px solid #81C7B3;
+.aside-line-red {
+  border-left: 5px solid #d32b2a;
+  padding-left: 5%;
 }
 
-.justify-align{
-  text-align: justify;
+.space-line {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+/*@END: Cardio */

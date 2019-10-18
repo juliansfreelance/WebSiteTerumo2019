@@ -27,6 +27,8 @@ import { EstrategiaComercialComponent } from './pages/solutions/cardiovascular/e
 import { CapioxFxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx/capiox-fx.component';
 import { CapioxRxComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-rx/capiox-rx.component';
 import { CapioxFxAdvComponent } from './pages/solutions/cardiovascular/productos/perfusion/capiox-fx-adv/capiox-fx-adv.component';
+import { CorazonPulmonComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/corazon-pulmon/corazon-pulmon.component';
+import { TerumoSystemComponent } from './pages/solutions/cardiovascular/productos/corazon-pulmon/terumo-system/terumo-system.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { CapioxFxAdvComponent } from './pages/solutions/cardiovascular/productos
     EstrategiaComercialComponent,
     CapioxFxComponent,
     CapioxRxComponent,
-    CapioxFxAdvComponent
+    CapioxFxAdvComponent,
+    CorazonPulmonComponent,
+    TerumoSystemComponent
   ],
   imports: [
     BrowserModule,
