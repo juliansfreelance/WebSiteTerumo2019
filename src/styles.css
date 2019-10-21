@@ -1,268 +1,320 @@
 @charset "UTF-8";
 @import "assets/css/materialize.css";
 @font-face {
-    font-family: "LatoLight";
-    src: url("assets/fonts/Lato-Bold.woff") format("woff2"), url("assets/fonts/Lato-Light.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "LatoLight";
+  src: url("assets/fonts/Lato-Bold.woff") format("woff2"), url("assets/fonts/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 .terumoLight {
-    font-family: "LatoLight";
+  font-family: "LatoLight";
 }
 
 @font-face {
-    font-family: "LatoRegular";
-    src: url("assets/fonts/Lato-Regular.woff2") format("woff2"), url("assets/fonts/Lato-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "LatoRegular";
+  src: url("assets/fonts/Lato-Regular.woff2") format("woff2"), url("assets/fonts/Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .terumoRegular {
-    font-family: "LatoRegular";
+  font-family: "LatoRegular";
 }
 
 @font-face {
-    font-family: "LatoSemibold";
-    src: url("assets/fonts/Lato-Semibold.woff2") format("woff2"), url("assets/fonts/Lato-Semibold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "LatoSemibold";
+  src: url("assets/fonts/Lato-Semibold.woff2") format("woff2"), url("assets/fonts/Lato-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 .terumoSemibold {
-    font-family: "LatoSemibold";
+  font-family: "LatoSemibold";
 }
 
 @font-face {
-    font-family: "LatoBold";
-    src: url("assets/fonts/Lato-Bold.woff2") format("woff2"), url("assets/fonts/Lato-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "LatoBold";
+  src: url("assets/fonts/Lato-Bold.woff2") format("woff2"), url("assets/fonts/Lato-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 .terumoBold {
-    font-family: "LatoBold";
+  font-family: "LatoBold";
 }
 
 .terumoP {
-    font-family: "OpenSansRegular";
+  font-family: "OpenSansRegular";
 }
 
 @font-face {
-    font-family: "OpenSansRegular";
-    src: url("assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("assets/fonts/OpenSans-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OpenSansRegular";
+  src: url("assets/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("assets/fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .terumoOpenRe {
-    font-family: 'OpenSansRegular';
+  font-family: "OpenSansRegular";
 }
 
 @font-face {
-    font-family: "OpenSansSemiBold";
-    src: url("assets/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("assets/fonts/OpenSans-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "OpenSansSemiBold";
+  src: url("assets/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 .terumoOpenSe {
-    font-family: 'OpenSansRegular';
+  font-family: "OpenSansRegular";
 }
 
 @font-face {
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: 400;
-    src: url("assets/fonts/Material-Icon.woff2") format("woff2");
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/Material-Icon.woff2") format("woff2");
 }
 
 .material-icons {
-    font-family: "Material Icons";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -moz-font-feature-settings: "liga";
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
-    border: none;
-    border-radius: 0px;
+  background: transparent;
+  border: none;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 2.5px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 2.5px;
 }
 
 ::-webkit-scrollbar-corner {
-    display: none;
+  display: none;
 }
 
 * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: default;
-    scrollbar-width: thin;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  scrollbar-width: thin;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
-    /* background: #EBEBEB; */
+  /* background: #EBEBEB; */
 }
 
 body {
-    font-family: "LatoRegular";
-    /*background: #ebebeb;*/
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  font-family: "LatoRegular";
+  /*background: #ebebeb;*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .links-icon {
-    display: none !important;
+  display: none !important;
 }
 
 .brand-logo span {
-    margin-left: 10px;
-    font-size: 1rem;
-    font-family: "LatoRegular";
-    color: #000000;
+  margin-left: 10px;
+  font-size: 1rem;
+  font-family: "LatoRegular";
+  color: #000000;
 }
 
 @media only screen and (max-width: 600px) {
-    .links-text {
-        display: none !important;
-    }
-    .links-icon {
-        display: block !important;
-    }
+  .links-text {
+    display: none !important;
+  }
+  .links-icon {
+    display: block !important;
+  }
 }
 
 .separador {
-    height: 11px;
+  height: 11px;
 }
 
 .titulo-bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .line-right {
-    border-right: 5px solid #81c7b3;
+  border-right: 5px solid #81c7b3;
 }
 
-.line-left {
-    border-left: 5px solid #81c7b3;
-    padding-left: 5%;
+.aside-line-left {
+  border-left: 5px solid #81c7b3;
+  padding-left: 5%;
 }
 
 .justify-align {
-    text-align: justify;
+  text-align: justify;
 }
 
-.slider-text {
-    padding-right: 35%;
+.slider-text-left {
+  padding-right: 35%;
+}
+
+.slider-text-right {
+  padding-left: 35%;
 }
 
 strong {
-    color: #008f66;
-    font-weight: bold;
+  color: #008f66;
+  font-weight: bold;
 }
-
 
 /*@START: Cardio */
 
 li {
-    list-style-type: disc !important;
+  list-style-type: disc !important;
 }
 
 .separador-cardio {
-    background: #d32b2a;
-    height: 11px;
+  background: #d32b2a;
+  height: 11px;
 }
 
+.line-bottom-space{
+  margin-bottom: 5%;
+}
+
+.separador-light-cardio {
+  background: #d9d9d9;
+  height: 11px;
+  margin-bottom: 5%;
+}
+
+
 .separador-cardio-small {
-    background: #d32b2a;
-    height: 4px;
+  background: #d32b2a;
+  height: 4px;
 }
 
 .video_fx {
-    margin-top: 5% !important;
-    border: 6px solid #adadadc7 !important;
-    /*#eeeeee*/
+  margin-top: 5% !important;
+  border: 6px solid #adadadc7 !important;
+  /*#eeeeee*/
 }
 
 .aside-line-red {
-    border-left: 5px solid #d32b2a;
-    padding-left: 5%;
+  border-left: 5px solid #d32b2a;
+  padding-left: 5%;
 }
 
 .space-line {
-    margin: 4% 0 4% 0;
+  margin: 4% 0 4% 0;
 }
 
 .space-box {
-    padding-top: 5%;
-    padding-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+/*@START: Circle section */
+.section-1 {
+  background-color: #d9eee8;
 }
 
+.imagen-circle {
+  border-radius: 50%;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*margin-left: calc(50% - 100px);*/
+  transition: all 0.5s ease-in-out;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.imagen {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*margin-left: calc(50% - 100px);*/
+  transition: all 0.5s ease-in-out;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1224px) {
+  .imagen-circle {
+    width: 160px;
+    height: 160px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/*@END: Circle section */
 
 /*@START: Aside*/
 
 .cuadro {
-    border: 1px solid #dfdfde;
-    border-radius: 5px;
-    padding: 5px 8px 5px 8px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    align-items: center;
-    margin-top: 8%;
+  border: 1px solid #dfdfde;
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  align-items: center;
+  margin-top: 8%;
 }
 
 .aside-text {
-    margin-left: 8%;
-    padding-right: 5px;
+  margin-left: 8%;
+  padding-right: 5px;
 }
 
-
 /*@END: Aside*/
-
 
 /*@START: Clases sobre-escritas */
 
 .progress {
-    background-color: #adadadc7 !important;
+  background-color: #adadadc7 !important;
 }
 
 .progress .determinate {
-    background-color: #d32b2a !important;
+  background-color: #d32b2a !important;
 }
 
-
 /*@END: Clases sobre-escritas */
-
 
 /*@END: Cardio */

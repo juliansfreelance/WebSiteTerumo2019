@@ -1,0 +1,10 @@
+.container p{
+    text-align: justify;
+}
+.container-fluid{
+    margin: 0% 5% 0% !important;
+}
+
+.row div img{
+    margin-bottom: 5%;
+}

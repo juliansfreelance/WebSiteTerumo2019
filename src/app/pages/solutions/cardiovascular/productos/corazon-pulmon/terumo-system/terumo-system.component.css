@@ -1,72 +1,32 @@
 p,
 h4,
 h5 {
-    text-align: justify;
-}
-
-.section-1 {
-    background-color: #d9eee8;
+  text-align: justify;
 }
 
 .img1 {
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
+  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
 }
 
 .img2 {
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
+  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
 }
 
 .img3 {
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
+  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
 }
 
 .img4 {
-    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
+  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
 }
 
-.imagen-circle {
-    border-radius: 50%;
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*margin-left: calc(50% - 100px);*/
-    transition: all .5s ease-in-out;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.imagen {
-    background-color: white;
-    width: 200px;
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*margin-left: calc(50% - 100px);*/
-    transition: all .5s ease-in-out;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.diseno div .terumoP {
-    text-align: center;
-    color: gray;
-    /*font-style: italic;*/
-    font-size: 14px;
+.diseno div p {
+  text-align: center;
+  color: gray;
+  /*font-style: italic;*/
+  font-size: 14px;
 }
 
 .responsive-img {
-    margin-top: 5%;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1224px) {
-    .imagen-circle {
-        width: 160px;
-        height: 160px;
-        margin-left: 50%;
-        transform: translateX(-50%);
-    }
+  margin-top: 5%;
 }
