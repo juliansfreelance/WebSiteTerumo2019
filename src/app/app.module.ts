@@ -38,6 +38,16 @@ import { BombCentrifugaComponent } from './pages/solutions/cardiovascular/produc
 import { CapioxSpComponent } from './pages/solutions/cardiovascular/productos/bomb-centrifuga/capiox-sp/capiox-sp.component';
 import { STuberiasComponent } from './pages/solutions/cardiovascular/productos/set-tuberias/set-tuberias/set-tuberias.component';
 import { ExtracorporeaComponent } from './pages/solutions/cardiovascular/productos/set-tuberias/extracorporea/extracorporea.component';
+import { MiocardiaComponent } from './pages/solutions/cardiovascular/productos/miocardia/miocardia/miocardia.component';
+import { SetCardioplejiaComponent } from './pages/solutions/cardiovascular/productos/miocardia/set-cardioplejia/set-cardioplejia.component';
+import { CapioxCpComponent } from './pages/solutions/cardiovascular/productos/miocardia/capiox-cp/capiox-cp.component';
+import { CapioxComponent } from './pages/solutions/cardiovascular/productos/capiox/capiox/capiox.component';
+import { HemoconcentradoresComponent } from './pages/solutions/cardiovascular/productos/capiox/hemoconcentradores/hemoconcentradores.component';
+import { FArterialComponent } from './pages/solutions/cardiovascular/productos/capiox/f-arterial/f-arterial.component';
+import { LineaComponent } from './pages/solutions/cardiovascular/productos/linea/linea/linea.component';
+import { PerfusionPedComponent } from './pages/solutions/cardiovascular/productos/linea/perfusion-ped/perfusion-ped.component';
+import { InicioAorticComponent } from './pages/solutions/aortic/inicio-aortic/inicio-aortic.component';
+import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/soluciones-estandar.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +80,17 @@ import { ExtracorporeaComponent } from './pages/solutions/cardiovascular/product
     BombCentrifugaComponent,
     CapioxSpComponent,
     STuberiasComponent,
-    ExtracorporeaComponent
+    ExtracorporeaComponent,
+    MiocardiaComponent,
+    SetCardioplejiaComponent,
+    CapioxCpComponent,
+    CapioxComponent,
+    HemoconcentradoresComponent,
+    FArterialComponent,
+    LineaComponent,
+    PerfusionPedComponent,
+    InicioAorticComponent,
+    SolucionesEstandarComponent
   ],
   imports: [
     BrowserModule,
