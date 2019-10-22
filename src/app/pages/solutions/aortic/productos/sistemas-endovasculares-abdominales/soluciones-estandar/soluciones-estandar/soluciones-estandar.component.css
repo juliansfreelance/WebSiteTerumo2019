@@ -1,26 +1,181 @@
+/*@START: General settings*/
+/*Background Colors*/
+.light-brown-aortic {
+  background-color: #dfd0a6;
+}
+.dark-blue-aortic {
+  background-color: #415465;
+}
+/*@END: General settings*/
+/*@START: Section 1*/
 .blue-section {
   border-radius: 0% 50% 50% 0%;
-  width: 45%;
+  width: 40%;
   padding: 8% 5% 8% 5%;
 }
-
-.imagen {
+.imagen-fondo {
   background-image: url(../../../../../../../../assets/img/solutions/aortic/baner-sol-est.png);
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 65%;
+  margin-top: 130px;
   background-position-x: right;
+  background-size: contain;
   position: absolute;
   top: 0;
   z-index: -2;
 }
 
+/*@END: Section 1*/
+
+/*@START: Section 3*/
+
+.centrar {
+  margin-top: 18%;
+}
+
+.row {
+  margin: 0%;
+}
+
+.section-2 {
+  background-color: #dfd0a6;
+  overflow-x: hidden;
+}
+
+.imagen-circle-aortic {
+  border-radius: 50%;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*margin-left: calc(50% - 100px);*/
+  transition: all 0.5s ease-in-out;
+  position: static;
+  left: 0;
+  background-image: url(../../../../../../../../assets/img/solutions/aortic/circle-aortic-index.png);
+}
+
+/*@END: Section 3*/
+
+/*@START: Section 4*/
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.dark-blue-circle {
+  background-color: #415465;
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 50%;
+}
+.space {
+  padding: 0 0.1rem !important;
+}
+.logo-circle {
+  margin: 26% 33.4% 0%;
+  margin-bottom: 0%;
+  width: 35%;
+  height: 35%;
+}
+.descripcion {
+  margin: 8% 12% 3%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+.descripcion strong {
+  color: white;
+}
+/*@END: Section 4*/
+
+/* @START: Section 5 */
+.divider {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+/* @END: Section 5 */
+/*@START: Section 6*/
+
+.dark-blue-section {
+  /*border-radius: 0% 150% 150% 0%;*/
+  width: 100%;
+  position: relative;
+  border-radius: 0% 180px 180px 0%;
+  padding: 15% 10% 12% 6%;
+}
+
+.margin-container-left {
+  padding-left: 0% !important;
+}
+
+.imagen-reposicionable {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../../../../../../../../assets/img/solutions/aortic/reposicionable.gif);
+}
+
+/*@END: Section 6*/
+
+/*Media Queries*/
 @media only screen and (max-width: 600px) {
   .blue-section {
     border-radius: 50% 50% 0% 0%;
     width: 100%;
-    margin-top: 60px;
+    height: 45%;
+    margin-top: 45%;
     padding: 8% 5% 8% 5%;
     text-align: center;
-  } 
+  }
+  .imagen-circle-aortic {
+    width: 250px;
+    height: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .flow-text {
+    margin-top: 10%;
+  }
+  .centrar {
+    margin-top: 0%;
+  }
+  .circles {
+    flex-direction: column;
+  }
+  /*SECTION 4*/
+  .dark-blue-circle {
+    width: calc(100vw / 1.2);
+    height: calc(100vw / 1.2);
+  }
+  .descripcion {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .blue-section {
+    height: 40%;
+    /*margin-top: 130px;*/
+  }
+  .imagen-circle-aortic {
+    width: 350px;
+    height: 350px;
+    margin-left: 0%;
+  }
+  .centrar {
+    margin-top: 10%;
+  }
+  .descripcion {
+    font-size: 10px;
+  }
+  .imagen-reposicionable {
+    height: 335px;
+  }
 }
