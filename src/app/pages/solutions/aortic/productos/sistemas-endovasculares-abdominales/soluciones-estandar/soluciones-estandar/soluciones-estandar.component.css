@@ -6,24 +6,42 @@
 .dark-blue-aortic {
   background-color: #415465;
 }
+.light-blue-aortic {
+  background-color: #b7d2df;
+}
+/* TEXT */
+.aortic-dark-text {
+  color: #74848e !important;
+}
+.aortic-black-text {
+  color: #4b5159 !important;
+}
+.aortic-light-text {
+  color: #bed6e2 !important;
+}
 /*@END: General settings*/
+
 /*@START: Section 1*/
 .blue-section {
   border-radius: 0% 50% 50% 0%;
   width: 40%;
   padding: 8% 5% 8% 5%;
 }
-.imagen-fondo {
-  background-image: url(../../../../../../../../assets/img/solutions/aortic/baner-sol-est.png);
+.imagen-fondo,
+.banner-blue {
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  top: 0;
+  z-index: -2;
+}
+.imagen-fondo {
   height: 65%;
   margin-top: 130px;
   background-position-x: right;
   background-size: contain;
+  background-image: url(../../../../../../../../assets/img/solutions/aortic/baner-sol-est.png);
   position: absolute;
-  top: 0;
-  z-index: -2;
 }
 
 /*@END: Section 1*/
@@ -67,11 +85,14 @@
   align-items: center;
   justify-content: center;
 }
-.dark-blue-circle {
-  background-color: #415465;
+.dark-blue-circle,
+.light-blue-circle {
   width: calc(100vw / 3);
   height: calc(100vw / 3);
   border-radius: 50%;
+}
+.dark-blue-circle {
+  background-color: #415465;
 }
 .space {
   padding: 0 0.1rem !important;
@@ -101,28 +122,150 @@
 /* @END: Section 5 */
 /*@START: Section 6*/
 
+.light-brown-section,
+.light-blue-section,
 .dark-blue-section {
   /*border-radius: 0% 150% 150% 0%;*/
   width: 100%;
   position: relative;
-  border-radius: 0% 180px 180px 0%;
+}
+.dark-blue-section {
+  border-radius: 0% 250px 250px 0%;
   padding: 15% 10% 12% 6%;
 }
-
 .margin-container-left {
   padding-left: 0% !important;
 }
 
-.imagen-reposicionable {
+.imagen-reposicionable,
+.imagen-implantation,
+.imagen-ring {
   width: 100%;
   height: 300px;
+  margin: 5% 0%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.imagen-reposicionable {
   background-image: url(../../../../../../../../assets/img/solutions/aortic/reposicionable.gif);
 }
 
+.text-section-6 {
+  font-size: 18px;
+  padding-top: 5%;
+}
+
 /*@END: Section 6*/
+
+/*@START Section 7*/
+.imagen-ring {
+  background-image: url(../../../../../../../../assets/img/solutions/aortic/anaconda_dual_proximal_ring_stent.png);
+}
+.margin-container-right {
+  padding-right: 0% !important;
+}
+.light-blue-section {
+  border-radius: 250px 0% 0% 250px;
+  padding: 15% 6% 12% 10%;
+}
+/*@END Section 7*/
+
+/*@START Section 8*/
+.light-brown-section {
+  border-radius: 0% 300px 300px 0%;
+  padding: 8% 8% 8% 4%;
+}
+.imagen-implantation {
+  margin: 8% 0% !important;
+  background-image: url(../../../../../../../../assets/img/solutions/aortic/implantation.png);
+}
+/*@END Section 8*/
+
+/*@START Section 9*/
+.btn {
+  border-radius: 0% 50px 50px 0%;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+}
+/*@END Section 9*/
+
+/*@START Section 10*/
+.section-10 {
+  margin: 5% 0%;
+}
+
+/*@END Section 10*/
+
+/*@START: Section 11*/
+.banner-blue {
+  background-position: center;
+  background-image: url(../../../../../../../../assets/img/solutions/aortic/blue-banner.png);
+  width: 100%;
+  height: 450px;
+  padding: 5% 0%;
+}
+.cite-section-1 {
+  padding: 3rem 0.75rem !important;
+}
+
+/*@END: Section 11*/
+
+/*@START: Section 12*/
+
+.tabs .tab a {
+  background: #dfd0a6;
+  color: black;
+  border-radius: 0% 25px 25px 0%;
+  font-weight: bold;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: #b7d2df;
+}
+
+.tabs {
+  padding: 3% 0%;
+  height: 0%;
+}
+
+.tabs .tab {
+  line-height: 1 !important;
+}
+
+.exclution li {
+  list-style-type: none !important;
+}
+
+ul li a {
+  text-align: center;
+}
+
+a {
+  color: #4b5159 !important;
+}
+
+.full-light-section {
+  border-radius: 0% 250px 250px 0%;
+  height: 520px !important;
+}
+/*@END: Section 12*/
+
+/*@START: FLEXBOX*/
+.container-right {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+}
+.col-1 {
+  order: 1; /* default is 0 */
+}
+.col-2 {
+  order: 2; /* default is 0 */
+}
+/*@END: FLEXBOX*/
 
 /*Media Queries*/
 @media only screen and (max-width: 600px) {
@@ -155,7 +298,24 @@
     height: calc(100vw / 1.2);
   }
   .descripcion {
-    font-size: 14px;
+    font-size: 20px;
+  }
+  /*SECTION 6*/
+  .light-blue-section {
+    padding: 15% 6% 12% 30%;
+  }
+  /*SECTION 8*/
+  .light-brown-section {
+    padding-right: 16%;
+  }
+  /*SECTION 10*/
+  .light-blue-circle {
+    width: calc(100vw / 1.2);
+    height: calc(100vw / 1.2);
+  }
+  /*FLEXBOX*/
+  .container-right {
+    flex-direction: column-reverse;
   }
 }
 
@@ -177,5 +337,10 @@
   }
   .imagen-reposicionable {
     height: 335px;
+    margin: 3% 0%;
+  }
+  /*SECTION 8*/
+  .light-brown-section {
+    padding-right: 12%;
   }
 }
