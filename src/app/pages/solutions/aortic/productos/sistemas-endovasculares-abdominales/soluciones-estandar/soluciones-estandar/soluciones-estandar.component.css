@@ -269,6 +269,9 @@ a {
   font-weight: bold;
 }
 
+ol li{
+  list-style-type: decimal !important;
+}
 /*@END: Section 12*/
 
 /*@START: Section 14*/
