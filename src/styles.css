@@ -323,3 +323,7 @@ li {
   background-color: #B7D2DF;
 }
 /*@END: Aortic*/
+
+html {
+  overflow-x: hidden !important;
+}
