@@ -95,7 +95,6 @@ header {
     padding: 48px 0 0;
     color: #fff;
     margin-top: -20px;
-    opacity: 0.5;
 }
 
 .ofinas {
@@ -121,22 +120,6 @@ header {
     background-color: #aaaaa8;
     height: 6px;
     width: 100%;
-}
-
-.gradiente-left {
-    background: linear-gradient(70deg, #008f66, white);
-}
-
-.gradiente-right {
-    background: linear-gradient(70deg, white, #008f66);
-}
-
-.historia {
-    background-image: url("../../../assets/img/home-3.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 strong {
@@ -180,7 +163,8 @@ strong {
         margin-top: -60px;
     }
     .taparight {
-        margin-top: -470px;/*-462px*/
+        margin-top: -470px;
+        /*-462px*/
         height: 90px;
     }
 }
@@ -222,5 +206,18 @@ strong {
         margin-top: -302px;
         width: 100%;
         height: 40px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .vision {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 }

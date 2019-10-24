@@ -1,6 +1,120 @@
-.main-tittle{
-  margin-left: 10%;
+header {
+    display: block;
 }
+
+.background-skyleft {
+    background-color: #008f66;
+    background: linear-gradient(45deg, rgba(0, 89, 64, .7) 0%, rgba(255, 255, 255, 0) 100%), url(../../../assets/img/contactenos-1.jpg);
+    background-blend-mode: multiply;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: 60% right;
+    color: #fff;
+}
+
+.skyleft {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+}
+
+.intro {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    height: 480px;
+    margin: 0 auto -32px;
+    padding: 48px 0 0;
+    color: #fff;
+}
+
+strong {
+    color: #008f66;
+}
+
+img {
+    margin: 14px 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .background-skyleft {
+        content: '';
+        background-color: #008f66;
+        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../assets/img/contactenos-1_2.png);
+        background-size: 100%, auto 100%;
+        background-repeat: no-repeat;
+        background-position: center, right;
+    }
+    .skyleft {
+        -webkit-transform: skewY(3deg);
+        transform: skewY(3deg);
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+    }
+    .intro h3 {
+        text-align: center !important;
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .background-skyleft {
+        content: '';
+        background-color: rgba(0, 143, 102, 0.2);
+        background: #005940, url(../../../assets/img/contactenos-1.jpg);
+        background-size: 100%, cover;
+    }
+    .skyleft {
+        height: 290px;
+    }
+    .intro {
+        height: 300px;
+    }
+    .intro h3 {
+        text-align: center !important;
+        margin-top: -40px;
+    }
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .vision {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.main-tittle {
+    margin-left: 10%;
+}
+
 agm-map {
     height: 300px;
 }

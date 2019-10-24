@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import data from 'src/assets/data/data.json';
 import { Router } from '@angular/router';
-import * as M from '../../../assets/js/materialize.min.js';
 
 
 @Component({
@@ -11,7 +10,7 @@ import * as M from '../../../assets/js/materialize.min.js';
 })
 export class BuscadorResultadosComponent implements OnInit {
 
-  @Input() textoBuscar: string = '';
+  @Input() textoBuscar = '';
 
   @Output() textoSalida = new EventEmitter<string>();
 
@@ -21,8 +20,6 @@ export class BuscadorResultadosComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    //const instant = M.Modal.init(document.querySelectorAll('.modal'), {});
-    //this.modal.emit(instant);
   }
 
   selectSolution(item: any) {

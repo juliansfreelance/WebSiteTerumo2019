@@ -1,7 +1,6 @@
 <body>
-    <app-header [textoBuscarHeader]="searchText" (search)="onchangeText($event)"></app-header>
+    <app-header></app-header>
     <main>
-        <app-buscador-resultados [textoBuscar]="searchText" (textoSalida)="getDataFromResult($event)"></app-buscador-resultados>
         <router-outlet></router-outlet>
     </main>
     <app-footer></app-footer>

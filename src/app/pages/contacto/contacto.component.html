@@ -1,83 +1,137 @@
-<div class="container-fluid">
-    <div class="row main-tittle">
-        <div class="col s12 m6">
-            <h2>Terumo Colombia Contacto</h2>
+<header>
+    <div class="background-skyleft skyleft"></div>
+    <section class="intro row">
+        <div class="container">
+            <div class="col m6 s12">
+                <h3 class="white-text left">Terumo Colombia Contacto</h3>
+            </div>
         </div>
-        <div class="col s12 m6">
-            <img src="assets/img/contactenos-1.jpg" alt="Contactenos header" class="responsive-img">
-        </div>
-    </div>
-</div>
+    </section>
+</header>
 
-<div class="container">
-    <div class="row">
-        <form class="col s12" (ngSubmit)="contactForm(contacto.value)" #contacto="ngForm">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input name="nombre" id="first_name" type="text" class="validate" ngModel>
-                    <label for="first_name">Nombre*</label>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="cargo_text" name="cargo" type="text" class="validate" ngModel>
-                    <label for="cargo_text">Cargo</label>
-                </div>
-            </div>
+<div class="section">
+    <div class="container">
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="empresa_text" name="empresa" type="text" class="validate" ngModel>
-                    <label for="empresa_text">Empresa*</label>
-                </div>
+        <div class="row">
+            <div class="col s12">
+                <h5>
+                    <strong>CONTÁCTENOS</strong>
+                </h5>
             </div>
+            <form class="col s12" (ngSubmit)="contactForm(contacto.value)" #contacto="ngForm">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input name="nombre" id="first_name" type="text" class="validate" ngModel>
+                        <label for="first_name">Nombre*</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="email_text" name="email" type="email" class="validate" ngModel>
+                        <label for="email_text">Correo electrónico*</label>
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="email_text" name="email" type="email" class="validate" ngModel>
-                    <label for="email_text">Correo electrónico*</label>
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="empresa_text" name="empresa" type="text" class="validate" ngModel>
+                        <label for="empresa_text">Empresa*</label>
+
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="cargo_text" name="cargo" type="text" class="validate" ngModel>
+                        <label for="cargo_text">Cargo</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <textarea placeholder="Pregunta o motivo por el cual quiere comunicarse con nosotros"
-                        class="materialize-textarea" name="message" id="mensaje_text" cols="30" rows="12"
-                        ngModel></textarea>
-                    <label for="mensaje_text">Mensaje</label>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea placeholder="Pregunta o motivo por el cual quiere comunicarse con nosotros" class="materialize-textarea" name="message" id="mensaje_text" cols="30" rows="12" ngModel></textarea>
+                        <label class="active" for="mensaje_text">Mensaje</label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <p>
-                        <label for="check_text">
+                <div class="row">
+                    <div class="col s12">
+                        <p>
+                            <label for="check_text">
                             <input type="checkbox" id="check_text" name="check" type="checkbox" ngModel>
-                            <span>He leído y acepto la <a href="#">Politica de Privacidad y Cookies</a> y los <a
-                                    href="#">Terminos y Condiciones</a>*
+                            <span>He leído y acepto la <a href="#politica" class="modal-trigger">Politica de Privacidad y Cookies</a> y los <a href="#terminos" class="modal-trigger">Terminos y Condiciones</a>*
                                 <br />
                                 * Estos campos son necesarios
                             </span>
                         </label>
-                    </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 ">
+                        <button type="submit" class="waves-effect waves-light btn terumo right terumoBold">Enviar <i class="material-icons right">send</i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="progress space-line">
+            <div class="determinate terumo" style="width: 20%"></div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h5>
+                    <strong>TERUMO COLOMBIA ANDINA S.A.S.</strong>
+                </h5>
+            </div>
+            <br/>
+            <br/>
+            <div class="section">
+                <div class="col s12 m6 valign-wrapper center-align">
+                    <div class="col s12"><i class="material-icons terumo-text">phone</i>
+                        <p>(+57 1)(57 - 1) 2568400 / 2568405</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 valign-wrapper center-align">
+                    <div class="col s12"><i class="material-icons terumo-text">mail</i>
+                        <p>contactenos@terumocolombia.com</p>
+                    </div>
+                </div>
+                <div class="col s12  valign-wrapper center-align">
+                    <div class="col s12"><i class="material-icons terumo-text">location_on</i>
+                        <p>Calle 100 No. 23 - 10 Piso 2 Bogotá D.C - Colombia</p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12 ">
-                    <button type="submit" class="waves-effect waves-light btn terumo right">Enviar</button>
-                </div>
+        </div>
+
+        <div class=" mapa row" style=" padding: 0px; ">
+
+            <!-- <div class="col s6">
+                <h5>
+                    <strong>Ubicación</strong>
+                </h5>
+            </div> -->
+
+            <div class="col s12">
+                <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+                </agm-map>
             </div>
-        </form>
+        </div>
+
     </div>
-    <div class="row">
-        <div class="col s6">
-            <h5>
-                <strong>Ubicación</strong>
-            </h5>
-        </div>
-        <div class="col s12 container">
-            <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-                <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
-            </agm-map>
-        </div>
+</div>
+
+<div id="politica" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h5><strong>Politica de Privacidad y Cookies</strong></h5>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-light btn terumo terumoBold">Cerrar <i class="material-icons left">close</i></a>
+    </div>
+</div>
+
+<div id="terminos" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h5><strong>Terminos y Condiciones</strong></h5>
+        <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-light btn terumo terumoBold">Cerrar <i class="material-icons left">close</i></a>
     </div>
 </div>

@@ -32,18 +32,19 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'contactanos',
-    component: ContactoComponent,
-  },
-  {
-    path: 'nosotros',
+    path: 'red-global',
     component: NosotrosComponent,
   },
-  //16 de Octubre 2019
   {
     path: 'resp-corporativa',
     component: ResCorporativaComponent,
   },
+  {
+    path: 'contactanos',
+    component: ContactoComponent,
+  },
+  //16 de Octubre 2019
+  
   {
     path: 'cardiovascular',
     component: InicioCardioComponent,

@@ -8,6 +8,10 @@
     background-color: #82c7b2 !important;
 }
 
+.terumo.red {
+    background-color: #d32b2a !important;
+}
+
 .terumo-text {
     color: #008f66 !important;
 }
@@ -6907,7 +6911,7 @@ textarea.materialize-textarea+label:after,
 }
 
 .input-field input[type="search"]:focus:not(.browser-default) {
-    background-color: #fff;
+    background-color: #ebebeb;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -7945,7 +7949,7 @@ input[type="range"]::-ms-thumb {
 }
 
 .sidenav .divider {
-    margin: 8px 0 0 0;
+    margin: 0;
 }
 
 .sidenav .subheader {
@@ -7964,7 +7968,6 @@ input[type="range"]::-ms-thumb {
 .sidenav .user-view {
     position: relative;
     padding: 32px 32px 0;
-    margin-bottom: 8px;
 }
 
 .sidenav .user-view>a {

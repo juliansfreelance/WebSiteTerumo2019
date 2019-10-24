@@ -9,10 +9,10 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() search = new EventEmitter<string>();
-  @Input() textoBuscarHeader: string;
+  textoHeader: string = '';
 
-  constructor(private router:Router) { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
     M.Sidenav.init( document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true } );
@@ -20,12 +20,16 @@ export class HeaderComponent implements OnInit {
     M.Collapsible.init( document.querySelectorAll('.collapsible'), {} );
   }
 
-  onchangeText(texto: string) {
-    this.textoBuscarHeader = texto;
-    this.search.emit(this.textoBuscarHeader);    
+  goTo(texto: string) {
+    this.router.navigate([texto]);
   }
 
-  goTo(texto: string){
-    this.router.navigate([texto]);
+  emitterBuscador(texto: string) {
+    this.textoHeader = texto;
+    console.log(this.textoHeader)
+  }
+
+  emitterResultado(texto: string) {
+    this.textoHeader = texto;
   }
 }

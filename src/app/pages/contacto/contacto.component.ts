@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { EmailService } from 'src/app/services/email.service';
 import { ClienteI } from 'src/app/models/cliente.interface';
 import { MapsAPILoader, MouseEvent } from '@agm/core';
+import * as M from '../../../assets/js/materialize.min.js';
 
 declare var google;
 
@@ -30,6 +31,7 @@ export class ContactoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    M.Modal.init(document.querySelectorAll('.modal'), {});
     //M.textareaAutoResize.init(document.querySelectorAll('#mensaje_text'))
     //this.initMap();
     this.mapsAPILoader.load().then(() => {

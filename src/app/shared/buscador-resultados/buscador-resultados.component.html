@@ -1,39 +1,19 @@
-<div class="container" *ngIf="textoBuscar && solutions.length>0">
-    <button data-target="modal1" class="btn modal-trigger">Modal</button>
-    <div class="row">
-        <div class="col s12">
-            <ul class="collection">
-                <a class="collection-item avatar" *ngFor="let s of (solutions | buscador:textoBuscar:'texto') as result" (click)="selectSolution(s)">
-                    <img src="assets/img/home-1_2.png" alt="" class="circle"> routerLink="{{s.url}}"
-                    <i class="material-icons circle">folder</i>
-                    <span class="title"> <strong>{{ s.texto }}:</strong></span>
-                    <p>
-                        {{ s.description | parrafo : 50 }}
-                    </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></a>
-                </a>
-            </ul>
+<div *ngIf="textoBuscar && solutions.length>0" class="section resultados blue-grey darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <ul class="collection">
+                    <a class="collection-item avatar" *ngFor="let s of (solutions | buscador:textoBuscar:'texto') as result" (click)="selectSolution(s)">
+                        <img src="assets/img/home-1_2.png" alt="" class="circle"> routerLink="{{s.url}}"
+                        <i class="material-icons circle">folder</i>
+                        <span class="title"> <strong>{{ s.texto }}:</strong></span>
+                        <p>
+                            {{ s.description | parrafo : 50 }}
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></a>
+                    </a>
+                </ul>
+            </div>
         </div>
-    </div>
-</div>
-
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <div class="col s12">
-            <ul class="collection">
-                <a class="collection-item avatar" *ngFor="let s of (solutions | buscador:textoBuscar:'texto') as result" (click)="selectSolution(s)">
-                    <img src="assets/img/home-1_2.png" alt="" class="circle"> routerLink="{{s.url}}"
-                    <i class="material-icons circle">folder</i>
-                    <span class="title"> <strong>{{ s.texto }}:</strong></span>
-                    <p>
-                        {{ s.description | parrafo : 50 }}
-                    </p>
-                    <a href="#!" class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></a>
-                </a>
-            </ul>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
 </div>
