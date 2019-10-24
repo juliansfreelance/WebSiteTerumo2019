@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  textoHeader: string = '';
+  textoHeader = '';
 
 
   constructor(private router: Router) { }
@@ -22,11 +22,12 @@ export class HeaderComponent implements OnInit {
 
   goTo(texto: string) {
     this.router.navigate([texto]);
+    window.scroll(0, 0);
   }
 
   emitterBuscador(texto: string) {
     this.textoHeader = texto;
-    console.log(this.textoHeader)
+    console.log(this.textoHeader);
   }
 
   emitterResultado(texto: string) {
