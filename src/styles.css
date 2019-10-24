@@ -322,3 +322,17 @@ li {
 
 
 /*@END: Cardio */
+
+
+/*@START: Aortic*/
+
+.blue-section {
+    background-color: #B7D2DF;
+}
+
+
+/*@END: Aortic*/
+
+html {
+    overflow-x: hidden !important;
+}

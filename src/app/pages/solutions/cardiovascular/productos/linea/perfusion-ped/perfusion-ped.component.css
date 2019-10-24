@@ -1,0 +1,23 @@
+p {
+  text-align: justify;
+  margin-top: 0%;
+}
+
+.card .card-image {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.responsive-img {
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  height: 300px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.card-content {
+  border-left: 10px solid #81c7b3;
+  min-height: 100%;
+}
