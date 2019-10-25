@@ -48,6 +48,8 @@ import { LineaComponent } from './pages/solutions/cardiovascular/productos/linea
 import { PerfusionPedComponent } from './pages/solutions/cardiovascular/productos/linea/perfusion-ped/perfusion-ped.component';
 import { InicioAorticComponent } from './pages/solutions/aortic/inicio-aortic/inicio-aortic.component';
 import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/soluciones-estandar.component';
+import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/treo/treo.component';
+import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/anaconda/anaconda.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +92,9 @@ import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/
     LineaComponent,
     PerfusionPedComponent,
     InicioAorticComponent,
-    SolucionesEstandarComponent
+    SolucionesEstandarComponent,
+    TREOComponent,
+    AnacondaComponent
   ],
   imports: [
     BrowserModule,

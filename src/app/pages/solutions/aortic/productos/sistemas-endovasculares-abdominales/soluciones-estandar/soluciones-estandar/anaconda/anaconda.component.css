@@ -1,0 +1,438 @@
+/*@START: Section 1*/
+.blue-section {
+  border-radius: 0% 50% 50% 0%;
+  padding: 8% 5% 8% 5%;
+  width: 40%;
+}
+.imagen-fondo,
+.banner-blue {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  top: 0;
+  z-index: -2;
+}
+.imagen-fondo {
+  height: 65%;
+  margin-top: 130px;
+  background-position-x: right;
+  background-size: contain;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/baner-sol-est.png);
+  position: absolute;
+}
+
+/*@END: Section 1*/
+
+/*@START: Section 3*/
+
+.centrar {
+  margin-top: 18%;
+}
+
+.row {
+  margin: 0%;
+}
+
+.section-2 {
+  background-color: #dfd0a6;
+  overflow-x: hidden;
+}
+
+.imagen-circle-aortic {
+  border-radius: 50%;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*margin-left: calc(50% - 100px);*/
+  transition: all 0.5s ease-in-out;
+  position: static;
+  left: 0;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/circle-aortic-index.png);
+}
+
+/*@END: Section 3*/
+
+/*@START: Section 4*/
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.dark-blue-circle,
+.light-blue-circle {
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 50%;
+}
+.dark-blue-circle {
+  background-color: #415465;
+}
+.space {
+  padding: 0 0.1rem !important;
+}
+.logo-circle {
+  margin: 26% 33.4% 0%;
+  margin-bottom: 0%;
+  width: 35%;
+  height: 35%;
+}
+.descripcion,
+.descripcion-light {
+  margin: 8% 12% 3%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+.descripcion strong {
+  color: white;
+}
+/*@END: Section 4*/
+
+/* @START: Section 5 */
+.divider {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+/* @END: Section 5 */
+/*@START: Section 6*/
+
+.light-brown-section,
+.light-blue-section,
+.dark-blue-section {
+  /*border-radius: 0% 150% 150% 0%;*/
+  width: 100%;
+  position: relative;
+}
+.dark-blue-section {
+  border-radius: 0% 250px 250px 0%;
+  padding: 15% 10% 12% 6%;
+}
+.margin-container-left {
+  padding-left: 0% !important;
+}
+
+.imagen-reposicionable,
+.imagen-implantation,
+.img-fenestrated,
+.imagen-ring {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.imagen-reposicionable {
+  margin: 5% 0%;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/reposicionable.gif);
+}
+
+.text-section-6 {
+  font-size: 18px;
+  padding-top: 5%;
+}
+
+/*@END: Section 6*/
+
+/*@START Section 7*/
+.imagen-ring {
+  margin: 5% 0%;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/anaconda_dual_proximal_ring_stent.png);
+}
+.margin-container-right {
+  padding-right: 0% !important;
+}
+.light-blue-section,
+.fenestrated-section-2 {
+  border-radius: 250px 0% 0% 250px;
+}
+.light-blue-section {
+  padding: 15% 6% 12% 10%;
+}
+/*@END Section 7*/
+
+/*@START Section 8*/
+.light-brown-section,
+.fenestrated-section-1 {
+  border-radius: 0% 300px 300px 0%;
+}
+.light-brown-section {
+  padding: 8% 8% 8% 4%;
+}
+.imagen-implantation {
+  margin: 8% 0% !important;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/implantation.png);
+}
+/*@END Section 8*/
+
+/*@START Section 9*/
+.btn {
+  border-radius: 0% 50px 50px 0%;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+}
+/*@END Section 9*/
+
+/*@START Section 10*/
+.section-10 {
+  margin: 5% 0%;
+}
+
+/*@END Section 10*/
+
+/*@START: Section 11*/
+.banner-blue {
+  background-position: center;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/blue-banner.png);
+  width: 100%;
+  height: 450px;
+  padding: 5% 0%;
+}
+.cite-section-1 {
+  padding: 3rem 0.75rem !important;
+}
+.circle-1 {
+  clip-path: circle(70% at 70% 20%);
+}
+.circle-2 {
+  clip-path: circle(70% at 70% 20%);
+}
+.circle-3 {
+  clip-path: circle(70% at 70% 20%);
+}
+.circle-4 {
+  clip-path: circle(70% at 70% 20%);
+}
+.semi-circle {
+  clip-path: inset(0% 486px 0px -50% round 135px);
+}
+
+/*@END: Section 11*/
+
+/*@START: Section 12*/
+
+.tabs .tab a {
+  background: #dfd0a6;
+  color: black;
+  border-radius: 0% 25px 25px 0%;
+  font-weight: bold;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: #b7d2df;
+}
+
+.tabs {
+  padding: 3% 0%;
+  height: 0%;
+}
+
+.tabs .tab {
+  line-height: 1 !important;
+}
+
+.exclution li {
+  list-style-type: none !important;
+}
+
+ul li a {
+  text-align: center;
+}
+
+a {
+  color: #4b5159 !important;
+}
+
+.full-light-section {
+  border-radius: 0% 250px 250px 0%;
+  height: 520px !important;
+}
+.full-light-section div div div p b {
+  color: white;
+}
+
+.full-light-section div div div p {
+  font-weight: bold;
+}
+
+ol li {
+  list-style-type: decimal !important;
+}
+/*@END: Section 12*/
+
+/*@START: Section 14*/
+.img-fenestrated {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/fenestrated.png);
+}
+
+.fenestrated-section-1,
+.fenestrated-section-2 {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+/*@END: Section 14*/
+/*@START: Section 15*/
+.section-15 {
+  padding: 3% 0%;
+}
+/*@END: Section 15*/
+/*@START: Section 16*/
+.section-16 {
+  padding: 5% 0%;
+}
+
+/*@END: Section 16*/
+
+/*@START: FLEXBOX*/
+.container-right {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+}
+.col-1 {
+  order: 1; /* default is 0 */
+}
+.col-2 {
+  order: 2; /* default is 0 */
+}
+
+/*Slider*/
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex-container li {
+  max-width: 275px;
+  margin: 1% 0%;
+}
+.full-light-section {
+  display: flex;
+  align-items: center;
+}
+/*@END: FLEXBOX*/
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+  .blue-section {
+    border-radius: 50% 50% 0% 0%;
+    width: 100%;
+    height: 45%;
+    margin-top: 45%;
+    padding: 8% 5% 8% 5%;
+    text-align: center;
+  }
+  .imagen-circle-aortic {
+    width: 250px;
+    height: 250px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .flow-text {
+    margin-top: 10%;
+  }
+  .centrar {
+    margin-top: 0%;
+  }
+  .circles {
+    flex-direction: column;
+  }
+  /*SECTION 4*/
+  .dark-blue-circle {
+    width: calc(100vw / 1.2);
+    height: calc(100vw / 1.2);
+  }
+  .descripcion {
+    font-size: 14px;
+  }
+  /*SECTION 6*/
+  .light-blue-section {
+    padding: 15% 6% 12% 30%;
+  }
+  /*SECTION 8*/
+  .light-brown-section {
+    padding-right: 16%;
+  }
+  /*SECTION 10*/
+  .light-blue-circle {
+    width: calc(100vw / 1.2);
+    height: calc(100vw / 1.2);
+  }
+  .descripcion-light {
+    font-size: 20px;
+  }
+  /*SECTION 11*/
+  .semi-circle {
+    clip-path: inset(0% 0px 0% -50% round 135px);
+  }
+  /*SECTION 12*/
+  .full-light-section {
+    height: 1015px !important;
+  }
+  .tabs .tab a {
+    border-radius: 25px 25px;
+  }
+  /*850 px*/
+  .full-light-section div {
+    padding-right: 8%;
+  }
+  .full-light-section div h3 {
+    padding-right: 25%;
+  }
+  /*FLEXBOX*/
+  .container-right {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .blue-section {
+    height: 40%;
+    /*margin-top: 130px;*/
+  }
+  .imagen-circle-aortic {
+    width: 350px;
+    height: 350px;
+    margin-left: 0%;
+  }
+  .centrar {
+    margin-top: 10%;
+  }
+  /*SECTION 4*/
+  .descripcion {
+    font-size: 10px;
+  }
+  .imagen-reposicionable {
+    height: 335px;
+    margin: 3% 0%;
+  }
+  /*SECTION 8*/
+  .light-brown-section {
+    padding-right: 12%;
+  }
+  /*SECTION 10*/
+  .descripcion-light {
+    font-size: 14px;
+  }
+
+  /*SECTION 11*/
+  .semi-circle {
+    clip-path: inset(0% 265px 0px -50% round 135px);
+  }
+
+  /*SECTION: 12*/
+  .tabs .tab a {
+    border-radius: 25px 25px;
+  }
+  /*SECTION: 14*/
+  .fenestrated-section-2 {
+    border-radius: 100% 0% 0% 100%;
+  }
+}

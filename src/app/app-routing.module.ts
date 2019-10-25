@@ -33,6 +33,8 @@ import { LineaComponent } from './pages/solutions/cardiovascular/productos/linea
 import { PerfusionPedComponent } from './pages/solutions/cardiovascular/productos/linea/perfusion-ped/perfusion-ped.component';
 import { InicioAorticComponent } from './pages/solutions/aortic/inicio-aortic/inicio-aortic.component';
 import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/soluciones-estandar.component';
+import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/anaconda/anaconda.component';
+import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/treo/treo.component';
 
 
 const routes: Routes = [
@@ -232,7 +234,24 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: SolucionesEstandarComponent
+        component: AnacondaComponent
+      },
+      {
+        path: 'soluciones-estandar',
+        component: SolucionesEstandarComponent,
+        children: [{
+          path: '',
+          component: AnacondaComponent
+        },
+        {
+          path: 'anaconda',
+          component: AnacondaComponent
+        },
+        {
+          path: 'treo',
+          component: TREOComponent 
+        }
+      ]
       },
       {
         path: 'soluciones-estandar',
