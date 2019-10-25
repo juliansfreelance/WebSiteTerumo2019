@@ -12,7 +12,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 
 import { BuscadorPipe } from './pipes/buscador.pipe';
 import { ParrafoPipe } from './pipes/parrafo.pipe';

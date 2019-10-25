@@ -2,7 +2,7 @@
     <nav class="z-depth-2">
         <div class="nav-wrapper white">
             <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Colombia</span></a>
-            <ul class="right black-text">
+            <ul class="right black-text external-link">
                 <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoBold">Sitios web Grupo Terumo >></a></li>
                 <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoBold"><i class="material-icons">language</i></a></li>
             </ul>
@@ -11,7 +11,7 @@
         <div class="nav-wrapper terumo lighten">
             <div class="container">
                 <a data-target="Menu-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="left" class="hide-on-med-and-down">
+                <ul class="left" class="Menu-escritorio hide-on-med-and-down">
                     <li><a class="dropdown-trigger terumoBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="dropdown-trigger terumoBold" data-target='Soluciones'>SOLUCIONES<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a (click)="goTo('')" class="terumoBold">EVENTOS</a></li>
@@ -19,10 +19,12 @@
                     <li><a (click)="goTo('contactanos')" class="terumoBold">CONTACTENOS</a></li>
                 </ul>
             </div>
-            <ul class="r">
+            <ul>
+                <li>
+                    <app-buscador class="buscador" [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)"></app-buscador>
+                </li>
                 <li>
                     <app-buscador-resultados [textoBuscar]="textoHeader" (textoSalida)="emitterResultado($event)"></app-buscador-resultados>
-                    <app-buscador [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)"></app-buscador>
                 </li>
             </ul>
         </div>
@@ -54,12 +56,26 @@
     <li>
         <ul class="collapsible collapsible-accordion">
             <li>
-                <a class="collapsible-header terumoBold terumo-text">SOLUCIONES<i
-                        class="material-icons right">arrow_drop_down</i></a>
+                <a class="collapsible-header terumoBold terumo-text">SOLUCIONES<i class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a class="sidenav-close">Intervencionismo</a></li>
+                        <li>
+                            <ul class="collapsible collapsible-accordion">
+                                <li>
+                                    <a class="collapsible-header ">Intervencionismo <i class="material-icons right">arrow_drop_down</i></a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li><a (click)="goTo('')" class="sidenav-close">Acerca de nosotros</a></li>
+                                            <li><a (click)="goTo('red-global')" class="sidenav-close">Red Global</a></li>
+                                            <li><a (click)="goTo('resp-corporativa')" class="sidenav-close">Responsabilidad Corporativa</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="divider"></li>
                         <li><a class="sidenav-close">Aortic</a></li>
+                        <li class="divider"></li>
                         <li><a class="sidenav-close">Dispositivo médico de infusión</a></li>
                     </ul>
                 </div>

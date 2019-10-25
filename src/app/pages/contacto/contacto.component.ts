@@ -31,9 +31,7 @@ export class ContactoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    M.Modal.init(document.querySelectorAll('.modal'), {});
-    //M.textareaAutoResize.init(document.querySelectorAll('#mensaje_text'))
-    //this.initMap();
+    M.Modal.init(document.querySelectorAll('.modal'), {preventScrolling: true, dismissible: false });
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
     })
