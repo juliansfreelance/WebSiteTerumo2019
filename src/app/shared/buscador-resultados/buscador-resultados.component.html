@@ -1,19 +1,32 @@
-<div *ngIf="textoBuscar && solutions.length>0" class="section resultados blue-grey darken-4">
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <ul class="collection">
-                    <a class="collection-item avatar" *ngFor="let s of (solutions | buscador:textoBuscar:'texto') as result" (click)="selectSolution(s)">
-                        <img src="assets/img/home-1_2.png" alt="" class="circle">
-                        <i class="material-icons circle">folder</i>
-                        <span class="title"> <strong>{{ s.texto }}:</strong></span>
-                        <p>
-                            {{ s.description | parrafo : 50 }}
-                        </p>
-                        <a href="#!" class="secondary-content"><i class="material-icons">keyboard_arrow_right</i></a>
-                    </a>
-                </ul>
+<section *ngIf="textoBuscar && solutions.length>0" class="resultados">
+    <div class="navbar-fixed">
+        <nav class="z-depth-0 transparent">
+            <div class="nav-wrapper">
+                <a class="brand-logo left"> <img src="assets/img/logoBlanco.svg" style="height: 30px;"><span class="white-text">Colombia</span></a>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="collection">
+                        <li *ngFor="let s of (solutions | buscador:textoBuscar:'texto') as result" (click)="selectSolution(s)" class="collection-item col s12">
+                            <div class="vinculo">
+                                <div class="texto">
+                                    <div class="titulo terumoBold terumo-text">{{ s.texto }}</div>
+                                    <div class="descripcion terumoRegular blue-grey-text text-darken-4">{{ s.description | parrafo : 80 }}</div>
+                                </div>
+                                <div class="flecha terumo-text">
+                                    <i class="material-icons">navigate_next</i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>

@@ -1,7 +1,63 @@
 .resultados {
     position: absolute;
-    top: 0px;
+    top: -64px;
     left: 0px;
-    z-index: 1000;
     width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(38, 50, 56, .9);
+    background-blend-mode: multiply;
+    overflow-y: auto;
+    display: block;
+}
+
+body .resultados {
+    overflow: hidden;
+}
+
+.vinculo {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.vinculo .texto {
+    width: calc(100% - 35px)!important;
+}
+
+.vinculo .texto div {
+    width: 100%!important;
+}
+
+.vinculo .flecha {
+    width: 30px!important;
+    height: 30px!important;
+    text-align: center;
+    line-height: 30px!important;
+}
+
+.vinculo .flecha .material-icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.collection {
+    max-height: calc(100vh - (128px + 20px + 5rem));
+    overflow-y: auto;
+}
+
+@media only screen and (max-width: 601px) {
+    .resultados {
+        top: -56px;
+    }
+    .collection {
+        max-height: calc(100vh - (112px + 20px + 5rem));
+    }
 }

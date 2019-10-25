@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import data from 'src/assets/data/data.json';
 import { Router } from '@angular/router';
+import { ScrollcssService } from '../../services/scrollcss.service';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class BuscadorResultadosComponent implements OnInit {
   solutions: any[] = data.solucion;
   solution: any = null;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private scrollCssService: ScrollcssService ) { }
 
   ngOnInit() {
   }
@@ -26,7 +27,7 @@ export class BuscadorResultadosComponent implements OnInit {
     this.solution = item;
     this.textoSalida.emit('');
     this.router.navigate([item.url]);
-    console.log(this.router.url);
+    this.scrollCssService.enable();
   }
 
 }
