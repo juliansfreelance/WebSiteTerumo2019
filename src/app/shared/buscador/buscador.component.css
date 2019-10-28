@@ -1,6 +1,7 @@
  .search-wrapper input {
      margin: 0px !important;
      left: 0px;
+     font-family: "OpenSansSemiBold";
  }
  
  .input-field input[type=search]::placeholder {
@@ -8,6 +9,11 @@
      font-weight: bold;
      -webkit-transition: .3s all;
      transition: .3s all;
+     font-family: "OpenSansSemiBold";
+ }
+ 
+ .input-field input[type=search]:focus::placeholder {
+     color: #444!important;
  }
  
  nav {

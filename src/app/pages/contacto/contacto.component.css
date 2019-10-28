@@ -118,3 +118,21 @@ img {
 agm-map {
     height: 300px;
 }
+
+table thead th {
+    text-align: center!important;
+}
+
+tr td:nth-child(1) {
+    font-style: italic;
+    width: 40%;
+}
+
+article ul {
+    margin-left: 25px;
+}
+
+.modal-content,
+table tbody tr td {
+    text-align: justify;
+}
