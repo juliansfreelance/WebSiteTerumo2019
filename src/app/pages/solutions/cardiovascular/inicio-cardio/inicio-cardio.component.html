@@ -2,13 +2,13 @@
     <ul class="slides">
         <li>
             <img src="assets/img/solutions/cardiovascular/slide-1.jpg">
-            <div class="caption left-align">
+            <div class="caption center-align">
                 <h3>La seguridad de obtener excelentes resultados en sus manos.</h3>
             </div>
         </li>
         <li>
             <img src="assets/img/solutions/cardiovascular/slide-2.jpg">
-            <div class="caption left-align">
+            <div class="caption center-align">
                 <h3>Calidad como garantía de vida</h3>
             </div>
         </li>
@@ -66,75 +66,60 @@
         <div class="col s12">
             <ul>
                 <ol>
-                    <h6>Oxigenadores</h6>
+                    <h6 (click)="goTo('perfusion')">Oxigenadores</h6>
+                    <li (click)="goTo('perfusion/capiox-rx')">
+                        CAPIOX® RX
+                    </li>
+                    <li (click)="goTo('perfusion/capiox-fx')">
+                        CAPIOX® FX
+                    </li>
+                    <li (click)="goTo('perfusion/capiox-fx-adv')">
+                        CAPIOX® FX ADVANCE
+                    </li>
                 </ol>
-                <li>
-                    CAPIOX® RX
-                </li>
-                <li>
-                    CAPIOX® FX
-                </li>
-                <li>
-                    CAPIOX® FX ADVANCE
-                </li>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Maquinas de corazón pulmón</h6>
+                    <h6 (click)="goTo('corazon-pulmon')">Maquinas de corazón pulmón</h6>
+                    <li (click)="goTo('corazon-pulmon/terumo-system')">TerumoSystem 1</li>
+                    <li (click)="goTo('corazon-pulmon/terumo-adv-system')">TerumoSystem Advance</li>
                 </ol>
-                <li>TerumoSystem 1</li>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Sistemas de Monitoreo</h6>
+                    <h6 (click)="goTo('sis-monitoreo')">Sistemas de Monitoreo</h6>
+                    <li (click)="goTo('sis-monitoreo/cdi')">CDI 550</li>
                 </ol>
-                <li>CDI 550</li>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Beating Heart</h6>
+                    <h6 (click)="goTo('beating-heart')">Beating Heart</h6>
+                    <li (click)="goTo('beating-heart/assistant')">Assistant</li>
+                    <li (click)="goTo('beating-heart/hercules')">Hercules</li>
                 </ol>
-                <li>Assistant</li>
-                <li>Hercules</li>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Bomba Centrifuga</h6>
+                    <h6 (click)="goTo('bomba-centrifuga/capiox-sp')">Bomba Centrifuga</h6>
                 </ol>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Tubing Pack</h6>
+                    <h6 (click)="goTo('set-tuberias/extracoporea')">Tubing Pack</h6>
                 </ol>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Dispositivos de protección Miocardica</h6>
+                    <h6 (click)="goTo('miocardia')">Dispositivos de protección Miocardica</h6>
+                    <li (click)="goTo('miocardia/set-cardioplejia')">CP 50</li>
+                    <li (click)="goTo('miocardia/capiox-cp')">CONDUCER</li>
                 </ol>
-                <li>CP 50</li>
-                <li>CONDUCER</li>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Hemoconcentradores</h6>
+                    <h6 (click)="goTo('capiox')">Hemoconcentradores</h6>
+                    <li (click)="goTo('capiox/hemoconcentradores')">HC05</li>
+                    <li (click)="goTo('capiox/filtro-arterial')">HC11</li>
                 </ol>
-                <li>HC05</li>
-                <li>HC11</li>
-                <li>
-                    <div class="divider"></div>
-                </li>
+                <div class="divider"></div>
                 <ol>
-                    <h6>Filtros Arteriales</h6>
+                    <h6 (click)="goTo('linea')">Filtros Arteriales</h6>
+                    <li (click)="goTo('perfusion-pediatrica')">AF02</li>
+                    <li (click)="goTo('perfusion-pediatrica')">AF125</li>
                 </ol>
-                <li>AF02</li>
-                <li>AF125</li>
             </ul>
         </div>
     </div>

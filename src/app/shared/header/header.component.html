@@ -74,7 +74,7 @@
                             </ul>
                         </li>
                         <li class="divider"></li>
-                        <li><a class="sidenav-close">Aortic</a></li>
+                        <li><a class="sidenav-close" (click)="goTo('aortic')">Aortic</a></li>
                         <li class="divider"></li>
                         <li><a class="sidenav-close">Dispositivo médico de infusión</a></li>
                     </ul>
@@ -102,9 +102,9 @@
 <ul id='Soluciones' class='dropdown-content'>
     <li><a (click)="goTo('')">Intervencionismo</a></li>
     <li class="divider"></li>
-    <li><a (click)="goTo('')">Aortic</a></li>
+    <li><a (click)="goTo('aortic')">Aortic</a></li>
     <li class="divider"></li>
-    <li><a (click)="goTo('')">Cardio Vascular</a></li>
+    <li><a (click)="goTo('cardiovascular')">Cardio Vascular</a></li>
     <li class="divider"></li>
     <li><a (click)="goTo('')">Dispositivo médico de infusión</a></li>
 </ul>

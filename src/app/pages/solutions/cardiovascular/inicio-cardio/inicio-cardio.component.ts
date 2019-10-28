@@ -19,4 +19,8 @@ export class InicioCardioComponent implements OnInit {
     console.log(this.urlNivel)
   }
 
+  goTo(texto: string) {
+    this.router.navigate([texto]);
+    window.scroll(0, 0);
+  }
 }
