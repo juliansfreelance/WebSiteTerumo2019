@@ -76,9 +76,24 @@
 
 /*@START: MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
+  /*SECTION 1*/
+  .blue-section{
+    border-radius: 50% 50% 0% 0%;
+    width: 100%;
+    height: 60vw;
+  }
+  .blue-section .flex-content{ 
+    height: 60vw;
+    text-align: center;
+  }
+  .space-responsive{
+    height: 40vw;
+  }
+  /*SECTION 2*/
   .imagen-intro {
     height: 100vw;
     clip-path: circle(40% at 50%);
+    background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/intro-responsive.jpg);
   }
   .row .col:not(.imagen-intro){
     padding: 20% 5%;
@@ -86,8 +101,12 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+   /*Section 2*/
   .dark-blue-aortic .row {
     padding: 5% 0%;
+  }
+  .imagen-intro{
+    clip-path: circle(40% at 66%);
   }
 }
 /*@END: MEDIA QUERIES*/

@@ -10,6 +10,7 @@ import { BuscadorComponent } from './shared/buscador/buscador.component';
 import { BuscadorResultadosComponent } from './shared/buscador-resultados/buscador-resultados.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FormsModule } from "@angular/forms";
+import { ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -100,6 +101,7 @@ import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-e
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDtFij2OgJyzhlDHZthxHGTlh452YPhDSo',
