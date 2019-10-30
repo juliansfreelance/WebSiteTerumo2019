@@ -30,4 +30,8 @@ export class BuscadorResultadosComponent implements OnInit {
     this.scrollCssService.enable();
   }
 
+  llegada(texto) {
+    console.log('Resultados: ', texto);
+  }
+
 }

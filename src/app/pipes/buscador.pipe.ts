@@ -5,13 +5,14 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class BuscadorPipe implements PipeTransform {
 
-
+  exist = false;
   transform(array: any[], texto: string, columna: string): any[] {
-    if (texto == '') {
+    if (texto === '') {
       return array;
     }
     texto = texto.toLowerCase();
-    return array.filter(categoria => {
+
+    const newArray = array.filter(categoria => {
       /*if (categoria.categoria_producto.length > 0) {
         return categoria.categoria_producto.filter(producto => {
           if (producto.producto_general.length > 0) {
@@ -30,8 +31,10 @@ export class BuscadorPipe implements PipeTransform {
             return producto[columna].toLowerCase().includes(texto)
         })
       } else*/
-      return categoria[columna].toLowerCase().includes(texto) || categoria['description'].toLowerCase().includes(texto)
-    })
+      return categoria[columna].toLowerCase().includes(texto) || categoria[ 'description' ].toLowerCase().includes(texto);
+    });
+
+    return (newArray.length > 0) ? newArray : [{texto: 'No hay resultados :(', description: 'Su búsqueda no arrojo resultados'}];
   }
 
 }

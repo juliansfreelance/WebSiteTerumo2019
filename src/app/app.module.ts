@@ -51,6 +51,7 @@ import { InicioAorticComponent } from './pages/solutions/aortic/inicio-aortic/in
 import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/soluciones-estandar.component';
 import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/treo/treo.component';
 import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/anaconda/anaconda.component';
+import { HeaderCardioComponent } from './shared/header-cardio/header-cardio.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-e
     InicioAorticComponent,
     SolucionesEstandarComponent,
     TREOComponent,
-    AnacondaComponent
+    AnacondaComponent,
+    HeaderCardioComponent
   ],
   imports: [
     BrowserModule,

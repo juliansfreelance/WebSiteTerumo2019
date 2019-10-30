@@ -1,3 +1,5 @@
+<app-header></app-header>
+
 <header>
     <div class="background-skyleft skyleft"></div>
     <section class="intro row">
@@ -8,7 +10,6 @@
         </div>
     </section>
 </header>
-
 
 <div class="section">
     <div class="container">
@@ -24,12 +25,12 @@
                     <div class="input-field col s12 m6">
                         <input name="nombre" id="first_name" type="text" class="validate" formControlName="nombre">
                         <label for="first_name">Nombre*</label>
-                        <span class="helper-text red-text" >{{ getError('nombre')}}</span>
+                        <span class="helper-text red-text">{{ getError('nombre')}}</span>
                     </div>
                     <div class="input-field col s12 m6">
                         <input id="email_text" name="email" type="email" class="validate" formControlName="email">
                         <label for="email_text">Correo electrónico*</label>
-                        <span class="helper-text red-text" >{{ getError('email')}}</span>
+                        <span class="helper-text red-text">{{ getError('email')}}</span>
                     </div>
                 </div>
 
@@ -37,7 +38,7 @@
                     <div class="input-field col s12 m6">
                         <input id="empresa_text" name="empresa" type="text" class="validate" formControlName="empresa">
                         <label for="empresa_text">Empresa*</label>
-                        <span class="helper-text red-text" >{{ getError('empresa')}}</span>
+                        <span class="helper-text red-text">{{ getError('empresa')}}</span>
                     </div>
                     <div class="input-field col s12 m6">
                         <input id="cargo_text" name="cargo" type="text" class="validate" formControlName="cargo">
@@ -46,11 +47,9 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <textarea placeholder="Pregunta o motivo por el cual quiere comunicarse con nosotros"
-                            class="materialize-textarea" name="message" id="mensaje_text" cols="30" rows="12"
-                            formControlName="message"></textarea>
+                        <textarea placeholder="Pregunta o motivo por el cual quiere comunicarse con nosotros" class="materialize-textarea" name="message" id="mensaje_text" cols="30" rows="12" formControlName="message"></textarea>
                         <label class="active" for="mensaje_text">Mensaje</label>
-                        <span class="helper-text red-text" >{{ getError('message')}}</span>
+                        <span class="helper-text red-text">{{ getError('message')}}</span>
                     </div>
                 </div>
                 <div class="row">
@@ -72,8 +71,7 @@
                 </div>
                 <div class="row">
                     <div class="col s12 ">
-                        <button (click)="contactForm()" [disabled]="formGroup.invalid"
-                            class="waves-effect waves-light btn terumo right terumoBold">Enviar <i
+                        <button (click)="contactForm()" [disabled]="formGroup.invalid" class="waves-effect waves-light btn terumo right terumoBold">Enviar <i
                                 class="material-icons right">send</i></button>
                     </div>
                     <div class="col s12">
@@ -295,10 +293,12 @@
             <p>Todo el contenido de este sitio web, incluidos, entre otros, el texto, gráficos, logotipos, iconos, imágenes, audio, video, código html, botones contenidos en este documento (el "Contenido") y su disposición es propiedad de Terumo, su empresas
                 afiliadas o sus socios, y está protegido por las leyes de derechos de autor aplicables. Todas las marcas comerciales utilizadas o mencionadas en este sitio web son propiedad de sus respectivos dueños.</p>
             <p>Nada de lo contenido en este sitio web se interpretará como una concesión implícita, o de otro modo, de una licencia o derecho a cualquier derecho de autor, patente, marca registrada u otros derechos de propiedad intelectual de Terumo o de
-                terceros.</p>
+                terceros.
+            </p>
             <p>Este sitio web y el contenido no se pueden copiar, reproducir, republicar, cargar, publicar, transmitir o distribuir de ninguna manera, sin nuestro consentimiento previo por escrito, excepto que puede descargar, mostrar e imprimir una copia
                 de los materiales en cualquier computadora únicamente para su uso personal, no comercial, siempre que no modifique el material de ninguna manera y mantenga intactos todos los derechos de autor, marcas registradas y otros derechos de propiedad
-                intelectual.</p>
+                intelectual.
+            </p>
             <h6>Representación, garantías y limitación de responsabilidad.</h6>
             <p>La información contenida en este sitio web se proporciona únicamente con fines informativos y se proporciona "tal cual". Haremos todos los esfuerzos razonables para incluir información actualizada y precisa en este sitio web. Sin embargo,
                 no podemos garantizar que toda la información en el sitio web sea precisa, completa o actualizada en todo momento.</p>
@@ -318,7 +318,8 @@
                 disposiciones y el resto de los afectados provisión.</p>
             <p>Usted acepta que podemos mover, alterar, hacer otros cambios o eliminar este sitio web en cualquier momento sin previo aviso. Nos reservamos el derecho de cambiar nuestros Términos de uso o nuestra Política de privacidad y cookies en cualquier
                 momento. Le recomendamos que consulte periódicamente el sitio web para ver los cambios. Los cambios serán efectivos inmediatamente después de su publicación en el sitio web. Su uso continuado del sitio web constituye su aceptación de estos
-                cambios.</p>
+                cambios.
+            </p>
             <h6>Ley aplicable y jurisdicción</h6>
             <p>Este sitio web y su uso del mismo se regirán por las leyes de Bélgica. Cualquier disputa que pueda surgir de o en relación con este sitio web o su uso del sitio web se someterá a la jurisdicción exclusiva de los tribunales de Lovaina, Bélgica.</p>
         </article>

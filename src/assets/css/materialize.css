@@ -7683,7 +7683,8 @@
         border-left: 2px solid #ee6e73;
     }
     
-    .sidenav {
+    .sidenav,
+    .nosotros-nav {
         position: fixed;
         width: 300px;
         left: 0;

@@ -42,9 +42,9 @@ export class ContactoComponent implements OnInit {
       this.latitude = 4.687157;
       this.longitude = -74.056041;
       this.zoom = 18;
-      this.scrollwheel= false
+      this.scrollwheel = false;
       // this.setCurrentLocation();
-    })
+    });
   }
 
   /*

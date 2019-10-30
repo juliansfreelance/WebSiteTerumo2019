@@ -1,0 +1,149 @@
+<div class="navbar-fixed">
+    <nav class="z-depth-2">
+        <div class="nav-wrapper white">
+            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Colombia</span></a>
+            <ul class="right black-text external-link">
+                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo >></a></li>
+                <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i class="material-icons">language</i></a></li>
+            </ul>
+        </div>
+
+        <div class="nav-wrapper terumo lighten">
+            <div class="container-fluid">
+                <a data-target="Cardio-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left" class="Menu-escritorio hide-on-med-and-down">
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li>
+                    <li><a (click)="goTo('')" class="terumoOpenBold">ESTRATEGIA COMERCIAL</a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTACTENOS</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <app-buscador class="buscador" [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)"></app-buscador>
+                </li>
+                <li>
+                    <app-buscador-resultados [textoBuscar]="textoHeader" (textoSalida)="emitterResultado($event)"></app-buscador-resultados>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<ul id="Cardio-mobile" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class=" background terumo lighten"></div>
+            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span>Colombia</span></a>
+        </div>
+    </li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header terumoOpenBold terumo-text">PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a class="sidenav-close">Intervencionismo</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('aortic')" class="sidenav-close">Aortic</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('cardiovascular')" class="sidenav-close">Cardio Vascular</a></li>
+                        <li class="divider"></li>
+                        <li><a class="sidenav-close">Dispositivo médico de infusión</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">CIRUGÍA OPTIMIZADA</a></li>
+    <li class="divider"></li>
+    <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">ESTRATEGIA COMERCIAL</a></li>
+    <li class="divider"></li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="collapsible-header terumoOpenBold terumo-text">NOSOTROS<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a (click)="goTo('')" class="sidenav-close">Acerca de nosotros</a></li>
+                        <li><a (click)="goTo('red-global')" class="sidenav-close">Red Global</a></li>
+                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close">Responsabilidad Corporativa</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li><a (click)="goTo('contactanos')" class="terumoOpenBold terumo-text sidenav-close">CONTACTENOS</a></li>
+    <li class="divider"></li>
+</ul>
+
+<ul id='Productos' class='dropdown-content'>
+    <ul class="collapsible" style="margin-top: 0px;">
+        <li>
+            <a class="collapsible-header">Oxigenadores<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">CAPIOX<sup>®</sup> RX</a>
+                <a (click)="goTo( '') ">CAPIOX<sup>®</sup> FX</a>
+                <a (click)="goTo( '') ">CAPIOX<sup>®</sup> FX ADVANCE</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Maquinas de corazón pulmón<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">TerumoSystem 1</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Sistemas de Monitoreo<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">CDI 550</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Beating Heart<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">Assistant</a>
+                <a (click)="goTo( '') ">Hercules</a>
+            </div>
+        </li>
+    </ul>
+    <li><a (click)="goTo( 'resp-corporativa') ">Bomba Centrifuga</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'resp-corporativa') ">Tubing Pack</a></li>
+    <li class="divider "></li>
+    <ul class="collapsible" style="margin-top: 0px;">
+        <li>
+            <a class="collapsible-header">Dispositivos de protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">CP 50</a>
+                <a (click)="goTo( '') ">CONDUCER</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">HC05</a>
+                <a (click)="goTo( '') ">HC11</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Filtros Arteriales<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo( '') ">AF02</a>
+                <a (click)="goTo( '') ">AF125</a>
+            </div>
+        </li>
+    </ul>
+</ul>
+
+<ul id='Nosotros' class='dropdown-content'>
+    <li><a (click)="goTo( '') ">Acerca de nosotros</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'red-global') ">Red Global</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'resp-corporativa') ">Responsabilidad Corporativa</a></li>
+</ul>
