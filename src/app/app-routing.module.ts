@@ -33,8 +33,11 @@ import { LineaComponent } from './pages/solutions/cardiovascular/productos/linea
 import { PerfusionPedComponent } from './pages/solutions/cardiovascular/productos/linea/perfusion-ped/perfusion-ped.component';
 import { InicioAorticComponent } from './pages/solutions/aortic/inicio-aortic/inicio-aortic.component';
 import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/soluciones-estandar.component';
-import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/anaconda/anaconda.component';
-import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/treo/treo.component';
+import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/anaconda/anaconda.component';
+import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo/treo.component';
+import { MainComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/main/main.component';
+import { ResourcesTreoComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/resources-treo/resources-treo.component';
+import { FenestratedComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/fenestrated/fenestrated.component';
 
 
 const routes: Routes = [
@@ -56,7 +59,7 @@ const routes: Routes = [
     component: ContactoComponent,
   },
   //16 de Octubre 2019
-  
+
   {
     path: 'cardiovascular',
     component: InicioCardioComponent,
@@ -249,9 +252,21 @@ const routes: Routes = [
         },
         {
           path: 'treo',
-          component: TREOComponent 
+          component: TREOComponent,
+          children: [{
+            path: '',
+            component: MainComponent
+          },
+          {
+            path: 'recursos',
+            component: ResourcesTreoComponent
+          }]
+        },
+        {
+          path: 'fenestrated',
+          component: FenestratedComponent
         }
-      ]
+        ]
       },
       {
         path: 'soluciones-estandar',

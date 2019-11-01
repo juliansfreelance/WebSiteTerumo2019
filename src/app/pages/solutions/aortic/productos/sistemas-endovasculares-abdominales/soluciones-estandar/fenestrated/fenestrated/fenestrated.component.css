@@ -1,0 +1,120 @@
+/*@START: SECTION 2*/
+.section-2 {
+  display: flex;
+}
+
+.left-rounded-section {
+  padding-right: 5%;
+}
+
+.left-rounded-section .container h5 {
+  padding-right: 10%;
+}
+/*@END: SECTION 2*/
+
+/*@START: SECTION 3*/
+.light-blue-circle {
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  border-radius: 50%;
+}
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.circles .center-content {
+  align-items: center;
+}
+
+.descripcion {
+  margin: 3% 12%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.logo-circle {
+  max-width: 55%;
+  max-height: 55%;
+}
+/*@END: SECTION 3*/
+
+/*@START: SECTION 4*/
+.tabs .tab a {
+  background: #dfd0a6;
+  display: flex;
+  justify-items: center;
+  flex-flow: row;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: space-evenly;
+  border-radius: 0% 25px 25px 0%;
+  font-weight: bold;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: #b7d2df !important;
+}
+
+.tabs {
+  padding: 3% 0%;
+  height: 0%;
+}
+
+.tabs .tab {
+  line-height: 1 !important;
+}
+
+.exclution li {
+  list-style-type: none !important;
+}
+/*@END: SECTION 4*/
+/*@START: SECTION 5*/
+.endoprotesis-imagen {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/Fenestrated/endoprotesis.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*@END: SECTION 5*/
+
+@media only screen and (max-width: 600px) {
+  /*SECTION 2*/
+  .section-2 {
+    flex-direction: column;
+  }
+  .left-rounded-section {
+    padding: 10% 16% 12% 5% !important;
+  }
+  .left-rounded-section .container h5 {
+    padding-right: 12%;
+  }
+  .left-rounded-section .container dl {
+    padding-right: 5%;
+  }
+  /*SECTION 3*/
+  .circles {
+    flex-direction: column;
+  }
+  .light-blue-circle {
+    width: calc(100vw / 1.2);
+    height: calc(100vw / 1.2);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /*SECTION 2*/
+  .left-rounded-section {
+    border-radius: 0% 200px 200px 0%;
+  }
+
+  .left-rounded-section .container h5 {
+    padding-right: 25%;
+  }
+
+  .left-rounded-section .container dl {
+    padding-right: 8%;
+  }
+}

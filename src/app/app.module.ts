@@ -49,8 +49,15 @@ import { LineaComponent } from './pages/solutions/cardiovascular/productos/linea
 import { PerfusionPedComponent } from './pages/solutions/cardiovascular/productos/linea/perfusion-ped/perfusion-ped.component';
 import { InicioAorticComponent } from './pages/solutions/aortic/inicio-aortic/inicio-aortic.component';
 import { SolucionesEstandarComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/soluciones-estandar.component';
-import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/treo/treo.component';
-import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/soluciones-estandar/anaconda/anaconda.component';
+import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo/treo.component';
+import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/anaconda/anaconda.component';
+import { FenestratedComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/fenestrated/fenestrated.component';
+import { RelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/relay.component';
+import { ResourcesTreoComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/resources-treo/resources-treo.component';
+import { MainComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/main/main.component';
+import { LearnMoreBtnComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/share/learn-more-btn/learn-more-btn.component';
+import { CircleBannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/share/circle-banner/circle-banner.component';
+import { BannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/shared/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +102,14 @@ import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-e
     InicioAorticComponent,
     SolucionesEstandarComponent,
     TREOComponent,
-    AnacondaComponent
+    AnacondaComponent,
+    FenestratedComponent,
+    RelayComponent,
+    ResourcesTreoComponent,
+    MainComponent,
+    LearnMoreBtnComponent,
+    CircleBannerComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

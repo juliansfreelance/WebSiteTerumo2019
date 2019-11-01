@@ -1,0 +1,11 @@
+ul li {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+h3 {
+  margin: 2.946667rem 0 2.168rem 0;
+}
+.space-padding {
+  padding: 1% 4%;
+}

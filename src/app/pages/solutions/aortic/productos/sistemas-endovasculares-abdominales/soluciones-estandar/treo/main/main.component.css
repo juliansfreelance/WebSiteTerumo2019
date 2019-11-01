@@ -1,0 +1,318 @@
+/*@START: General Settings*/
+p,
+ul li {
+  font-size: 20px;
+}
+.slider {
+  height: 500px !important;
+}
+.slides {
+  height: 500px !important;
+}
+.center-content{ 
+  height: 400px;
+}
+.gradiente {
+  mask-image: -webkit-gradient(
+    linear,
+    0% 20%,
+    0% 0%,
+    from(rgb(0, 0, 0)),
+    color-stop(0.35, rgb(0, 0, 0)),
+    color-stop(0.5, rgba(0, 0, 0, 0)),
+    color-stop(0.65, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0))
+  );
+}
+/*@END: General Settings*/
+/*@START: Section 2*/
+.imagen-intro {
+  height: 35vw;
+  background-position-x: left;
+  clip-path: circle(41% at 65%);
+  background-size: cover;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/intro.jpg);
+}
+.flex-content-intro {
+  height: 35vw;
+}
+.treo-line {
+  margin: 2% 0%;
+  padding: 3px;
+  border-radius: 5px;
+  width: 59%;
+}
+.section-2 p {
+  font-size: 25px;
+}
+.section-2 ul li {
+  font-size: 18px;
+}
+/*@END: Section 2*/
+
+/*@START: Section 3*/
+.section-3-imagen {
+  height: 45vw;
+  background-color: white;
+  border-radius: 0px 350px 350px 0px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/Treo-Body.png);
+}
+/*@END: Section 3*/
+
+/*@START: Section 4*/
+.navegacion {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.btn-left,
+.btn-right {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 18%;
+  width: 10%;
+}
+.btn-left {
+  border-radius: 0% 100px 100px 0%;
+}
+
+.btn-right {
+  border-radius: 100px 0% 0% 100px;
+}
+.btn i:not(.exception) {
+  font-size: 5.5rem;
+}
+.btn:hover {
+  background: #415365;
+  color: #b7d2df !important;
+}
+.circle-image-section-4,
+.fijacion-image-section-4,
+.stent-1-image-section-4,
+.stent-2-image-section-4 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 17vw;
+  border-radius: 50% 50%;
+  border: dotted #51bae8;
+}
+.circle-image-section-4 {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/Circle.png);
+}
+.fijacion-image-section-4 {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/fijacion.png);
+}
+.stent-1-image-section-4 {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/stent-1.png);
+}
+.stent-2-image-section-4 {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/stent-2.png);
+}
+.flex-container-section-4 {
+  display: flex;
+  flex-direction: column;
+}
+.item-1 {
+  order: 1;
+}
+.item-2 {
+  order: 2;
+}
+.slides {
+  background-color: white;
+}
+.text-aspect,
+.aspect-table {
+  font-size: 15px;
+}
+/*@END: Section 4*/
+/*@START: Section 5*/
+.carousel-item .row {
+  height: 100%;
+}
+.lista-section-4 {
+  padding-left: 50px;
+  list-style-type: disc;
+}
+.valign-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0% 350px 350px 0px;
+  height: 100%;
+  text-align: left;
+}
+.img-carousel-1 {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/sis-liberacion.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: inherit;
+  text-align: right;
+}
+
+.img-carousel-1 .treo-line {
+  margin: 0% 42%;
+}
+
+.carousel .indicators .indicator-item {
+  height: 18px !important;
+  width: 18px !important;
+  background-color: #d2dbe5 !important;
+}
+
+.carousel .indicators .indicator-item .active {
+  background-color: #415364 !important;
+}
+
+.tittle-carousel {
+  font-size: 40px !important;
+  font-weight: bold !important;
+}
+
+.tittle-carousel span {
+  border-bottom: 5px solid #b7d2df;
+  line-height: 45px;
+}
+
+/*@END: Section 5*/
+
+/*@START: Section 6*/
+
+.space-padding .light-bottom-line {
+  padding: 0% 4% 4%;
+}
+.light-bottom-line span {
+  border-bottom: 5px solid white;
+  line-height: 45px;
+}
+/*@START: Section 6*/
+
+/*@START: Section 7*/
+/*ESTE se repite en AORTIC - Podría ser un SHARE*/
+.btn-plus {
+  border-radius: 0% 50px 50px 0%;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+  align-self: flex-end;
+}
+.btn:hover {
+  background-color: #4b5159 !important;
+  color: #b7d2df !important;
+}
+.image-circle-broder {
+  border-radius: 50% 50%;
+  border: solid 1px;
+}
+.section-7 > * {
+  height: 100% !important;
+  min-height: calc(100% - 20px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section-7-spacing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*@END: Section 7*/
+
+/*@START: MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+  /*SECTION 2*/
+  .imagen-intro {
+    height: 100vw;
+    clip-path: circle(40% at 50%);
+    background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/intro-responsive.jpg);
+  }
+  /*SECTION 3*/
+  .section-3-imagen {
+    height: 80vw;
+  }
+  /*SECTION 4*/
+  .btn i:not(.exception) {
+    font-size: 2.5rem;
+    margin-left: -4px;
+  }
+  .row .col:not(.imagen-intro) {
+    padding: 30% 5%;
+  }
+
+  .circle-image-section-4,
+  .fijacion-image-section-4,
+  .stent-1-image-section-4,
+  .stent-2-image-section-4 {
+    height: 32vw;
+  }
+
+  .margin-space {
+    margin-top: -25vw;
+  }
+
+  .no-space {
+    padding: 0% 1% !important;
+  }
+  .aspect-table {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+  .slides li img {
+    background-position: inherit;
+  }
+  /*SECTION 5*/
+  .img-carousel-1 {
+    padding: 0% 5% !important;
+    height: fit-content;
+    background-position: left;
+  }
+  .valign-wrapper {
+    height: 50%;
+  }
+  .tittle-carousel {
+    font-size: 20px !important;
+  }
+  /*SECTION 7*/
+  .section-7 .col {
+    padding: 8% 5% !important;
+  }
+  .section-7-spacing {
+    flex: none;
+    display: -webkit-inline-box;
+  }
+  .section-7 > * {
+    display: flow-root;
+  }
+  /*SECTION */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /*Section 2*/
+  .dark-blue-aortic .row {
+    padding: 10% 0%;
+  }
+  .imagen-intro {
+    clip-path: circle(40% at 66%);
+  }
+  p,
+  ul li {
+    font-size: 18px;
+  }
+  /*Section 4
+  .text-aspect{
+    font-size: 15px;
+  }*/
+}
+/*@END: MEDIA QUERIES*/

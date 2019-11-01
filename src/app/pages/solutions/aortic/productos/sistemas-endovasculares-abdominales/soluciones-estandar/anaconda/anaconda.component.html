@@ -121,7 +121,7 @@
 <section>
     <div class="row">
         <div class="col s12 m7 valig-graper margin-container-left">
-            <div class="dark-blue-section dark-blue-aortic">
+            <div class="left-rounded-section dark-blue-aortic">
                 <div class="container-fluid">
                     <h3 class="white-text">
                         Completamente reposicionable
@@ -491,7 +491,7 @@
                     Sistema de endoprótesis AAA a medida
                 </h5>
                 <div>
-                    <a href="#" class="waves-effect waves-light btn light-blue-aortic aortic-black-text">
+                    <a (click)="goTo('aortic/soluciones-estandar/fenestrated')" class="waves-effect waves-light btn light-blue-aortic aortic-black-text">
                         LEER MÁS
                         <i class="material-icons right">chevron_right</i>
                     </a>
@@ -505,14 +505,14 @@
 </section>
 <section class="section-15 dark-blue-aortic">
     <div class="container">
-        <div class="row white-text">
-            <div class="col s12 m6">
+        <div class="white-text center-content">
+            <div class="medium-8">
                 <h4 class="white-text">
                     Precauciones para la toma de una
                     resonancia magnética (RM)
                 </h4>
             </div>
-            <div class="col s12">
+            <div class="small-12">
                 <p>
                     <b>El sistema de endoprótesis AAA Anaconda™ fue determinado para ser condicional para RM
                         (de acuerdo con la información suministrada en el siguiente documento: American Society for
@@ -527,18 +527,22 @@
                     Un paciente con sistema de endoprótesis AAA Anaconda™puede ser analizado con seguridad,
                     inmediatamente después de la implantación, cumpliendo con las siguientes condiciones:
                 </p>
-                <ul>
-                    <li>
-                        Campo magnético estático de 3 unidades tesla o menos.
-                    </li>
-                    <li>
-                        Gradiente espacial de campo magnético de 720-Gauss/cm o menos.
-                    </li>
-                    <li>
-                        Máxima tasa de absorción específica de energía (SAR) de 3W/Kg por 15 minutos de análisis
-                        promediada en todo el cuerpo.
-                    </li>
-                </ul>
+                <dl>
+                    <dd>
+                        <ul>
+                            <li>
+                                Campo magnético estático de 3 unidades tesla o menos.
+                            </li>
+                            <li>
+                                Gradiente espacial de campo magnético de 720-Gauss/cm o menos.
+                            </li>
+                            <li>
+                                Máxima tasa de absorción específica de energía (SAR) de 3W/Kg por 15 minutos de análisis
+                                promediada en todo el cuerpo.
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
                 <p>
                     En pruebas no-clínicas, el sistema de endoprótesis AAA Anaconda™produjo un aumento de temperatura
                     menor o igual a 2,0°C en una tasa máxima de absorción específica de energía (SAR) de 3W/Kg
@@ -563,7 +567,7 @@
             de <b class="aortic-light-text">reparación endovascular de aneurismas</b>?
         </p>
         <div>
-            <a href="#" class="waves-effect waves-light btn light-blue-aortic aortic-black-text">
+            <a (click)="goTo('contactanos')" class="waves-effect waves-light btn light-blue-aortic aortic-black-text">
                 ESCRÍBANOS
                 <i class="material-icons right">chevron_right</i>
             </a>
