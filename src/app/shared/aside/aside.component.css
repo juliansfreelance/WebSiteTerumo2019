@@ -1,7 +1,22 @@
 .contenedor {
-  border-radius: 5px;
-  border: 2px solid lightgrey;
-  padding: 10px;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    padding: 10px;
 }
 
+.contac {
+    display: none;
+}
 
+button {
+    width: 100%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 869px) {
+    .contac {
+        display: block;
+    }
+    button {
+        display: none;
+    }
+}

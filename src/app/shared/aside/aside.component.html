@@ -1,9 +1,11 @@
-<div class="contenedor">
+<div class="contenedor center-align">
     <h6 class="black-text titulo-bold">Da el siguiente paso</h6>
     <p class="terumoP">
         Contáctenos hoy para asistencia clínica o de ventas
     </p>
-    <button class="waves-effect waves-light btn terumo">
-        Contáctenos
+    <button class="waves-effect waves-light btn terumo" (click)="goTo('contactanos')">
+            <div class="truncate"><i class="material-icons left">phone</i>Contáctenos</div>
     </button>
+    <a class=" contac btn-floating waves-effect waves-light terumo" (click)="goTo('contactanos')"><i class="material-icons">phone</i></a>
+
 </div>

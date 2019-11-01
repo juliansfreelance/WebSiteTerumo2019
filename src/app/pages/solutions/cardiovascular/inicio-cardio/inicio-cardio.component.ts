@@ -9,14 +9,17 @@ import { Router } from '@angular/router';
 })
 export class InicioCardioComponent implements OnInit {
 
-  urlNivel: number = 0;
+  urlNivel = 0;
 
   constructor(private router: Router) {  }
 
   ngOnInit() {
-    M.Slider.init(document.querySelectorAll('.slider'), { indicators: false });
+    M.Slider.init(document.querySelectorAll('.slider'), {});
     this.urlNivel = this.router.url.split('/').length;
-    console.log(this.urlNivel)
   }
 
+  goTo(texto: string) {
+    this.router.navigate([texto]);
+    window.scroll(0, 0);
+  }
 }

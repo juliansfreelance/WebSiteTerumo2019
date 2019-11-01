@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
     <nav class="z-depth-2">
         <div class="nav-wrapper white">
-            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Colombia</span></a>
+            <a (click)="goTo('cardiovascular')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Cardiovascular</span></a>
             <ul class="right black-text external-link">
                 <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo >></a></li>
                 <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i class="material-icons">language</i></a></li>
@@ -13,8 +13,8 @@
                 <a data-target="Cardio-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="left" class="Menu-escritorio hide-on-med-and-down">
                     <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li>
-                    <li><a (click)="goTo('')" class="terumoOpenBold">ESTRATEGIA COMERCIAL</a></li>
+                    <!-- <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li> -->
+                    <li><a (click)="goTo('estrategia-comercial')" class="terumoOpenBold">ESTRATEGIA COMERCIAL</a></li>
                     <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTACTENOS</a></li>
                 </ul>
@@ -36,7 +36,7 @@
     <li>
         <div class="user-view">
             <div class=" background terumo lighten"></div>
-            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span>Colombia</span></a>
+            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span class="white-text">Colombia</span></a>
         </div>
     </li>
     <li>
@@ -44,23 +44,92 @@
             <li>
                 <a class="collapsible-header terumoOpenBold terumo-text">PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
-                    <ul>
-                        <li><a class="sidenav-close">Intervencionismo</a></li>
+                    <ul class="collapsible" style="margin-top: 0px;">
                         <li class="divider"></li>
-                        <li><a (click)="goTo('aortic')" class="sidenav-close">Aortic</a></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Oxigenadores<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'perfusion/capiox-rx') " class="sidenav-close">CAPIOX<sup>®</sup> RX</a></li>
+                                    <li><a (click)="goTo( 'perfusion/capiox-fx') " class="sidenav-close">CAPIOX<sup>®</sup> FX</a></li>
+                                    <li><a (click)="goTo( 'perfusion/capiox-fx-adv') " class="sidenav-close">CAPIOX<sup>®</sup> FX ADVANCE</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="divider"></li>
-                        <li><a (click)="goTo('cardiovascular')" class="sidenav-close">Cardio Vascular</a></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Maquinas de corazón pulmón<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'corazon-pulmon/terumo-system') " class="sidenav-close">TerumoSystem 1</a></li>
+                                    <li><a (click)="goTo('corazon-pulmon/terumo-adv-system')" class="sidenav-close">TerumoSystem Advance</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="divider"></li>
-                        <li><a class="sidenav-close">Dispositivo médico de infusión</a></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Sistemas de Monitoreo<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'sis-monitoreo/cdi' ) " class="sidenav-close">CDI 550</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Beating Heart<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'beating-heart/assistant' ) " class="sidenav-close">Assistant</a></li>
+                                    <li><a (click)="goTo( 'beating-heart/hercules' ) " class="sidenav-close">Hercules</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <li class="divider"></li>
+                    <li><a (click)="goTo( 'bomba-centrifuga/capiox-sp') " class="terumo-text sidenav-close">Bomba Centrifuga</a></li>
+                    <li class="divider "></li>
+                    <li><a (click)="goTo( 'set-tuberias/extracoporea') " class="terumo-text sidenav-close">Tubing Pack</a></li>
+                    <li class="divider "></li>
+                    <ul class="collapsible" style="margin-top: 0px;">
+                        <li>
+                            <a class="collapsible-header terumo-text">Protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'miocardia/set-cardioplejia') " class="sidenav-close">CP 50</a></li>
+                                    <li><a (click)="goTo( 'miocardia/capiox-cp') " class="sidenav-close">CONDUCER</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'capiox/hemoconcentradores') " class="sidenav-close">HC05</a></li>
+                                    <li><a (click)="goTo( 'capiox/filtro-arterial') " class="sidenav-close">HC11</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Filtros Arteriales<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo( 'perfusion-pediatrica') " class="sidenav-close">AF02</a></li>
+                                    <li class="divider"></li>
+                                    <li><a (click)="goTo( 'perfusion-pediatrica') " class="sidenav-close">AF125</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </li>
         </ul>
     </li>
+    <!-- <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">CIRUGÍA OPTIMIZADA</a></li> -->
     <li class="divider"></li>
-    <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">CIRUGÍA OPTIMIZADA</a></li>
-    <li class="divider"></li>
-    <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">ESTRATEGIA COMERCIAL</a></li>
+    <li><a (click)="goTo('estrategia-comercial')" class="terumoOpenBold terumo-text sidenav-close">ESTRATEGIA COMERCIAL</a></li>
     <li class="divider"></li>
     <li>
         <ul class="collapsible collapsible-accordion">
@@ -68,9 +137,12 @@
                 <a class="collapsible-header terumoOpenBold terumo-text">NOSOTROS<i class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul>
-                        <li><a (click)="goTo('')" class="sidenav-close">Acerca de nosotros</a></li>
-                        <li><a (click)="goTo('red-global')" class="sidenav-close">Red Global</a></li>
-                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close">Responsabilidad Corporativa</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('')" class="sidenav-close terumo-text">Acerca de nosotros</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('red-global')" class="sidenav-close terumo-text">Red Global</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close terumo-text">Responsabilidad Corporativa</a></li>
                     </ul>
                 </div>
             </li>
@@ -79,6 +151,7 @@
     <li class="divider"></li>
     <li><a (click)="goTo('contactanos')" class="terumoOpenBold terumo-text sidenav-close">CONTACTENOS</a></li>
     <li class="divider"></li>
+
 </ul>
 
 <ul id='Productos' class='dropdown-content'>
@@ -86,55 +159,56 @@
         <li>
             <a class="collapsible-header">Oxigenadores<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">CAPIOX<sup>®</sup> RX</a>
-                <a (click)="goTo( '') ">CAPIOX<sup>®</sup> FX</a>
-                <a (click)="goTo( '') ">CAPIOX<sup>®</sup> FX ADVANCE</a>
+                <a (click)="goTo( 'perfusion/capiox-rx') ">CAPIOX<sup>®</sup> RX</a>
+                <a (click)="goTo( 'perfusion/capiox-fx') ">CAPIOX<sup>®</sup> FX</a>
+                <a (click)="goTo( 'perfusion/capiox-fx-adv') ">CAPIOX<sup>®</sup> FX ADVANCE</a>
             </div>
         </li>
         <li>
             <a class="collapsible-header">Maquinas de corazón pulmón<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">TerumoSystem 1</a>
+                <a (click)="goTo( 'corazon-pulmon/terumo-system') ">TerumoSystem 1</a>
+                <a (click)="goTo('corazon-pulmon/terumo-adv-system')">TerumoSystem Advance</a>
             </div>
         </li>
         <li>
             <a class="collapsible-header">Sistemas de Monitoreo<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">CDI 550</a>
+                <a (click)="goTo( 'sis-monitoreo/cdi' ) ">CDI 550</a>
             </div>
         </li>
         <li>
             <a class="collapsible-header">Beating Heart<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">Assistant</a>
-                <a (click)="goTo( '') ">Hercules</a>
+                <a (click)="goTo( 'beating-heart/assistant' ) ">Assistant</a>
+                <a (click)="goTo( 'beating-heart/hercules' ) ">Hercules</a>
             </div>
         </li>
     </ul>
-    <li><a (click)="goTo( 'resp-corporativa') ">Bomba Centrifuga</a></li>
+    <li><a (click)="goTo( 'bomba-centrifuga/capiox-sp') ">Bomba Centrifuga</a></li>
     <li class="divider "></li>
-    <li><a (click)="goTo( 'resp-corporativa') ">Tubing Pack</a></li>
+    <li><a (click)="goTo( 'set-tuberias/extracoporea') ">Tubing Pack</a></li>
     <li class="divider "></li>
     <ul class="collapsible" style="margin-top: 0px;">
         <li>
             <a class="collapsible-header">Dispositivos de protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">CP 50</a>
-                <a (click)="goTo( '') ">CONDUCER</a>
+                <a (click)="goTo( 'miocardia/set-cardioplejia') ">CP 50</a>
+                <a (click)="goTo( 'miocardia/capiox-cp') ">CONDUCER</a>
             </div>
         </li>
         <li>
             <a class="collapsible-header">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">HC05</a>
-                <a (click)="goTo( '') ">HC11</a>
+                <a (click)="goTo( 'capiox/hemoconcentradores') ">HC05</a>
+                <a (click)="goTo( 'capiox/filtro-arterial') ">HC11</a>
             </div>
         </li>
         <li>
             <a class="collapsible-header">Filtros Arteriales<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( '') ">AF02</a>
-                <a (click)="goTo( '') ">AF125</a>
+                <a (click)="goTo( 'perfusion-pediatrica') ">AF02</a>
+                <a (click)="goTo( 'perfusion-pediatrica') ">AF125</a>
             </div>
         </li>
     </ul>

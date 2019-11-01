@@ -1,3 +1,232 @@
-.tittle-block{
+.slider .slides,
+.slider,
+.slides {
+    background: transparent!important;
+    height: auto!important;
+    z-index: 1;
+}
+
+.slider .slides li {
+    position: relative!important;
+}
+
+.slider .slides li:nth-child(2) {
+    position: absolute!important;
+}
+
+header {
+    display: block;
+}
+
+.background-skyuno {
+    background-color: #008f66;
+    background: linear-gradient(45deg, rgba(0, 89, 64, .7) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-1.jpg);
+    background-blend-mode: multiply;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: 60% right;
+    color: #fff;
+}
+
+.skyuno {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+}
+
+.background-skydos {
+    background-color: #008f66;
+    background: linear-gradient(45deg, rgba(0, 89, 64, .7) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-2.jpg);
+    background-blend-mode: multiply;
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: 60% right;
+    color: #fff;
+}
+
+.skydos {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+}
+
+.intro {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    height: 480px;
+    margin: 0 auto 0px;
+    padding: 38px 0 0;
+    color: #fff;
+}
+
+.intro h3 {
+    line-height: 1;
+    margin-top: -70px;
+}
+
+strong {
+    color: #008f66;
+}
+
+img {
+    margin: 14px 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .background-skyuno {
+        content: '';
+        background-color: #008f66;
+        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-1.jpg);
+        background-size: 100%, auto 100%;
+        background-repeat: no-repeat;
+        background-position: center, right;
+    }
+    .skyuno {
+        -webkit-transform: skewY(3deg);
+        transform: skewY(3deg);
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+    }
+    .background-skydos {
+        content: '';
+        background-color: #008f66;
+        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-2.jpg);
+        background-size: 100%, auto 100%;
+        background-repeat: no-repeat;
+        background-position: center, right;
+    }
+    .skydos {
+        -webkit-transform: skewY(3deg);
+        transform: skewY(3deg);
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+    }
+    .intro h3 {
+        text-align: center !important;
+        margin-top: -60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .background-skyuno {
+        content: '';
+        background-color: rgba(0, 143, 102, 0.2);
+        background: #005940, url(../../../../../assets/img/solutions/cardiovascular/slide-1.jpg);
+        background-size: 100%, cover;
+    }
+    .skyuno {
+        height: 290px;
+    }
+    .background-skydos {
+        content: '';
+        background-color: rgba(0, 143, 102, 0.2);
+        background: #005940, url(../../../../../assets/img/solutions/cardiovascular/slide-2.jpg);
+        background-size: 100%, cover;
+    }
+    .skydos {
+        height: 290px;
+    }
+    .intro {
+        height: 300px;
+    }
+    .intro h3 {
+        text-align: center !important;
+        margin-top: -70px;
+    }
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .vision {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.tittle-block {
     margin-bottom: 20px;
+}
+
+.caption h3 {
+    text-align: center;
+    padding-right: 50%;
+}
+
+.divider {
+    height: 2px;
+}
+
+dl dt {
+    color: #008f66;
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 0.656rem 0;
+}
+
+dl dd a {
+    color: #363636;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+dl dd a i {
+    margin-right: 15px;
+    line-height: 1;
+}
+
+.info .container,
+.info .container div {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoimg {
+    object-fit: contain;
+    object-position: 50% 50%;
 }

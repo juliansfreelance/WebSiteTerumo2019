@@ -21,3 +21,14 @@ p {
   border-left: 10px solid #81c7b3;
   min-height: 100%;
 }
+.card .card-content {
+  /*padding: 31px;*/
+  height: 15vw;
+}
+
+@media only screen and (max-width: 670px){
+  .card .card-content {
+    /*padding: 31px;*/
+    height: 25vw;
+  }
+}
