@@ -1,0 +1,98 @@
+/*@START: SECTION 1*/
+.abdominal-section-1 {
+  height: 450px;
+}
+.abdominal-section-1 .row,
+.abdominal-section-1 .row .col {
+  height: inherit;
+}
+.img-fenestrated {
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/Abdominales/index.png);
+  background-size: contain;
+  background-position: left;
+}
+/*@END: SECTION 1*/
+
+/*@START: SECTION 2*/
+
+/*@END: SECTION 2*/
+
+/*@START: SECTION 3*/
+.body-img {
+  height: inherit;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/Abdominales/body-treo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+  clip-path: circle(45% at 50%);
+}
+.abdominal-section-3 {
+  height: 450px;
+}
+.abdominal-section-3 .row {
+  height: inherit;
+}
+.abdominal-section-3 .row .col {
+  height: inherit;
+}
+/*@END: SECTION 3*/
+
+/*@START: SECTION 4*/
+.abdominal-section-4{
+  height: 450px;
+}
+.abdominal-section-4 .center-content{
+  height: inherit;
+}
+/*@END: SECTION 4*/
+
+/*@START: SECTION 5*/
+.responsive-table thead tr{
+  border-bottom: 5px solid #b7d2df;
+}
+.responsive-table tbody tr{
+  border-bottom: none;
+}
+/*@END: SECTION 5*/
+
+/*@START MEDIA-Queries*/
+@media only screen and (max-width: 600px) {
+  .img-fenestrated {
+    background-position: center;
+  }
+  .abdominal-section-1 .img-fenestrated .right-rounded-section {
+    margin-top: 65%;
+    height: 50%;
+    border-radius: 250px 250px 0px 0px;
+  }
+  .abdominal-section-1 .img-fenestrated .right-rounded-section .container {
+    text-align: center;
+  }
+  /*SECTION 2*/
+  .abdominal-section-2 div .treo-tittle-color {
+    margin-top: 10%;
+  }
+  /*SECTION 3*/
+  .body-img {
+    background-color: #b7d2df;
+  }
+  .abdominal-section-3 {
+    border-radius: 0px 250px 250px 0px;
+  }
+  /*SECTION 4*/
+  .abdominal-section-4{
+    height: 600px;
+    margin-top: 450px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .body-img {
+    clip-path: circle(42% at 54%);
+  }
+  .blue-bottom-line {
+    font-size: 2.22rem;
+  }
+}
+/*@START MEDIA-Queries*/

@@ -1,0 +1,70 @@
+
+
+/*@START: Section 1*/
+.blue-section {
+  border-radius: 0% 50% 50% 0%;
+  /* 
+    padding: 8% 5% 8% 5%; 
+    height: 376px;
+  */
+  width: 40%;
+}
+.imagen-fondo,
+.imagen-intro {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  top: 0;
+  z-index: -2;
+}
+.imagen-fondo {
+  /*height: 65%;
+  margin-top: 130px;*/
+  background-position-x: right;
+  background-size: contain;
+  background-image: url(../../../../../../../../../assets/img/solutions/aortic/TREO/home-temp.png);
+  /*position: absolute;*/
+}
+
+.flex-content,
+.flex-content-intro {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: left;
+  justify-content: center;
+}
+.flex-content {
+  height: 40vw;
+}
+
+.flex-content h1 {
+  font-weight: bold;
+  margin-bottom: 0%;
+}
+
+.flex-content h2 {
+  margin-top: 1%;
+}
+/*@END: Section 1*/
+
+
+
+/*@START: MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+  /*SECTION 1*/
+  .blue-section {
+    border-radius: 50% 50% 0% 0%;
+    width: 100%;
+    height: 60vw;
+  }
+  .blue-section .flex-content {
+    height: 60vw;
+    text-align: center;
+  }
+  .space-responsive {
+    height: 40vw;
+  }
+}
+
+/*@END: MEDIA QUERIES*/

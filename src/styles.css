@@ -359,8 +359,101 @@ li {
     color: #bed6e2 !important;
 }
 
+.treo-black-color {
+    color: #415365 !important;
+}
+
+.treo-tittle-color {
+    color: #454c54 !important;
+}
+
+
+/*@START: Spacing*/
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-rounded-section {
+    border-radius: 0% 250px 250px 0%;
+    padding: 15% 10% 12% 6%;
+}
+
+.right-rounded-section {
+    border-radius: 250px 0px 0px 250px;
+    /*padding: 15% 1% 12% 11%;*/
+}
+
+
+/*@END: Spacing*/
+
+
+/*@START: Background Image*/
+
+.imagen-fondo,
+.banner-blue,
+.img-fenestrated {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: 0;
+    z-index: -2;
+}
+
+.fenestrated-section-1,
+.fenestrated-section-2 {
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+
+/*@END: Background Image*/
+
+
+/*@START: Lines TREO*/
+
+.light-bottom-line span {
+    border-bottom: 5px solid white;
+    line-height: 45px;
+}
+
+.blue-bottom-line span {
+    border-bottom: 5px solid #b7d2df;
+    line-height: 45px;
+}
+
+
+/*@END: Lines TREO*/
+
 
 /*@END: General settings*/
+
+
+/*@START: TREO*/
+
+.blue-line-span {
+    border-bottom: 5px solid #b7d2df;
+    line-height: 45px;
+}
+
+.no-space-row {
+    margin-bottom: 0% !important;
+}
+
+.no-space-section {
+    height: 100% !important;
+}
+
+.space-padding {
+    padding: 6% 4%;
+}
+
+
+/*@END: TREO*/
 
 
 /*@END: Aortic*/

@@ -1,0 +1,36 @@
+/*@START: General Settings*/
+.row {
+  height: inherit;
+}
+.col {
+  height: inherit;
+}
+/*@END: General Settings*/
+
+.banner-imagen {
+  background-image: url(../../../../../../../../../../assets/img/solutions/aortic/Fenestrated/banner-index.png);
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.center-content {
+  text-align: end;
+  border-radius: 350px 0px 0px 350px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .col:not(.light-blue-aortic) {
+    height: 0%;
+  }
+  .banner-imagen {
+    background-size: inherit;
+    background-position: top;
+  }
+}
