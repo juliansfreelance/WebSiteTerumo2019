@@ -37,7 +37,7 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit() {
     this.buildForm();
-    M.Modal.init(document.querySelectorAll('.modal'), { preventScrolling: true, dismissible: false });
+    M.Modal.init(document.querySelectorAll('.modal'), { preventScrolling: false, dismissible: false });
     this.mapsAPILoader.load().then(() => {
       this.latitude = 4.687157;
       this.longitude = -74.056041;

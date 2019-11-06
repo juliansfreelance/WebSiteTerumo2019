@@ -12,6 +12,7 @@ export class EstrategiaComercialComponent implements OnInit {
 
   ngOnInit() {
     M.Slider.init(document.querySelectorAll('.slider'), { indicators: false });
+    M.Modal.init(document.querySelectorAll('.modal'), {});
   }
 
 }

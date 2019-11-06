@@ -109,7 +109,7 @@ img {
     .background-skyuno {
         content: '';
         background-color: #008f66;
-        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-1.jpg);
+        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-1_2.png);
         background-size: 100%, auto 100%;
         background-repeat: no-repeat;
         background-position: center, right;
@@ -123,7 +123,7 @@ img {
     .background-skydos {
         content: '';
         background-color: #008f66;
-        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-2.jpg);
+        background: linear-gradient(45deg, rgba(0, 143, 102, 0.8) 0%, rgba(255, 255, 255, 0) 100%), url(../../../../../assets/img/solutions/cardiovascular/slide-2_2.png);
         background-size: 100%, auto 100%;
         background-repeat: no-repeat;
         background-position: center, right;

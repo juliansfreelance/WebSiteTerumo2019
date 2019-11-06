@@ -130,6 +130,25 @@
         min-width: 0;
     }
     
+    dl dt {
+        color: #008f66;
+        font-size: 1.64rem;
+        line-height: 110%;
+        margin: 1.0933333333rem 0 0.656rem 0;
+    }
+    
+    dl dd a {
+        color: #363636;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    dl dd a i {
+        margin-right: 15px;
+        line-height: 1;
+    }
+    
     @media screen and (min-width: 1150px) {
         .m_topTitle h3 {
             position: absolute;

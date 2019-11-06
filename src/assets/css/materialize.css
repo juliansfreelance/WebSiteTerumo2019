@@ -5759,7 +5759,7 @@
         user-select: none;
         -webkit-tap-highlight-color: transparent;
         vertical-align: middle;
-        z-index: 1;
+        z-index: -1;
         -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out;
     }
@@ -5906,6 +5906,7 @@
     
     .modal .modal-close {
         cursor: pointer;
+        z-index: 1;
     }
     
     .modal .modal-footer {
