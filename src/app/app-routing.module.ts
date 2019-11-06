@@ -38,6 +38,7 @@ import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endov
 import { MainComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/main/main.component';
 import { ResourcesTreoComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/resources-treo/resources-treo.component';
 import { FenestratedComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/fenestrated/fenestrated.component';
+import { TreoAbdominalComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo-abdominal/treo-abdominal.component';
 
 
 const routes: Routes = [
@@ -261,6 +262,10 @@ const routes: Routes = [
             path: 'recursos',
             component: ResourcesTreoComponent
           }]
+        },
+        {
+          path: 'treo-abdominal',
+          component: TreoAbdominalComponent
         },
         {
           path: 'fenestrated',

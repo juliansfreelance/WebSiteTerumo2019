@@ -58,6 +58,7 @@ import { MainComponent } from './pages/solutions/aortic/productos/sistemas-endov
 import { LearnMoreBtnComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/share/learn-more-btn/learn-more-btn.component';
 import { CircleBannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/share/circle-banner/circle-banner.component';
 import { BannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/shared/banner/banner.component';
+import { TreoAbdominalComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo-abdominal/treo-abdominal.component';
 
 @NgModule({
   declarations: [
@@ -109,7 +110,8 @@ import { BannerComponent } from './pages/solutions/aortic/productos/sistemas-end
     MainComponent,
     LearnMoreBtnComponent,
     CircleBannerComponent,
-    BannerComponent
+    BannerComponent,
+    TreoAbdominalComponent
   ],
   imports: [
     BrowserModule,
