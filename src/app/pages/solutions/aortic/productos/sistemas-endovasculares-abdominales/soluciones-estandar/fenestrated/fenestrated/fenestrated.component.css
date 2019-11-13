@@ -14,6 +14,9 @@ body {
 .row {
   margin-bottom: 0px;
 }
+a {
+  z-index: 1 !important;
+}
 /*@END: GENERAL SETTING*/
 
 /*@START: SECTION 2*/

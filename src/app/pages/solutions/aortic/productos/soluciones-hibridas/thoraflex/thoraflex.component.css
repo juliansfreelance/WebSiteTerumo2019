@@ -1,0 +1,286 @@
+/*@START: General Settings*/
+.row,
+.row .col {
+  height: inherit;
+}
+
+.rango-img,
+.plexus-img,
+.frozen-img,
+.cite-section-13,
+.anastomosis-img,
+.beneficioso-img {
+  background-repeat: no-repeat;
+  height: inherit;
+  background-size: contain;
+  background-position: center;
+}
+/*@END: General Settings*/
+
+/*@START: Section 1*/
+.thoraflex-section-1 {
+  height: 450px;
+}
+
+.thoraflex-section-1 .row .col {
+  border-radius: 0% 250px 250px 0%;
+}
+
+.thoraflex-banner-imagen {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/banner-thoraflex.png);
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*@END: Section 1*/
+
+/*@START: Section 2*/
+
+/*@END: Section 2*/
+
+/*@START: Section 3*/
+.thoraflex-section-3 {
+  height: 500px;
+}
+.plexus-img {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/plexus.png);
+  clip-path: circle(42% at 50%);
+  background-color: white;
+}
+/*@END: Section 3*/
+
+/*@START: Section 4*/
+ol li {
+  list-style-type: decimal !important;
+}
+/*@END: Section 4*/
+
+/*@START: Section 5*/
+.exactly-circle p {
+  font-size: 12px;
+  padding: 0px 10%;
+}
+/*@END: Section 5*/
+
+/*@START: Section 7*/
+.thoraflex-section-7 {
+  height: 500px;
+  position: relative;
+}
+.thoraflex-section-7 .row .col {
+  padding-left: 10%;
+  align-items: flex-start;
+}
+.frozen-img {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/frozen.png);
+  background-position: left;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+/*Four circles*/
+.exactly-circle-4 {
+  padding: 0% 2%;
+  font-size: 20px;
+}
+/*@END: Section 7*/
+
+/*@START: Section 9*/
+.thoraflex-section-9 {
+  height: 450px;
+}
+
+.thoraflex-section-9 .row .center-content {
+  align-items: flex-start;
+  padding: 0px 5%;
+}
+
+.anastomosis-img {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/anastomosis.png);
+  background-size: cover;
+}
+/*@END: Section 9*/
+
+/*@START: Section 10*/
+.thoraflex-section-10 {
+  height: 500px;
+}
+
+.thoraflex-section-10 .row .right-rounded-section {
+  padding-left: 12%;
+}
+
+.rango-img {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/nuevo-rango.png);
+}
+/*@END: Section 10*/
+
+/*@START: Section 11*/
+.thoraflex-section-11 {
+  height: 450px;
+}
+
+.beneficioso-img {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/beneficioso.png);
+}
+/*@END: Section 11*/
+
+/*@START: Section 12*/
+.cite-section-13 {
+  background-image: url(../../../../../../../assets/img/solutions/aortic/Thoraflex/cite-thoraflex.svg);
+  background-size: cover;
+  height: 450px;
+  background-position: center right;
+}
+/*@END: Section 12*/
+
+/*@START: Section 15*/
+.thoraflex-section-15 {
+  margin: 5% 0%;
+}
+
+.thoraflex-section-15 .row .col a {
+  z-index: 1;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.thoraflex-section-15 .row .col a:hover {
+  background-color: #454c54;
+  color: #b7d2df;
+}
+
+.responsive-img {
+  background-color: #d2dbe5;
+  border-radius: 50%;
+  border: 2px solid #a0d0e8;
+}
+/*@END: Section 15*/
+
+/*@START: Section 15*/
+/*@END: Section 15*/
+
+/*@START: Media Queries*/
+
+@media only screen and (max-width: 600px) {
+  /*Section 1*/
+  .thoraflex-section-1 .row .col {
+    border-radius: 250px 250px 0px 0%;
+    height: 50%;
+    margin-top: 225px;
+    padding: 10%;
+  }
+
+  .thoraflex-section-1 .row .col:hover {
+    border-left: 4px dotted #dfd0a6;
+  }
+  /*SECTION 3*/
+  .plexus-img {
+    background-color: #b7d2df;
+  }
+  .thoraflex-section-3 {
+    border-radius: 0px 250px 250px 0px;
+  }
+  .thoraflex-section-3 .row .col .container p {
+    padding-right: 12%;
+  }
+  /*@START: Section 5*/
+  .exactly-circle p {
+    font-size: 18px;
+  }
+  /*Section 7*/
+  .frozen-img {
+    position: initial;
+  }
+
+  .thoraflex-section-7 {
+    margin-bottom: 520px;
+  }
+
+  .thoraflex-section-7 .row .col {
+    padding-left: 20%;
+  }
+  /*Section 8*/
+  .exactly-circle-4 {
+    padding: 0% 5%;
+  }
+  /*Section 10*/
+  .thoraflex-section-10 .row .right-rounded-section {
+    font-size: 14px;
+    height: 550px;
+    padding-left: 22%;
+    border-radius: 200px 0px 0px 200px;
+  }
+  .thoraflex-section-10 .row .right-rounded-section h4 {
+    font-size: 22px;
+  }
+  .thoraflex-section-10 .row .right-rounded-section p {
+    text-align: center;
+  }
+
+  /*Section 11*/
+  .thoraflex-section-11 .row .center-content {
+    background-color: #dfd0a6;
+    border-radius: 0% 250px 250px 0px;
+  }
+
+  /*Section 13*/
+  .cite-section-13 {
+    background-position: left center;
+    border-radius: 0% 200px 200px 0%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .frozen-img {
+    width: 60%;
+  }
+  .exactly-circle-4 {
+    font-size: 16px;
+  }
+}
+
+/*Extra Queries*/
+@media only screen and (min-width: 601px) and (max-width: 870px) {
+  /*Section 8*/
+  .exactly-circle-4 {
+    font-size: 11px;
+  }
+
+  /*SECTION 10*/
+  .thoraflex-section-10 .row .right-rounded-section {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 745px) {
+  .plexus-img {
+    clip-path: circle(36% at 50%);
+  }
+  /*SECTION 5*/
+  .exactly-circle p {
+    font-size: 9.5px;
+  }
+  /*SECTION 9*/
+  .anastomosis-img {
+    background-size: contain;
+  }
+  .cite-section-13 {
+    background-position: center;
+  }
+}
+/*Dotted and hover*/
+@media only screen and (min-width: 1084px) {
+  .thoraflex-banner-imagen {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1084px) {
+  .thoraflex-section-1 .row .col:hover {
+    background-color: transparent;
+    border-right: 4px dotted #dfd0a6;
+  }
+}
+/*@END: Media Queries*/

@@ -10,6 +10,20 @@ import { Router } from '@angular/router';
 export class MainComponent implements OnInit {
 
   instance: any = null;
+  
+  /* <img src="" alt="Logo TREO"
+                class="responsive-img image-circle-broder">
+            <h5 class="treo-tittle-color titulo-bold">
+                RECURSOS DE TREO
+            </h5>
+            <p class="treo-tittle-color">
+                
+            </p>
+   */
+  treo_urlImagen = 'assets/img/solutions/aortic/TREO/logo-treo.png';
+  treo_tittle = 'RECURSOS DE TREO';
+  treo_description = 'La información, los videos y las instrucciones de uso del producto están disponibles para la descarga..';
+  treo_link = 'aortic/soluciones-estandar/treo/recursos';
 
   constructor(private router: Router) { }
 

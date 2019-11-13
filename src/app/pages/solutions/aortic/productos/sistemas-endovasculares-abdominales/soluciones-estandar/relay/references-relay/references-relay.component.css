@@ -1,0 +1,18 @@
+.treo-tittle-color::after {
+  content: "";
+  height: 5px;
+  width: 32%;
+  background-color: white;
+  border-radius: 55px;
+  display: block;
+  margin-bottom: 6%;
+}
+.left-rounded-section {
+    padding: 4% 2% 10%;
+}
+
+@media only screen and (max-width: 600px){
+    .treo-tittle-color::after {
+        width: 55%;
+    }
+}

@@ -1,0 +1,18 @@
+.banner-cardio-interv::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background: #008f66;
+  position: absolute;
+}
+.banner-cardio-interv {
+  height: 450px;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: contain !important;
+}
+
+.row,
+.row .col {
+  height: inherit;
+}
