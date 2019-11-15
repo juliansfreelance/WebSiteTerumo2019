@@ -1,0 +1,57 @@
+/*@START: Section 7*/
+
+/*ESTE se repite en AORTIC - Podría ser un SHARE*/
+
+.btn-plus {
+  border-radius: 0% 50px 50px 0%;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+  align-self: flex-end;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.btn:hover {
+  background-color: #4b5159 !important;
+  color: #b7d2df !important;
+}
+
+.image-circle-broder {
+  border-radius: 50% 50%;
+  border: solid 1px;
+}
+
+.relay-section-9 {
+  height: 500px;
+  margin: 5% 1%;
+}
+
+.relay-section-9 .row,
+.relay-section-9 .row .col {
+  height: inherit;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  /*SECTION 7*/
+  .relay-section-9 {
+    height: inherit;
+  }
+  .relay-section-9 .row .col {
+    padding: 8% 5% !important;
+  }
+  .center-content {
+    display: flow-root;
+    flex: none;
+    flex-direction: column;
+  }
+}
+/*@END: Media Queries*/

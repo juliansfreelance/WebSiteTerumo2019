@@ -315,59 +315,11 @@
         </div>
     </div>
 </section>
-<section class="section-7-spacing">
-    <div class="row center-align space-padding section-7">
-        <div class="col s12 m4">
-            <img src="assets/img/solutions/aortic/TREO/logo-treo.png" alt="Logo TREO"
-                class="responsive-img image-circle-broder">
-            <h5 class="treo-tittle-color titulo-bold">
-                RECURSOS DE TREO
-            </h5>
-            <p class="treo-tittle-color">
-                La información, los videos y
-                las instrucciones de uso del
-                producto están disponibles
-                para la descarga.
-            </p>
-            <a (click)="goTo('aortic/soluciones-estandar/treo/recursos')"
-                class="waves-effect waves-light btn btn-plus light-blue-aortic flex-container aortic-black-text">
-                APRENDA MÁS <i class="material-icons exception right">navigate_next</i>
-            </a>
-        </div>
-        <div class="col s12 m4">
-            <img src="assets/img/solutions/aortic/TREO/aortic-blue-logo.png" alt="Logo Aortic" class="responsive-img">
-            <h5 class="treo-tittle-color titulo-bold">
-                SOBRE NOSOTROS
-            </h5>
-            <p class="treo-tittle-color">
-                Estamos enfocados
-                únicamente en la aorta.
-            </p>
-            <a href="#"
-                class="waves-effect waves-light btn btn-plus light-blue-aortic flex-container aortic-black-text">
-                APRENDA MÁS <i class="material-icons exception right">navigate_next</i>
-            </a>
-        </div>
-        <div class="col s12 m4">
-            <img src="assets/img/solutions/aortic/TREO/contacto.png" alt="Contacto TREO" class="responsive-img">
-            <h5 class="treo-tittle-color titulo-bold">
-                CONTACTO
-
-            </h5>
-            <p class="treo-tittle-color">
-                Nos dedicamos a servir a
-                nuestros clientes.
-            </p>
-            <a href="#"
-                class="waves-effect waves-light btn btn-plus light-blue-aortic flex-container aortic-black-text">
-                APRENDA MÁS <i class="material-icons exception right">navigate_next</i>
-            </a>
-        </div>
-    </div>
-</section>
+<app-aprenda-mas [urlImagen]="treo_urlImagen" [tittle]="treo_tittle" [description]="treo_description"
+    [link]="treo_link"></app-aprenda-mas>
 <section class="dark-blue-aortic space-padding no-space-row">
     <div class="container">
-        <p class="white-text">
+        <p class="treo-cite-text">
             1Internal competitive product review of top four market-share leaders of AAA stent-grafting, conducted
             January 2016. <br /><br />
             Disclaimers: TREO is certified by SGS (0120) according to MDD 93/42/EEC as amended 2007/47/EC. Caution

@@ -125,9 +125,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-    /* background: #EBEBEB; */
-}
+
+/* html {
+  background: #EBEBEB; 
+}*/
 
 body {
     font-family: "LatoRegular";
@@ -276,6 +277,45 @@ li {
     transform: translateX(-50%);
 }
 
+.exactly-circle {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    border-radius: 50%;
+}
+
+.exactly-circle-4 {
+    width: calc(100vw / 4);
+    height: calc(100vw / 4);
+    border-radius: 50%;
+}
+
+.exactly-circle img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.circles .center-content {
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .circles {
+        flex-direction: column;
+    }
+    .exactly-circle,
+    .exactly-circle-4 {
+        width: calc(100vw / 1.2);
+        height: calc(100vw / 1.2);
+    }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1224px) {
     .imagen-circle {
         width: 160px;
@@ -375,6 +415,10 @@ li {
     color: #454c54 !important;
 }
 
+.treo-cite-text {
+    color: #c9cfd4 !important;
+}
+
 
 /*@START: Spacing*/
 
@@ -436,6 +480,40 @@ li {
 
 
 /*@END: Lines TREO*/
+
+
+/*@START: Slides*/
+
+.navegacion {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.btn-left,
+.btn-right {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 18%;
+    width: 10%;
+}
+
+.btn-left {
+    border-radius: 0% 100px 100px 0%;
+}
+
+.btn-right {
+    border-radius: 100px 0% 0% 100px;
+}
+
+
+/*@END: Slides*/
 
 
 /*@END: General settings*/

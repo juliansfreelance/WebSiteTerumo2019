@@ -39,6 +39,16 @@ import { MainComponent } from './pages/solutions/aortic/productos/sistemas-endov
 import { ResourcesTreoComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/resources-treo/resources-treo.component';
 import { FenestratedComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/fenestrated/fenestrated.component';
 import { TreoAbdominalComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo-abdominal/treo-abdominal.component';
+import { RelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/relay/relay.component';
+import { ReferencesRelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/references-relay/references-relay.component';
+import { HeaderRelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/shared/header-relay/header-relay.component';
+import { NbsComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/nbs/nbs.component';
+import { RelayPlusComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/relay-plus/relay-plus.component';
+import { ThoraflexComponent } from './pages/solutions/aortic/productos/soluciones-hibridas/thoraflex/thoraflex.component';
+import { HeartrailIiComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/heartrail-ii/heartrail-ii.component';
+import { CardiologiaIntervencionistaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/cardiologia-intervencionista/cardiologia-intervencionista.component';
+import { ProdIntervCoronariaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/prod-interv-coronaria/prod-interv-coronaria.component';
+import { CateterGuiaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/cateter-guia/cateter-guia.component';
 
 
 const routes: Routes = [
@@ -270,6 +280,48 @@ const routes: Routes = [
         {
           path: 'fenestrated',
           component: FenestratedComponent
+        },
+        {
+          path: 'relay',
+          component: HeaderRelayComponent,
+          children: [
+            {
+              path: '',
+              component: RelayComponent
+            },
+            {
+              path: 'referencias',
+              component: ReferencesRelayComponent
+            }
+          ]
+        },
+        {
+          path: 'relay-nbs-plus',
+          component: HeaderRelayComponent,
+          children: [
+            {
+              path: '',
+              component: NbsComponent
+            },
+            {
+              path: 'referencias',
+              component: ReferencesRelayComponent
+            }
+          ]
+        },
+        {
+          path: 'relay-plus',
+          component: HeaderRelayComponent,
+          children: [
+            {
+              path: '',
+              component: RelayPlusComponent
+            }
+          ]
+        },
+        {
+          path: 'thoraflex',
+          component: ThoraflexComponent
         }
         ]
       },
@@ -278,8 +330,41 @@ const routes: Routes = [
         component: SolucionesEstandarComponent
       }
     ]
-  }
+  },
   //@END Avance 21 de Octubre  
+  {
+    path: 'cardiologia-intervencionista',
+    component: CardiologiaIntervencionistaComponent,
+    children: [
+      {
+        path: '',
+        component: HeartrailIiComponent
+      },
+      {
+        path: 'productos-para-intervencion-coronaria',
+        component: ProdIntervCoronariaComponent,
+        children: [
+          {
+            path: '',
+            component: HeartrailIiComponent
+          },
+          {
+            path: 'cateter-guia',
+            component: CateterGuiaComponent,
+            children: [
+              {
+                path: '',
+                component: HeartrailIiComponent
+              },
+              {
+                path: 'heartrail-II',
+                component: HeartrailIiComponent
+              }
+            ]
+          }
+        ]
+      }]
+  }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

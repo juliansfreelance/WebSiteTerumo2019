@@ -76,34 +76,6 @@ ul li {
 
 /*@START: Section 4*/
 
-.navegacion {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-}
-
-.btn-left,
-.btn-right {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    height: 18%;
-    width: 10%;
-}
-
-.btn-left {
-    border-radius: 0% 100px 100px 0%;
-}
-
-.btn-right {
-    border-radius: 100px 0% 0% 100px;
-}
-
 .btn i:not(.exception) {
     font-size: 5.5rem;
 }

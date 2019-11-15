@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LearnMoreBtnComponent } from './learn-more-btn.component';
+import { ReferencesRelayComponent } from './references-relay.component';
 
-describe('LearnMoreBtnComponent', () => {
-  let component: LearnMoreBtnComponent;
-  let fixture: ComponentFixture<LearnMoreBtnComponent>;
+describe('ReferencesRelayComponent', () => {
+  let component: ReferencesRelayComponent;
+  let fixture: ComponentFixture<ReferencesRelayComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LearnMoreBtnComponent ]
+      declarations: [ ReferencesRelayComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LearnMoreBtnComponent);
+    fixture = TestBed.createComponent(ReferencesRelayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

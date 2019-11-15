@@ -1,3 +1,7 @@
+/*@START: General Settings*/
+
+/*@END: General Settings*/
+
 /*@START: SECTION 1*/
 .abdominal-section-1 {
   height: 450px;
@@ -39,22 +43,68 @@
 /*@END: SECTION 3*/
 
 /*@START: SECTION 4*/
-.abdominal-section-4{
+.abdominal-section-4 {
   height: 450px;
 }
-.abdominal-section-4 .center-content{
+.abdominal-section-4 .center-content {
   height: inherit;
 }
 /*@END: SECTION 4*/
 
 /*@START: SECTION 5*/
-.responsive-table thead tr{
+.responsive-table thead tr {
   border-bottom: 5px solid #b7d2df;
 }
-.responsive-table tbody tr{
+.responsive-table tbody tr {
   border-bottom: none;
 }
+/*.light-borders-dotted {
+  border-bottom: 8px dotted #b7d2df !important;
+  border-top: 8px dotted #b7d2df !important;
+}*/
+
+tbody tr td {
+  font-size: 20px;
+}
 /*@END: SECTION 5*/
+
+/*@START: SECTION 6*/
+.btn i:not(.exception) {
+  font-size: 5.5rem;
+}
+
+.btn:hover {
+  background: #415365;
+  color: #b7d2df !important;
+}
+
+.slider {
+  height: 500px !important;
+}
+
+.slides {
+  background-color: white;
+  height: 500px !important;
+}
+.test-after::after {
+  content: "";
+  height: 5px;
+  width: 90%;
+  background: #b7d2df;
+  display: block;
+  margin-top: 3%;
+}
+/*@END: SECTION 6*/
+
+/*@START: SECTION 8*/
+.abdominal-section-8 {
+  padding: 3% 0%;
+  height: fit-content;
+}
+.abdominal-section-8 ol li {
+  list-style: decimal !important;
+}
+/*@END: SECTION 8*/
 
 /*@START MEDIA-Queries*/
 @media only screen and (max-width: 600px) {
@@ -81,18 +131,60 @@
     border-radius: 0px 250px 250px 0px;
   }
   /*SECTION 4*/
-  .abdominal-section-4{
+  .abdominal-section-4 {
     height: 600px;
     margin-top: 450px;
+  }
+  /*SECTION 5*/
+  tbody tr td {
+    margin: 6vw 0vw;
+  }
+  .abdominal-section-5 {
+    height: 400px;
+  }
+  .abdominal-section-5 div,
+  .abdominal-section-5 div table,
+  .abdominal-section-5 div table thead,
+  .abdominal-section-5 div table tbody {
+    height: -webkit-fill-available;
+  }
+  /*SECTION 6*/
+  .slider .slides li img {
+    width: 145%;
+    background-position: right;
+  }
+  .slider .slides li .caption::after {
+    content: "";
+    position: absolute;
+    width: 122%;
+    height: 450px;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 57%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+    z-index: -1;
+  }
+  .btn i:not(.exception) {
+    font-size: 2.8rem;
+    font-weight: bold;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+  /*SECTION 3*/
   .body-img {
     clip-path: circle(42% at 54%);
   }
   .blue-bottom-line {
     font-size: 2.22rem;
+  }
+  /*SECTION 5*/
+  tbody tr td {
+    margin: 5.5vw 0vw;
   }
 }
 /*@START MEDIA-Queries*/

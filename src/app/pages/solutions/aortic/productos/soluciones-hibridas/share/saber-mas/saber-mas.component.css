@@ -1,0 +1,37 @@
+/*@START: Section 12*/
+.thoraflex-saber-mas {
+  margin: 5% 0%;
+}
+.section-12-text {
+  font-size: 45px;
+}
+
+.thoraflex-saber-mas a {
+  z-index: 1;
+  border-radius: 0% 25px 25px 0px;
+}
+
+.btn:hover {
+  background-color: #454c54;
+  color: #b7d2df !important;
+}
+
+.material-icons {
+  font-size: 35px;
+}
+
+/*@END: Section 12*/
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .section-12-text {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .section-12-text {
+    font-size: 35px;
+  }
+}
+/*@END: Media Queries*/

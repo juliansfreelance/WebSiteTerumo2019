@@ -53,13 +53,25 @@ import { HeaderCardioComponent } from './shared/header-cardio/header-cardio.comp
 import { TREOComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo/treo.component';
 import { AnacondaComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/anaconda/anaconda.component';
 import { FenestratedComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/fenestrated/fenestrated.component';
-import { RelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/relay.component';
+import { RelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/relay/relay.component';
 import { ResourcesTreoComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/resources-treo/resources-treo.component';
 import { MainComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/main/main.component';
-import { LearnMoreBtnComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/share/learn-more-btn/learn-more-btn.component';
-import { CircleBannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/share/circle-banner/circle-banner.component';
+import { CircleBannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/share/circle-banner/circle-banner.component';
 import { BannerComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/fenestrated/shared/banner/banner.component';
 import { TreoAbdominalComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/treo/treo-abdominal/treo-abdominal.component';
+import { AprendaMasComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/share/aprenda-mas/aprenda-mas.component';
+import { HeaderRelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/shared/header-relay/header-relay.component';
+import { ReferencesRelayComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/references-relay/references-relay.component';
+import { NbsComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/nbs/nbs.component';
+import { ThoraflexComponent } from './pages/solutions/aortic/productos/soluciones-hibridas/thoraflex/thoraflex.component';
+import { RelayPlusComponent } from './pages/solutions/aortic/productos/sistemas-endovasculares-abdominales/soluciones-estandar/relay/relay-plus/relay-plus.component';
+import { SaberMasComponent } from './pages/solutions/aortic/productos/soluciones-hibridas/share/saber-mas/saber-mas.component';
+import { TabsSliderComponent } from './pages/solutions/aortic/productos/soluciones-hibridas/share/tabs-slider/tabs-slider.component';
+import { HeartrailIiComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/heartrail-ii/heartrail-ii.component';
+import { CardiologiaIntervencionistaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/cardiologia-intervencionista/cardiologia-intervencionista.component';
+import { ProdIntervCoronariaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/prod-interv-coronaria/prod-interv-coronaria.component';
+import { CateterGuiaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/cateter-guia/cateter-guia.component';
+import { BannerCardiologiaIntervComponent } from './pages/solutions/intervencionismo/shared/banner-cardiologia-interv/banner-cardiologia-interv.component';
 
 @NgModule({
   declarations: [
@@ -110,10 +122,22 @@ import { TreoAbdominalComponent } from './pages/solutions/aortic/productos/siste
     RelayComponent,
     ResourcesTreoComponent,
     MainComponent,
-    LearnMoreBtnComponent,
     CircleBannerComponent,
     BannerComponent,
-    TreoAbdominalComponent
+    TreoAbdominalComponent,
+    AprendaMasComponent,
+    HeaderRelayComponent,
+    ReferencesRelayComponent,
+    NbsComponent,
+    ThoraflexComponent,
+    RelayPlusComponent,
+    SaberMasComponent,
+    TabsSliderComponent,
+    HeartrailIiComponent,
+    CardiologiaIntervencionistaComponent,
+    ProdIntervCoronariaComponent,
+    CateterGuiaComponent,
+    BannerCardiologiaIntervComponent
   ],
   imports: [
     BrowserModule,
