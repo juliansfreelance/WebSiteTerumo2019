@@ -86,11 +86,21 @@
     padding-left: 8px;
 }
 
+dl dd {
+    color: #363636;
+}
+
+sup,
+sub {
+    z-index: 0;
+}
+
 dl dd:before {
     content: '•';
     position: absolute;
     margin-left: -20px;
     margin-right: 0px;
+    z-index: 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -138,4 +148,25 @@ dl dd:before {
         width: 100%;
         object-fit: cover;
     }
+}
+.carousel .carousel-item {
+    z-index: 50;
+}
+
+.carouselnav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carouselnav .prev i,
+.carouselnav .next i {
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 100;
 }

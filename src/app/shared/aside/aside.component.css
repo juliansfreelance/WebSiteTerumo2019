@@ -2,10 +2,15 @@
     border-radius: 5px;
     border: 2px solid lightgrey;
     padding: 10px;
+    z-index: -1;
 }
 
 .contac {
     display: none;
+}
+
+.aside {
+    z-index: 1;
 }
 
 button {

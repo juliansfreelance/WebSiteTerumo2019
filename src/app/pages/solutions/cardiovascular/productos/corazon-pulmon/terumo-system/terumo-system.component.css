@@ -1,32 +1,224 @@
-p,
-h4,
-h5 {
-  text-align: justify;
+header {
+    position: relative;
+    display: block;
+    z-index: 1;
 }
 
+.background-skyleft {
+    background-color: #fafafa;
+    background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv.png);
+    background-blend-mode: normal;
+    background-size: 100%, auto 80%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.skyleft {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 48px 48px 32px;
+    overflow: hidden;
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+    border-bottom: 5px solid #D32B2A;
+}
+
+.intro {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    height: 480px;
+    margin: 0 auto -32px;
+    padding: -60px 0 0 0;
+    color: #fff;
+}
+
+.texto {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50% -50%);
+}
+
+.progress {
+    margin: 30px 0px;
+}
+
+.progress .terumo {
+    background-color: #D32B2A !important;
+}
+
+.carousel .indicators {
+    z-index: -1;
+}
+
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    background-color: rgba(15, 150, 150, 0.5);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #fff;
+}
+
+.terumo-red {
+    color: #D32B2A;
+    font-size: 16px;
+}
+
+.publi {
+    border-left: 4px solid #82c7b2;
+    padding-left: 8px;
+}
+
+.publi2 {
+    border-left: 4px solid #D32B2A;
+    padding-left: 8px;
+}
+
+dl .title {
+    color: #363636;
+    font-size: 1.44rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 0.656rem 0;
+}
+
+dl dt {
+    color: #008f66;
+    font-size: 1.44rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 0.656rem 0;
+}
+
+dl dd {
+    color: #363636;
+}
+
+sup,
+sub {
+    z-index: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .background-skyleft {
+        background-color: #fafafa;
+        background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv.png);
+        background-size: 100%, auto 95%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    .skyleft {
+        -webkit-transform: skewY(3deg);
+        transform: skewY(3deg);
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .background-skyleft {
+        background-color: rgba(49, 128, 106, 0.5);
+        background: rgba(0, 89, 64, .7), url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv.png);
+        background-blend-mode: multiply;
+        background-size: 100%, contain;
+        background-position: bottom center;
+    }
+    .skyleft {
+        height: 290px;
+        border: none;
+    }
+    .intro {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        height: 300px;
+    }
+    .intro h4 {
+        color: #fff!important;
+        text-align: center !important;
+        margin-top: -40px;
+    }
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.carousel .carousel-item {
+    z-index: 50;
+}
+
+.carouselnav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carouselnav .prev i,
+.carouselnav .next i {
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+/*p,
+h4,
+h5 {
+     text-align: justify; 
+}*/
+
 .img1 {
-  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-1.jpg);
 }
 
 .img2 {
-  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-2.png);
 }
 
 .img3 {
-  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-3.png);
 }
 
 .img4 {
-  background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
+    background-image: url(../../../../../../../assets/img/solutions/cardiovascular/contenedor-4.png);
 }
 
 .diseno div p {
-  text-align: center;
-  color: gray;
-  /*font-style: italic;*/
-  font-size: 14px;
+    text-align: center;
+    color: gray;
+    /*font-style: italic;*/
+    font-size: 14px;
 }
 
 .responsive-img {
-  margin-top: 5%;
+    margin-top: 5%;
 }

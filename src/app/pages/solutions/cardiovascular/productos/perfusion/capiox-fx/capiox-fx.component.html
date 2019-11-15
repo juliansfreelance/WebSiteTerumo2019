@@ -20,14 +20,20 @@
         <div class="row">
             <div class="col s12 m9">
                 <div class="row">
-                    <div class="carousel carousel-slider center">
-                        <div class="carousel-item white-text" href="#uno!">
-                            <img class="materialboxed responsive-img" data-caption="Capiox® FX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/crx-slide-1.png">
+                    <section style=" position: relative; z-index: 100;background: white;">
+                        <div class="carousel carousel-slider center">
+                            <div class="carouselnav">
+                                    <div class="prev" [hidden]="visibleNav" (click)="prev()"><i class='material-icons terumo-text'>keyboard_arrow_left</i></div>
+                                    <div class="next" [hidden]="visibleNav" (click)="next()"><i class='material-icons terumo-text'>keyboard_arrow_right</i></div>
+                            </div>
+                            <div class="carousel-item white-text" href="#uno!">
+                                <img class="materialboxed responsive-img" data-caption="Capiox® FX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/crx-slide-1.png">
+                            </div>
+                            <div class="carousel-item white-text" href="#dos!">
+                                <img class="materialboxed responsive-img" data-caption="Capiox® FX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/crx-slide-2.png">
+                            </div>
                         </div>
-                        <div class="carousel-item white-text" href="#dos!">
-                            <img class="materialboxed responsive-img" data-caption="Capiox® FX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/crx-slide-2.png">
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <div class="row">
                     <div class="col s12 m6">

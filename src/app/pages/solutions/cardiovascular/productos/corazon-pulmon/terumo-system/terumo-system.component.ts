@@ -11,7 +11,6 @@ export class TerumoSystemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    M.Slider.init(document.querySelectorAll('.slider'), { indicators: false });
   }
 
 }
