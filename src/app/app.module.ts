@@ -82,7 +82,6 @@ import { UltimasterTmComponent } from './pages/solutions/intervencionismo/cardio
 import { StentsComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/stents/stents/stents.component';
 import { GraficaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/stents/ultimaster-tm/shared/grafica/grafica.component';
 import { RadifocusComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/radifocus/radifocus.component';
-import { ProdAccesoDiagnosticoIntroductorComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-acceso-diagnostico-introductor/prod-acceso-diagnostico-introductor.component';
 import { RadifocusMCoatComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/radifocus-m-coat/radifocus-m-coat.component';
 import { RadiofocusImgComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/shared/radiofocus-img/radiofocus-img.component';
 import { RadifocusGwMComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gw-m/radifocus-gw-m.component';
@@ -165,7 +164,6 @@ import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardi
     StentsComponent,
     GraficaComponent,
     RadifocusComponent,
-    ProdAccesoDiagnosticoIntroductorComponent,
     RadifocusMCoatComponent,
     RadiofocusImgComponent,
     RadifocusGwMComponent,
