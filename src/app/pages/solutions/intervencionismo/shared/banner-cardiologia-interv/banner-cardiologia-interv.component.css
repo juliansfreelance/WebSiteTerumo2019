@@ -6,13 +6,21 @@
   position: absolute;
 }
 .banner-cardio-interv {
-  height: 450px;
+  height: 600px;
   background-repeat: no-repeat !important;
-  background-position: right center !important;
-  background-size: contain !important;
+  background-position: right 5% center, left center !important;
+  background-size: contain, cover !important;
 }
 
 .row,
 .row .col {
   height: inherit;
 }
+
+/* @START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .banner-cardio-interv .row .col {
+    background: linear-gradient(to right, rgb(255, 255, 255, 0.3) 95%, rgb(255, 255, 255, 0.5));
+  }
+}
+/* @END: Media Queries*/

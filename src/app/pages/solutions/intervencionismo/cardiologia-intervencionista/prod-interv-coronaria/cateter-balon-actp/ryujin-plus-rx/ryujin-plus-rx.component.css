@@ -1,0 +1,24 @@
+/*@START: Section 1*/
+.determinate {
+  background: #008f66;
+}
+ol li {
+  list-style-type: decimal !important;
+}
+
+/*Table*/
+.border-table th {
+  border: 1px solid #cececf;
+}
+tr td {
+  border: 2px solid #ececec !important;
+}
+/*@END: Section 1*/
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+}
+/*@END: Media Queries*/
