@@ -29,14 +29,20 @@
             <div class="col s12 m9">
                 <p class="terumoP justify-align">Oxigenador de alto desempeño, bajo volume de primado, diseñado para ser usado en una gran variedad de pacientes de acuerdo a sus necesidades.</p>
                 <div class="row">
-                    <div class="carousel carousel-slider center">
-                        <div class="carousel-item white-text" href="#uno!">
-                            <img class="materialboxed responsive-img" data-caption="Capiox® RX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/carousel-1.jpg">
+                    <section style=" position: relative; z-index: 100;background: white;">
+                        <div class="carousel carousel-slider center">
+                            <div class="carouselnav">
+                                    <div class="prev" [hidden]="visibleNav" (click)="prev()"><i class='material-icons terumo-text'>keyboard_arrow_left</i></div>
+                                    <div class="next" [hidden]="visibleNav" (click)="next()"><i class='material-icons terumo-text'>keyboard_arrow_right</i></div>
+                            </div>
+                            <div class="carousel-item white-text" href="#uno!">
+                                <img class="materialboxed responsive-img" data-caption="Capiox® RX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/carousel-1.jpg">
+                            </div>
+                            <div class="carousel-item white-text" href="#dos!">
+                                <img class="materialboxed responsive-img" data-caption="Capiox® RX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/carousel-2.jpg">
+                            </div>
                         </div>
-                        <div class="carousel-item white-text" href="#dos!">
-                            <img class="materialboxed responsive-img" data-caption="Capiox® RX Sistemas de oxigenación" src="assets/img/solutions/cardiovascular/carousel-2.jpg">
-                        </div>
-                    </div>
+                    </section>
                 </div>
                 <div class="row">
                     <dl>

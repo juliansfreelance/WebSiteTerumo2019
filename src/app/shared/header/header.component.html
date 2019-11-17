@@ -43,9 +43,12 @@
             <li>
                 <a class="collapsible-header terumoOpenBold terumo-text">NOSOTROS<i class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
-                    <ul>
+                    <ul class="submenu">
+                        <li class="divider"></li>
                         <li><a (click)="goTo('')" class="sidenav-close">Acerca de nosotros</a></li>
+                        <li class="divider"></li>
                         <li><a (click)="goTo('red-global')" class="sidenav-close">Red Global</a></li>
+                        <li class="divider"></li>
                         <li><a (click)="goTo('resp-corporativa')" class="sidenav-close">Responsabilidad Corporativa</a></li>
                     </ul>
                 </div>
@@ -58,7 +61,8 @@
             <li>
                 <a class="collapsible-header terumoOpenBold terumo-text">SOLUCIONES<i class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
-                    <ul>
+                    <ul class="submenu">
+                        <li class="divider"></li>
                         <li><a class="sidenav-close">Intervencionismo</a></li>
                         <li class="divider"></li>
                         <li><a (click)="goTo('aortic')" class="sidenav-close">Aortic</a></li>
