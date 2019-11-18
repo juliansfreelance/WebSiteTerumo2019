@@ -1,0 +1,101 @@
+/*@START: Section 1*/
+.determinate {
+  background: #008f66;
+}
+ol li {
+  list-style-type: decimal !important;
+}
+
+/*Table*/
+.border-table th {
+  border: 1px solid #cececf;
+}
+
+.default-table th,
+tr td {
+  border: 2px solid #ececec !important;
+}
+
+thead tr th {
+  text-align: center;
+}
+
+/*@END: Section 1*/
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 1170px) {
+    .hide-on-large-and-down {
+        display: none !important;
+    }
+
+    .responsive-table-long .hide-on-large-only {
+        display: block !important;
+    }
+
+    table.responsive-table-long {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: block;
+        position: relative;
+        /* sort out borders */
+    }
+    table.responsive-table-long td:empty:before {
+        content: "\00a0";
+    }
+    table.responsive-table-long th,
+    table.responsive-table-long td {
+        margin: 0;
+        vertical-align: top;
+    }
+    table.responsive-table-long th {
+        text-align: left;
+    }
+    table.responsive-table-long thead {
+        display: block;
+        float: left;
+    }
+    table.responsive-table-long thead tr {
+        display: block;
+        padding: 0 10px 0 0;
+    }
+    table.responsive-table-long thead tr th::before {
+        content: "\00a0";
+    }
+    table.responsive-table-long tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    table.responsive-table-long tbody tr {
+        display: inline-block;
+        vertical-align: top;
+    }
+    table.responsive-table-long th {
+        display: block;
+        text-align: right;
+    }
+    table.responsive-table-long td {
+        display: block;
+        min-height: 1.25em;
+        text-align: left;
+    }
+    table.responsive-table-long tr {
+        border-bottom: none;
+        padding: 0 10px;
+    }
+    table.responsive-table-long thead {
+        border: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    table.responsive-table-long thead tr .center-content {
+        height: 1220px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+/*@END: Media Queries*/

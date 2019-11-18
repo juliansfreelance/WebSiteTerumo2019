@@ -72,6 +72,22 @@ import { CardiologiaIntervencionistaComponent } from './pages/solutions/interven
 import { ProdIntervCoronariaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/prod-interv-coronaria/prod-interv-coronaria.component';
 import { CateterGuiaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/cateter-guia/cateter-guia.component';
 import { BannerCardiologiaIntervComponent } from './pages/solutions/intervencionismo/shared/banner-cardiologia-interv/banner-cardiologia-interv.component';
+import { RunthoughNsComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/guia-ACTP/runthough-ns/runthough-ns.component';
+import { FinecrossComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-guia/microcateter-guia-coro/finecross/finecross.component';
+import { EliminateTmComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-de-aspiracion/eliminate-tm/eliminate-tm.component';
+import { RyujinPlusRxComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-balon-actp/ryujin-plus-rx/ryujin-plus-rx.component';
+import { AccuforceComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-interv-coronaria/cateter-balon-actp/accuforce/accuforce.component';
+import { StentsPerformaceComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/stents/stents-performace/stents-performace.component';
+import { UltimasterTmComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/stents/ultimaster-tm/ultimaster-tm.component';
+import { StentsComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/stents/stents/stents.component';
+import { GraficaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/stents/ultimaster-tm/shared/grafica/grafica.component';
+import { RadifocusComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/radifocus/radifocus.component';
+import { RadifocusMCoatComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/radifocus-m-coat/radifocus-m-coat.component';
+import { RadiofocusImgComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/shared/radiofocus-img/radiofocus-img.component';
+import { RadifocusGwMComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gw-m/radifocus-gw-m.component';
+import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-ot/radifocus-ot.component';
+import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
+import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
 
 @NgModule({
   declarations: [
@@ -137,7 +153,23 @@ import { BannerCardiologiaIntervComponent } from './pages/solutions/intervencion
     CardiologiaIntervencionistaComponent,
     ProdIntervCoronariaComponent,
     CateterGuiaComponent,
-    BannerCardiologiaIntervComponent
+    BannerCardiologiaIntervComponent,
+    RunthoughNsComponent,
+    FinecrossComponent,
+    EliminateTmComponent,
+    RyujinPlusRxComponent,
+    AccuforceComponent,
+    StentsPerformaceComponent,
+    UltimasterTmComponent,
+    StentsComponent,
+    GraficaComponent,
+    RadifocusComponent,
+    RadifocusMCoatComponent,
+    RadiofocusImgComponent,
+    RadifocusGwMComponent,
+    RadifocusOtComponent,
+    GlidenshSComponent,
+    ProdDiagIntroComponent
   ],
   imports: [
     BrowserModule,

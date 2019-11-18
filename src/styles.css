@@ -419,14 +419,20 @@ li {
     color: #c9cfd4 !important;
 }
 
+/*@START: Backgrond table color*/
+.bold-tittle-table {
+  border: 1px solid #CECECF;
+  background: #F6F6F6;
+}
+/*@END: Backgrond table color*/
 
 /*@START: Spacing*/
 
 .center-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-rounded-section {

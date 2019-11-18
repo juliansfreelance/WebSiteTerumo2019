@@ -8,16 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BannerCardiologiaIntervComponent implements OnInit {
 
   @Input() titulo = 'No hay un título disponible';
-  @Input() imagen = '../../../../../../assets/img/solutions/aortic/fenestrated.png';
+  @Input() imagen;
 
-  style = {
-    'background': 'url(' + this.imagen + '),linear-gradient(to right, white 5%, #008f66 120%)'
-  };
-
+  style: any; 
 
   constructor() { }
 
   ngOnInit() {
+    this.style = {
+      'background': 'url(../../../../../../assets/img/solutions/intervencionismo/' + this.imagen + '), '
+        + 'url(../../../../../../assets/img/solutions/intervencionismo/slider-fondo.png)'
+    };
   }
 
 }

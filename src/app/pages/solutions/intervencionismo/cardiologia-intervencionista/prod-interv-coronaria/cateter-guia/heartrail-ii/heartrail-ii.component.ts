@@ -11,7 +11,7 @@ export class HeartrailIiComponent implements OnInit {
   imagen: string;
   constructor() {
     this.titulo = 'Heartrail<sup>&reg;</sup> II – catéter guía ACTP';
-    this.imagen = '../../../../../../assets/img/solutions/aortic/fenestrated.png';
+    this.imagen = 'heartrail-II-product-image.png';
   }
 
   ngOnInit() {

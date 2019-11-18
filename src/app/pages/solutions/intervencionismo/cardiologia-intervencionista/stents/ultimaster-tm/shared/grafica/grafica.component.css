@@ -1,0 +1,11 @@
+.grafica-contenedor {
+  border: 1px solid #72ceb9;
+}
+.titulo-grafica {
+  background-color: #72ceb9;
+  top: 0;
+  padding: 2.5%;
+}
+.titulo-grafica > * {
+  margin: 0px;
+}

@@ -1,0 +1,39 @@
+/*@START: Section 1*/
+.determinate {
+  background: #008f66;
+}
+.eliminate-img {
+  height: 25vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/eliminate_technical_drawing.png);
+}
+ol li {
+  list-style-type: decimal !important;
+}
+
+/*Table*/
+.left-tittle {
+  border: 1px solid #cececf;
+  background: #f6f6f6;
+}
+tr td {
+  border: 2px solid #ececec !important;
+}
+/*@END: Section 1*/
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .eliminate-img {
+    height: 32vw;
+    background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/eliminate_technical_drawing-mobile.png);
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .eliminate-img {
+    height: 28vw;
+  }
+}
+/*@END: Media Queries*/

@@ -1,0 +1,14 @@
+.radiofocus-main-img {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/radifocus_Introducer_II_Standard_A_technical.png);
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .radiofocus-main-img {
+    background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/radifocus_Introducer_II_Standard_A_technical_mobile.png);
+  }
+}
+/*@END: Media Queries*/

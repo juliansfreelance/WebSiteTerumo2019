@@ -1,0 +1,33 @@
+.video-section-ultimaster .row .col {
+  margin-top: 5%;
+}
+
+/*@START: Section 1*/
+.determinate {
+  background: #008f66;
+}
+
+ol li {
+  list-style-type: decimal !important;
+}
+
+.row {
+  display: flex;
+}
+
+.row-exception {
+     display: inherit !important;
+}
+
+/*Table*/
+tr td {
+  border: 2px solid #ececec !important;
+}
+/*@END: Section 1*/
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .row {
+    display: initial;
+  }
+}
+/*@START: Media Queries*/
