@@ -1,0 +1,33 @@
+.nav-wrapper li {
+    list-style-type: none !important;
+}
+
+.submenu {
+    padding: 0px;
+}
+
+.submenu a {
+    padding: 14px 16px 14px 32px;
+    color: #26a69a;
+    border-bottom: 1px solid #ddd;
+}
+
+.navSubmenu ul li {
+    color: #26a69a;
+    background: #eeeeee;
+    border-bottom: 1px solid #ddd;
+}
+
+.navSubmenu ul li a {
+    color: #26a69a;
+    padding-left: 48px;
+}
+
+.submenu a:last-child,
+.navSubmenu ul li:last-child {
+    border: none;
+}
+
+.navSubmenu ul li:first-child {
+    border-top: 1px solid #ddd;
+}
