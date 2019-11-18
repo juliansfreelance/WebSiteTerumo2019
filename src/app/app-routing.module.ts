@@ -68,6 +68,8 @@ import { TrBandCaComponent } from './pages/solutions/intervencionismo/cardiologi
 import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-cierre-vasc/angio-sealt-cv/angio-sealt-cv.component';
 import { RadifocusGwAdvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/alambre-guia/radifocus-gw-adv/radifocus-gw-adv.component';
 import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor-guia/dest-igp/dest-igp.component';
+import { ProgreatMicrocComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/microcateter/progreat-microc/progreat-microc.component';
+import { RadifocusGwGtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gw-gt/radifocus-gw-gt.component';
 
 
 const routes: Routes = [
@@ -505,6 +507,10 @@ const routes: Routes = [
               {
                 path: 'radifocus-glidecath',
                 component: RadifocusGcComponent
+              },
+              {
+                path: 'radifocus-guidewire-gt',
+                component: RadifocusGwGtComponent
               }
             ]
           },
@@ -561,6 +567,20 @@ const routes: Routes = [
               {
                 path: 'destination-introductor-guia-periferico',
                 component: DestIgpComponent
+              }
+            ]
+          },
+          {
+            path: 'microcateter',
+            component: ProdDiagIntroComponent,
+            children: [
+              {
+                path: '',
+                component: ProgreatMicrocComponent
+              },
+              {
+                path: 'progreat-microcateter',
+                component: ProgreatMicrocComponent
               }
             ]
           }
