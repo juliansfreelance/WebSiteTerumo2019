@@ -63,6 +63,11 @@ import { RadifocusGwMComponent } from './pages/solutions/intervencionismo/cardio
 import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-ot/radifocus-ot.component';
 import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
 import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
+import { RadifocusGcComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gc/radifocus-gc.component';
+import { TrBandCaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-comp-art-rad/tr-band-ca/tr-band-ca.component';
+import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-cierre-vasc/angio-sealt-cv/angio-sealt-cv.component';
+import { RadifocusGwAdvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/alambre-guia/radifocus-gw-adv/radifocus-gw-adv.component';
+import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor-guia/dest-igp/dest-igp.component';
 
 
 const routes: Routes = [
@@ -475,7 +480,7 @@ const routes: Routes = [
               {
                 path: 'radifocus-m-coat',
                 component: RadifocusMCoatComponent
-              },{
+              }, {
                 path: 'glidensheath-slender',
                 component: GlidenshSComponent
               }
@@ -487,7 +492,7 @@ const routes: Routes = [
             children: [
               {
                 path: '',
-                component: RadifocusGwMComponent 
+                component: RadifocusGwMComponent
               },
               {
                 path: 'radifocus-guidewire-m',
@@ -496,6 +501,66 @@ const routes: Routes = [
               {
                 path: 'radifocus-optitorque',
                 component: RadifocusOtComponent
+              },
+              {
+                path: 'radifocus-glidecath',
+                component: RadifocusGcComponent
+              }
+            ]
+          },
+          {
+            path: 'dispositivo-de-compresion-de-arteria-radial',
+            component: ProdDiagIntroComponent,
+            children: [
+              {
+                path: '',
+                component: TrBandCaComponent
+              },
+              {
+                path: 'tr-band-disp-c-a-r',
+                component: TrBandCaComponent
+              }
+            ]
+          },
+          {
+            path: 'dispositivos-cierre-vascular',
+            component: ProdDiagIntroComponent,
+            children: [
+              {
+                path: '',
+                component: AngioSealtCvComponent
+              },
+              {
+                path: 'angio-seal',
+                component: AngioSealtCvComponent
+              }
+            ]
+          },
+          {
+            path: 'alambre-guia',
+            component: ProdDiagIntroComponent,
+            children: [
+              {
+                path: '',
+                component: RadifocusGwAdvComponent
+              },
+              {
+                path: 'radifocus-glidewire-advantage',
+                component: RadifocusGwAdvComponent
+              }
+            ]
+          },
+          {
+            path: 'introductor-guia',
+            component: ProdDiagIntroComponent,
+            children: [
+              {
+                path: '',
+                component: DestIgpComponent
+              },
+              {
+                path: 'destination-introductor-guia-periferico',
+                component: DestIgpComponent
               }
             ]
           }

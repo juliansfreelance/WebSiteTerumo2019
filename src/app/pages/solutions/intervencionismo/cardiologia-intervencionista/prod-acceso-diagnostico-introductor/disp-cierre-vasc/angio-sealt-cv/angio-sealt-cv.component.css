@@ -1,0 +1,53 @@
+/*General settings*/
+ol li {
+  list-style-type: decimal !important;
+  font-weight: bold;
+}
+
+li > * {
+  font-weight: normal;
+}
+/*Table*/
+tr th {
+  text-align: center;
+}
+tr td,
+tr th {
+  border: 2px solid #ececec !important;
+}
+/*Images*/
+.img-content {
+  flex-flow: row;
+}
+.img-locacion,
+.img-fijacion,
+.img-f-sello {
+  height: 225px;
+  background-repeat: no-repeat;
+  background-position: left 66% center;
+  background-size: cover;
+}
+
+.img-locacion {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/angioseal_localizacion_1.png);
+}
+
+.img-fijacion {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/angioseal_fijacion_2.png);
+}
+
+.img-f-sello {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/angioseal_sellado_3.png);
+}
+/*START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .img-content {
+    flex-flow: column;
+  }
+  .img-locacion,
+  .img-fijacion,
+  .img-f-sello {
+    background-size: contain;
+  }
+}
+/*END: Media Queries*/

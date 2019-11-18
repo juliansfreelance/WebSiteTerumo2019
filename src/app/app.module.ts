@@ -88,6 +88,12 @@ import { RadifocusGwMComponent } from './pages/solutions/intervencionismo/cardio
 import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-ot/radifocus-ot.component';
 import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
 import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
+import { RadifocusGcComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gc/radifocus-gc.component';
+import { TrBandCaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-comp-art-rad/tr-band-ca/tr-band-ca.component';
+import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-cierre-vasc/angio-sealt-cv/angio-sealt-cv.component';
+import { RadifocusGwAdvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/alambre-guia/radifocus-gw-adv/radifocus-gw-adv.component';
+import { ProgreatMicrocComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/microcateter/progreat-microc/progreat-microc.component';
+import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor-guia/dest-igp/dest-igp.component';
 
 @NgModule({
   declarations: [
@@ -169,7 +175,13 @@ import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardi
     RadifocusGwMComponent,
     RadifocusOtComponent,
     GlidenshSComponent,
-    ProdDiagIntroComponent
+    ProdDiagIntroComponent,
+    RadifocusGcComponent,
+    TrBandCaComponent,
+    AngioSealtCvComponent,
+    RadifocusGwAdvComponent,
+    ProgreatMicrocComponent,
+    DestIgpComponent
   ],
   imports: [
     BrowserModule,
