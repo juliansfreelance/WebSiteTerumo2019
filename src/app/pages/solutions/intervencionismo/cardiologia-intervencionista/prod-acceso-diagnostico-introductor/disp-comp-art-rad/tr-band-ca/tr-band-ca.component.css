@@ -3,9 +3,7 @@ ol li {
   list-style-type: decimal !important;
   font-weight: bold;
 }
-ul {
-  color: #039be5;
-}
+
 li > * {
   font-weight: normal;
 }
@@ -24,9 +22,6 @@ tr th {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .second-table {
-    height: 83px;
   }
 }
 /*@END: Media Queries*/
