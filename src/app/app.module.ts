@@ -88,6 +88,7 @@ import { RadifocusGwMComponent } from './pages/solutions/intervencionismo/cardio
 import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-ot/radifocus-ot.component';
 import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
 import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
+import { HeaderAorticComponent } from './shared/header-aortic/header-aortic.component';
 import { RadifocusGcComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gc/radifocus-gc.component';
 import { TrBandCaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-comp-art-rad/tr-band-ca/tr-band-ca.component';
 import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-cierre-vasc/angio-sealt-cv/angio-sealt-cv.component';
@@ -177,6 +178,7 @@ import { RadifocusGwGtComponent } from './pages/solutions/intervencionismo/cardi
     RadifocusOtComponent,
     GlidenshSComponent,
     ProdDiagIntroComponent,
+    HeaderAorticComponent,
     RadifocusGcComponent,
     TrBandCaComponent,
     AngioSealtCvComponent,
