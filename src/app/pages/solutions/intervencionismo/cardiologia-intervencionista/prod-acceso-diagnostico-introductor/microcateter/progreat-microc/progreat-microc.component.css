@@ -1,0 +1,64 @@
+.progreat-img,
+.microcateter-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.progreat-img {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/progreat_technical_details.png);
+  height: 42vw;
+}
+.microcateter-img {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/progreat_technical_drawing_2.png);
+  height: 12vw;
+}
+/*General settigns*/
+ol li {
+  list-style-type: decimal !important;
+  font-weight: bold;
+}
+ul {
+  color: #039be5;
+}
+li > * {
+  font-weight: normal;
+}
+/*Table*/
+tr th {
+  text-align: center;
+}
+tr td,
+tr th {
+  border: 2px solid #ececec !important;
+}
+
+/*START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .progreat-img {
+    background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/progreat_technical_details_mobile.png);
+  }
+  .microcateter-img {
+    background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/progreat_technical_drawing_mobile.png);
+  }
+  /*Table*/
+  .second-table thead {
+    width: 50%;
+  }
+  .second-table thead tr th {
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  tr th {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1125px){
+    .second-table{
+        margin-left: -14vw;
+    }
+}
+/*END: Media Queries*/

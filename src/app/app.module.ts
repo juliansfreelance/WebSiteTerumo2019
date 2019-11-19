@@ -95,6 +95,7 @@ import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardio
 import { RadifocusGwAdvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/alambre-guia/radifocus-gw-adv/radifocus-gw-adv.component';
 import { ProgreatMicrocComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/microcateter/progreat-microc/progreat-microc.component';
 import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor-guia/dest-igp/dest-igp.component';
+import { RadifocusGwGtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gw-gt/radifocus-gw-gt.component';
 
 @NgModule({
   declarations: [
@@ -183,7 +184,8 @@ import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia
     AngioSealtCvComponent,
     RadifocusGwAdvComponent,
     ProgreatMicrocComponent,
-    DestIgpComponent
+    DestIgpComponent,
+    RadifocusGwGtComponent
   ],
   imports: [
     BrowserModule,
