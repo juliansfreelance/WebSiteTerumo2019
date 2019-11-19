@@ -1,0 +1,71 @@
+/*Imagenes*/
+.img-grafica-1,
+.img-grafica-2,
+.img-grafica-3,
+.img-grafica-4,
+.img-grafica-5,
+.img-grafica-6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 22vw;
+}
+.img-grafica-1 {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/lifepearl-g-1.png);
+}
+.img-grafica-2 {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/lifepearl-g-2.png);
+}
+.img-grafica-3 {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/lifepearl-g-3.png);
+}
+.img-grafica-4 {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/lifepearl-g-4.png);
+}
+.img-grafica-5 {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/lifepearl-g-5.png);
+}
+.img-grafica-6 {
+  background-image: url(../../../../../../../../assets/img/solutions/intervencionismo/lifepearl-g-6.png);
+}
+/*General settigns*/
+ol li {
+  list-style-type: decimal !important;
+  font-weight: bold;
+}
+ul {
+  color: #039be5;
+}
+li > * {
+  font-weight: normal;
+}
+/*Table*/
+tr th {
+  text-align: center;
+}
+tr td,
+tr th {
+  border: 2px solid #ececec !important;
+}
+
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .img-grafica-1,
+  .img-grafica-2,
+  .img-grafica-3,
+  .img-grafica-4,
+  .img-grafica-5,
+  .img-grafica-6 {
+    height: 48vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  tr th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*@END: Media Queries*/
