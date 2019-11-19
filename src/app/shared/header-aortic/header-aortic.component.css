@@ -31,3 +31,23 @@
 .navSubmenu ul li:first-child {
     border-top: 1px solid #ddd;
 }
+
+.collapsible li .principal {
+    padding: 0 16px !important;
+}
+
+.collapsible li .secundario {
+    padding: 0 32px !important;
+}
+
+.collapsible li .secundario i {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.collapsible li .secundario-item ul li {
+    cursor: pointer;
+}
+
+.collapsible li .secundario-item ul li a {
+    color: #363636;
+}
