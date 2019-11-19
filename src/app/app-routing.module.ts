@@ -121,7 +121,7 @@ const routes: Routes = [
       //END Avance
     ]
   },
-  //@START Avance 18 de Octubre 
+  //@START Avance 18 de Octubre
   {
     path: 'corazon-pulmon',
     component: CorazonPulmonComponent,
@@ -345,7 +345,7 @@ const routes: Routes = [
       }
     ]
   },
-  //@END Avance 21 de Octubre  
+  //@END Avance 21 de Octubre
   {
     path: 'cardiologia-intervencionista',
     component: CardiologiaIntervencionistaComponent,
@@ -487,7 +487,7 @@ const routes: Routes = [
             children: [
               {
                 path: '',
-                component: RadifocusGwMComponent 
+                component: RadifocusGwMComponent
               },
               {
                 path: 'radifocus-guidewire-m',
