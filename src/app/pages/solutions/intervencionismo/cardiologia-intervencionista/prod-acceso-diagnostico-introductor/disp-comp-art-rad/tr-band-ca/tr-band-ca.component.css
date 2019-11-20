@@ -1,0 +1,27 @@
+/*General settigns*/
+ol li {
+  list-style-type: decimal !important;
+  font-weight: bold;
+}
+
+li > * {
+  font-weight: normal;
+}
+/*Table*/
+tr th {
+  text-align: center;
+}
+tr td,
+tr th {
+  border: 2px solid #ececec !important;
+}
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 992px) {
+  tr th {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*@END: Media Queries*/
