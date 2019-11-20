@@ -4,6 +4,17 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    user-zoom: none;
+    user-select: none;
+}
+
 .terumo.lighten {
     background-color: #82c7b2 !important;
 }
