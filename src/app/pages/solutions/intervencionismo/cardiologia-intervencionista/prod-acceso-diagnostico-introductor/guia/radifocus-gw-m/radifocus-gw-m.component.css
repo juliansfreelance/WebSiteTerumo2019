@@ -1,33 +1,32 @@
 /*General settigns*/
 ol li {
-    list-style-type: decimal !important;
-    font-weight: bold;
-  }
-  ul {
-    color: #039be5;
-  }
-  li > * {
-    font-weight: normal;
-  }
-  /*Table*/
+  list-style-type: decimal !important;
+  font-weight: bold;
+}
+ul {
+  color: #039be5;
+}
+li > * {
+  font-weight: normal;
+}
+/*Table*/
+tr th {
+  text-align: center;
+}
+tr td,
+tr th {
+  border: 2px solid #ececec !important;
+}
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 992px) {
   tr th {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  tr td,
-  tr th {
-    border: 2px solid #ececec !important;
+  .second-table {
+    height: 83px;
   }
-  
-  /*@START: Media Queries*/
-  @media only screen and (max-width: 992px) {
-    tr th {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .second-table {
-      height: 83px;
-    }
-  }
-  /*@END: Media Queries*/
-  
+}
+/*@END: Media Queries*/

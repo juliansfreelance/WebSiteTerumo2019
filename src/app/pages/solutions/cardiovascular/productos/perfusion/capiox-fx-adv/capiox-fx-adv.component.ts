@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from 'src/assets/js/materialize.min.js';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-capiox-fx-adv',
@@ -9,7 +10,7 @@ import * as M from 'src/assets/js/materialize.min.js';
 export class CapioxFxAdvComponent implements OnInit {
   carousel;
   visibleNav = false;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     M.Carousel.init(document.querySelectorAll('.carousel.carousel-slider'), {
@@ -17,17 +18,18 @@ export class CapioxFxAdvComponent implements OnInit {
       indicators: false,
     });
     this.carousel = M.Carousel.getInstance(document.querySelector('.carousel.carousel-slider'));
-    M.Materialbox.init(document.querySelectorAll('.materialboxed'), {onOpenStart: () => {
-      this.carousel.destroy();
-      this.visibleNav = true;
-    }, onCloseEnd: () => {
-      this.carousel = M.Carousel.init(document.querySelector('.carousel.carousel-slider'), {
-        fullWidth: true,
-        indicators: false,
-      });
-      this.visibleNav = false;
-    }
-  });
+    M.Materialbox.init(document.querySelectorAll('.materialboxed'), {
+      onOpenStart: () => {
+        this.carousel.destroy();
+        this.visibleNav = true;
+      }, onCloseEnd: () => {
+        this.carousel = M.Carousel.init(document.querySelector('.carousel.carousel-slider'), {
+          fullWidth: true,
+          indicators: false,
+        });
+        this.visibleNav = false;
+      }
+    });
   }
 
   next() {
@@ -35,6 +37,11 @@ export class CapioxFxAdvComponent implements OnInit {
   }
   prev() {
     this.carousel.prev();
+  }
+
+  goTo(texto: string) {
+    this.router.navigate([texto]);
+    window.scroll(0, 0);
   }
 
 }
