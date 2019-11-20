@@ -89,19 +89,6 @@ import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiol
 import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
 import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
 import { HeaderAorticComponent } from './shared/header-aortic/header-aortic.component';
-import { RadifocusGcComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gc/radifocus-gc.component';
-import { TrBandCaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-comp-art-rad/tr-band-ca/tr-band-ca.component';
-import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-cierre-vasc/angio-sealt-cv/angio-sealt-cv.component';
-import { RadifocusGwAdvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/alambre-guia/radifocus-gw-adv/radifocus-gw-adv.component';
-import { ProgreatMicrocComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/microcateter/progreat-microc/progreat-microc.component';
-import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor-guia/dest-igp/dest-igp.component';
-import { RadifocusGwGtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gw-gt/radifocus-gw-gt.component';
-import { HydropearlMceComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/tratamiento-locorregional/embolizacion-transarterial/hydropearl-mce/hydropearl-mce.component';
-import { LifepearlMeComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/tratamiento-locorregional/microesferas-lib-med/lifepearl-me/lifepearl-me.component';
-import { DispMedInfComponent } from './pages/solutions/disp-med-infusion/disp-med-inf/disp-med-inf.component';
-import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/sis-av-infusion/sis-av-infusion.component';
-import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
-import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/banner-infusion/banner-infusion.component';
 
 @NgModule({
   declarations: [
@@ -184,20 +171,7 @@ import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis
     RadifocusOtComponent,
     GlidenshSComponent,
     ProdDiagIntroComponent,
-    HeaderAorticComponent,
-    RadifocusGcComponent,
-    TrBandCaComponent,
-    AngioSealtCvComponent,
-    RadifocusGwAdvComponent,
-    ProgreatMicrocComponent,
-    DestIgpComponent,
-    RadifocusGwGtComponent,
-    HydropearlMceComponent,
-    LifepearlMeComponent,
-    DispMedInfComponent,
-    SisAvInfusionComponent,
-    TerufusionBiSmComponent,
-    BannerInfusionComponent
+    HeaderAorticComponent
   ],
   imports: [
     BrowserModule,

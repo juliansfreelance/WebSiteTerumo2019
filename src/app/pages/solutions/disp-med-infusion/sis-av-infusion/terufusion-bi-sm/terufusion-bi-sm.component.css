@@ -1,29 +1,3 @@
 .determinate {
-  background-color: #4358a7;
+    background-color: blue;
 }
-
-.buttons-row {
-  display: flex;
-  flex-flow: row wrap;
-  align-self: stretch;
-  height: 115px;
-}
-
-.btn {
-  margin: auto;
-  border-radius: 15px;
-  padding: 3% 6%;
-  margin-top: 2%;
-}
-
-/*@START: Media Queries*/
-@media only screen and (max-width: 600px) {
-  .btn {
-    padding: 6% 8%;
-  }
-  .buttons-row {
-    height: initial;
-    margin-bottom: 6%;
-  }
-}
-/*@END: Media Queries*/
