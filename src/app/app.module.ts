@@ -102,6 +102,7 @@ import { DispMedInfComponent } from './pages/solutions/disp-med-infusion/disp-me
 import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/sis-av-infusion/sis-av-infusion.component';
 import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
 import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/banner-infusion/banner-infusion.component';
+import { HeaderInterComponent } from './shared/header-inter/header-inter.component';
 
 @NgModule({
   declarations: [
@@ -197,7 +198,8 @@ import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis
     DispMedInfComponent,
     SisAvInfusionComponent,
     TerufusionBiSmComponent,
-    BannerInfusionComponent
+    BannerInfusionComponent,
+    HeaderInterComponent
   ],
   imports: [
     BrowserModule,
