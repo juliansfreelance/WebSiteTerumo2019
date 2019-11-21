@@ -16,6 +16,19 @@
   margin-top: 2%;
 }
 
+.space-between {
+  height: 50px;
+}
+
+.space-between::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: #4358a7;
+  transform: skewY(-2deg);
+}
+
 /*@START: Media Queries*/
 @media only screen and (max-width: 600px) {
   .btn {

@@ -1,6 +1,6 @@
 .linea::after {
   content: "";
-  height: 3px;
+  height: 5px;
   width: 100%;
   background-color: #4358a7;
   position: absolute;
@@ -23,18 +23,6 @@
 .center-content {
   align-items: flex-start;
   padding: 0% 5%;
-}
-
-.infusion-banner::after {
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 100%;
-  background-color: #4358a7;
-  transform: skewY(-2deg);
-}
-.space-between {
-  height: 50px;
 }
 
 /*@START: Media Queries*/

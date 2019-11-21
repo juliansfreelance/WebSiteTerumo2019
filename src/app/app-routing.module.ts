@@ -75,6 +75,7 @@ import { LifepearlMeComponent } from './pages/solutions/intervencionismo/cardiol
 import { DispMedInfComponent } from './pages/solutions/disp-med-infusion/disp-med-inf/disp-med-inf.component';
 import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/sis-av-infusion/sis-av-infusion.component';
 import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
+import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/videos-infusion/videos-infusion.component';
 
 
 const routes: Routes = [
@@ -650,6 +651,14 @@ const routes: Routes = [
           {
             path:'terufusion-bomba-infusion-sm',
             component: TerufusionBiSmComponent
+          },
+          {
+            path: 'videos-infusion',
+            component: VideosInfusionComponent
+          },
+          {
+            path: 'videos-infusion/:id',
+            component: VideosInfusionComponent
           }
         ]
       }
