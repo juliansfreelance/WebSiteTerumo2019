@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-terufusion-bi-sm',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TerufusionBiSmComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-
+  goTo(dir: string, id: string){
+    this.router.navigate([dir, id]);
+    window.scroll(0,0)
+  }
 }

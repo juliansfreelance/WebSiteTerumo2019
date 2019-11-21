@@ -18,6 +18,7 @@ export class HeaderAorticComponent implements OnInit {
     M.Collapsible.init( document.querySelectorAll('.collapsible'), {} );
     M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), { constrainWidth: false, coverTrigger: false, closeOnClick: false } );
   }
+  
   goTo(texto: string) {
     this.router.navigate([texto]);
     window.scroll(0, 0);

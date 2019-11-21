@@ -1,0 +1,13 @@
+.header-videos {
+  padding: 4%;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #f2f2f3;
+  text-align: center;
+  border: 1px solid #cec9c9;
+}
+.content-videos {
+  background: #808080;
+  color: white;
+  height: 500px;
+  overflow-y: scroll;
+}
