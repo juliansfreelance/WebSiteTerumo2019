@@ -16,13 +16,18 @@ header {
     z-index: 1;
 }
 
+.container {
+    width: 70%;
+    z-index: 999 !important;
+}
+
 .background-skyleft {
     background-color: #fafafa;
-    background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url();
+    /* background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg); */
     background-blend-mode: normal;
-    background-size: 100%, auto 80%;
+    background-size: 100%, auto 90%;
     background-repeat: no-repeat;
-    background-position: 90% center;
+    background-position: center, 90% 50%;
 }
 
 .skyleft {
@@ -54,18 +59,81 @@ header {
     align-items: center;
     position: relative;
     height: 480px;
-    margin: 0 auto -32px;
+    margin: 0 auto auto;
     padding: -60px 0 0 0;
     color: #fff;
+}
+
+.texto {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50% -50%);
+}
+
+.progress {
+    margin: 30px 0px;
+}
+
+.progress .terumo {
+    background-color: #D32B2A !important;
+}
+
+.carousel .indicators {
+    z-index: -1;
+}
+
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    background-color: rgba(15, 150, 150, 0.5);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #fff;
+}
+
+.terumo-red {
+    color: #D32B2A;
+    font-size: 16px;
+}
+
+.publi {
+    border-left: 4px solid #82c7b2;
+    padding-left: 8px;
+}
+
+dl dd {
+    color: #363636;
+}
+
+sup,
+sub {
+    z-index: 0;
+}
+
+dl dd:before {
+    content: '•';
+    position: absolute;
+    margin-left: -20px;
+    margin-right: 0px;
+    z-index: 0;
 }
 
 @media only screen and (min-width: 1024px) {
     .background-skyleft {
         background-color: #fafafa;
-        background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url();
-        background-size: 100%, auto 90%;
+        /* background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg); */
+        background-blend-mode: normal, multiply, normal;
+        background-size: 100%, auto 95%, auto 160%;
         background-repeat: no-repeat;
-        background-position: 90% center;
+        background-position: center, 70% 50%, 99% 140%;
     }
     .skyleft {
         -webkit-transform: skewY(3deg);
@@ -78,14 +146,13 @@ header {
 @media only screen and (max-width: 600px) {
     .background-skyleft {
         background-color: rgba(49, 128, 106, 0.5);
-        background: rgba(0, 89, 64, .7), url();
+        /* background: rgba(0, 89, 64, .7), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg); */
         background-blend-mode: multiply;
-        background-size: 100%, auto 90%;
-        background-position: bottom center;
+        background-size: 100%, contain;
     }
     .skyleft {
-        height: 290px;
-        border: none;
+        height: 300px;
+        border-bottom: 5px solid #D32B2A;
     }
     .intro {
         display: -webkit-flex;
@@ -99,17 +166,20 @@ header {
         text-align: center !important;
         margin-top: -40px;
     }
-}
 
-.responsive-img {
-    margin-top: 5%;
-}
+    .section {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
 
-.progress .determinate {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #d32b2a;
-    transition: width 0.3s linear;
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .title {
+        color: #fff !important;
+        
+    }
 }

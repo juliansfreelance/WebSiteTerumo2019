@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderCardioComponent implements OnInit {
 
-  textoHeader = '';
+  textoHeader ='';
 
   constructor( private router: Router ) { }
 

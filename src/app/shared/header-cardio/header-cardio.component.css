@@ -31,3 +31,11 @@
 .navSubmenu ul li:first-child {
     border-top: 1px solid #ddd;
 }
+
+.dropdown-content {
+    width: auto !important;
+}
+
+.sidenav li>a {
+    padding: 0 16px !important;
+}
