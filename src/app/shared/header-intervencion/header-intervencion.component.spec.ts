@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderInterComponent } from './header-inter.component';
+import { HeaderIntervencionComponent } from './header-intervencion.component';
 
-describe('HeaderInterComponent', () => {
-  let component: HeaderInterComponent;
-  let fixture: ComponentFixture<HeaderInterComponent>;
+describe('HeaderIntervencionComponent', () => {
+  let component: HeaderIntervencionComponent;
+  let fixture: ComponentFixture<HeaderIntervencionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderInterComponent ]
+      declarations: [ HeaderIntervencionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeaderInterComponent);
+    fixture = TestBed.createComponent(HeaderIntervencionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
