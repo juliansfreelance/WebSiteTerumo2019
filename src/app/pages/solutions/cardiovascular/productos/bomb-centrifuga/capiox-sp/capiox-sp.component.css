@@ -19,23 +19,25 @@ header {
     position: relative;
     display: block;
     z-index: 1;
+    overflow: hidden;
 }
 
 .container {
-    width: 70%;
-    z-index: 999 !important;
+    z-index: 9999;
 }
 
 .background-skyleft {
     background-color: #fafafa;
-    /* background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg); */
+    background: linear-gradient(300deg, #eee0 20%, #f0eff0 70%), url(../../../../../../../assets/img/solutions/cardiovascular/capiox_back.png);
     background-blend-mode: normal;
-    background-size: 100%, auto 90%;
+    background-size: auto, auto 100%;
     background-repeat: no-repeat;
-    background-position: center, 90% 50%;
+    background-position: right;
 }
 
 .skyleft {
+    /* background: url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png), linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden; */
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -46,7 +48,7 @@ header {
     align-items: center;
     position: absolute;
     width: 100%;
-    height: 480px;
+    height: 100%;
     box-sizing: border-box;
     padding: 48px 48px 32px;
     overflow: hidden;
@@ -58,87 +60,27 @@ header {
 }
 
 .intro {
+    /* background: url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
+    overflow: hidden; */
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
     align-items: center;
     position: relative;
     height: 480px;
-    margin: 0 auto auto;
+    margin: 0 auto -32px;
     padding: -60px 0 0 0;
     color: #fff;
-}
-
-.texto {
-    margin-left: 50%;
-    margin-top: 50%;
-    transform: translate(-50% -50%);
-}
-
-.progress {
-    margin: 30px 0px;
-}
-
-.progress .terumo {
-    background-color: #D32B2A !important;
-}
-
-.carousel .indicators {
-    z-index: -1;
-}
-
-.carousel .indicators .indicator-item {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 24px 4px;
-    background-color: rgba(15, 150, 150, 0.5);
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    border-radius: 50%;
-}
-
-.carousel .indicators .indicator-item.active {
-    background-color: #fff;
-}
-
-.terumo-red {
-    color: #D32B2A;
-    font-size: 16px;
-}
-
-.publi {
-    border-left: 4px solid #82c7b2;
-    padding-left: 8px;
-}
-
-dl dd {
-    color: #363636;
-}
-
-sup,
-sub {
-    z-index: 0;
-}
-
-dl dd:before {
-    content: '•';
-    position: absolute;
-    margin-left: -20px;
-    margin-right: 0px;
-    z-index: 0;
 }
 
 @media only screen and (min-width: 1024px) {
     .background-skyleft {
         background-color: #fafafa;
-        /* background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg); */
-        background-blend-mode: normal, multiply, normal;
-        background-size: 100%, auto 95%, auto 160%;
+        background: linear-gradient(300deg, #eee0 20%, #f0eff0 70%), url(../../../../../../../assets/img/solutions/cardiovascular/capiox_back.png);
+        background-size: auto, auto 100%;
         background-repeat: no-repeat;
-        background-position: center, 70% 50%, 99% 140%;
+        background-position: 90% center;
+        background-position: right;
     }
     .skyleft {
         -webkit-transform: skewY(3deg);
@@ -150,13 +92,15 @@ dl dd:before {
 
 @media only screen and (max-width: 600px) {
     .background-skyleft {
-        background-color: rgba(49, 128, 106, 0.5);
-        /* background: rgba(0, 89, 64, .7), url(../../../../../../../assets/img/solutions/cardiovascular/perfusion-1.jpg); */
+        background-color: #757575c7;
+        background: #757575c7, url(../../../../../../../assets/img/solutions/cardiovascular/capiox_back.png);
         background-blend-mode: multiply;
-        background-size: 100%, contain;
+        background-size: 100%, auto 130%;
+        background-position: bottom center;
     }
     .skyleft {
-        height: 300px;
+        height: 100%;
+        border: none;
         border-bottom: 5px solid #D32B2A;
     }
     .intro {
@@ -166,21 +110,25 @@ dl dd:before {
         align-items: center;
         height: 300px;
     }
-    .intro h4 {
+    .intro h3 {
         color: #fff!important;
         text-align: center !important;
         margin-top: -40px;
     }
-    .section {
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+    .row .col {
+        padding: 0 4rem;
     }
-    img {
-        height: 300px;
-        width: 100%;
-        object-fit: cover;
-    }
-    .title {
-        color: #fff !important;
-    }
+}
+
+.responsive-img {
+    margin-top: 5%;
+}
+
+.progress .determinate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #d32b2a;
+    transition: width 0.3s linear;
 }
