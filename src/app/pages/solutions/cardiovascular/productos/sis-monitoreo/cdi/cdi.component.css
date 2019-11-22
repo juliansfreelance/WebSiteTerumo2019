@@ -4,16 +4,22 @@ header {
     z-index: 1;
 }
 
+.container {
+    z-index: 9999;
+}
+
 .background-skyleft {
     background-color: #fafafa;
-    background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
+    background: linear-gradient(45deg, #eee0 -30%, #f0eff0 80%), url(../../../../../../../assets/img/solutions/cardiovascular/header_CDI_550.png);
     background-blend-mode: normal;
-    background-size: 100%, auto 80%;
+    background-size: auto, auto 100%;
     background-repeat: no-repeat;
-    background-position: 90% center;
+    background-position: left;
 }
 
 .skyleft {
+    /* background: url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png), linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden; */
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -36,6 +42,8 @@ header {
 }
 
 .intro {
+    /* background: url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
+    overflow: hidden; */
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: center;
@@ -50,10 +58,11 @@ header {
 @media only screen and (min-width: 1024px) {
     .background-skyleft {
         background-color: #fafafa;
-        background: linear-gradient(45deg, rgba(255, 255, 255, .9) 20%, rgba(255, 255, 255, 0) 100%), url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
-        background-size: 100%, auto 90%;
+        background: linear-gradient(45deg, #eee0 20%, #f0eff0 70%), url(../../../../../../../assets/img/solutions/cardiovascular/header_CDI_550.png);
+        background-size: auto, auto 100%;
         background-repeat: no-repeat;
         background-position: 90% center;
+        background-position: left;
     }
     .skyleft {
         -webkit-transform: skewY(3deg);
@@ -65,15 +74,16 @@ header {
 
 @media only screen and (max-width: 600px) {
     .background-skyleft {
-        background-color: rgba(49, 128, 106, 0.5);
-        background: rgba(0, 89, 64, .7), url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
+        background-color: #757575c7;
+        background: #757575c7, url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
         background-blend-mode: multiply;
-        background-size: 100%, auto 90%;
+        background-size: 100%, auto 130%;
         background-position: bottom center;
     }
     .skyleft {
         height: 290px;
         border: none;
+        border-bottom: 5px solid #D32B2A;
     }
     .intro {
         display: -webkit-flex;
