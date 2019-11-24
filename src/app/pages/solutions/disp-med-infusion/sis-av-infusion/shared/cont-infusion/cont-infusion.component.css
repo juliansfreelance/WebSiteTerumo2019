@@ -1,0 +1,42 @@
+.determinate {
+  background-color: #4358a7;
+}
+
+.buttons-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: stretch;
+  height: 115px;
+}
+
+.btn {
+  margin: auto;
+  border-radius: 15px;
+  padding: 3% 6%;
+  margin-top: 2%;
+}
+
+.space-between {
+  height: 50px;
+}
+
+.space-between::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: #4358a7;
+  transform: skewY(-2deg);
+}
+
+/*@START: Media Queries*/
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 6% 8%;
+  }
+  .buttons-row {
+    height: initial;
+    margin-bottom: 6%;
+  }
+}
+/*@END: Media Queries*/

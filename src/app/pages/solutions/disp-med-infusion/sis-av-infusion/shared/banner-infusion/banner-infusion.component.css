@@ -1,17 +1,9 @@
-.linea::after {
-  content: "";
-  height: 5px;
-  width: 100%;
-  background-color: #4358a7;
-  position: absolute;
-}
-
 .infusion-banner {
-  background: url(../../../../../../../assets/img/solutions/infusion/terufusion-infusion-pump-smart-midpress-product-image.png);
+  /*background: url(../../../../../../../assets/img/solutions/infusion/terufusion-infusion-pump-smart-midpress-product-image.png);*/
   height: 400px;
-  background-position: right center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-position: right center !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 
 .row,

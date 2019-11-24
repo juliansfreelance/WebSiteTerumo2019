@@ -76,13 +76,22 @@ import { DispMedInfComponent } from './pages/solutions/disp-med-infusion/disp-me
 import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/sis-av-infusion/sis-av-infusion.component';
 import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
 import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/videos-infusion/videos-infusion.component';
+import { TerufusionBjsComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bjs/terufusion-bjs.component';
+import { AccesoComponent } from './pages/solutions/disp-med-infusion/acceso/acceso/acceso.component';
+import { SurflashComponent } from './pages/solutions/disp-med-infusion/acceso/surflash/surflash.component';
+import { SurfloComponent } from './pages/solutions/disp-med-infusion/acceso/surflo/surflo.component';
+import { InyeccionComponent } from './pages/solutions/disp-med-infusion/inyeccion/inyeccion/inyeccion.component';
+import { AgujasHipoComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-hipo/agujas-hipo.component';
+import { AgujasDentComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-dent/agujas-dent.component';
+import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion/jeringas/jeringas.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: InicioComponent,
-    pathMatch: 'full'
+    pathMatch: 'full',
+    outlet: ""
   },
   {
     path: 'red-global',
@@ -633,9 +642,9 @@ const routes: Routes = [
     ]
   },
   {
-    path:'dispositivo-medico-infusion',
+    path: 'dispositivo-medico-infusion',
     component: DispMedInfComponent,
-    children:[
+    children: [
       {
         path: '',
         component: SisAvInfusionComponent
@@ -643,22 +652,66 @@ const routes: Routes = [
       {
         path: 'sistema-avanzado-infusion',
         component: SisAvInfusionComponent,
-        children:[ 
+        children: [
           {
-            path:'',
+            path: '',
             component: TerufusionBiSmComponent
           },
           {
-            path:'terufusion-bomba-infusion-sm',
+            path: 'terufusion-bomba-infusion-smart',
             component: TerufusionBiSmComponent
+          },
+          {
+            path: 'terufusion-bomba-jeringa-smart',
+            component: TerufusionBjsComponent
           },
           {
             path: 'videos-infusion',
             component: VideosInfusionComponent
           },
           {
-            path: 'videos-infusion/:id',
+            path: 'videos-infusion/:id/:type',
             component: VideosInfusionComponent
+          }
+        ]
+      },
+      {
+        path: 'acceso-v',
+        component: AccesoComponent,
+        children: [
+          {
+            path: '',
+            component: SurflashComponent
+          },
+          {
+            path: 'surflash',
+            component: SurflashComponent
+          },
+          {
+            path: 'surflo',
+            component: SurfloComponent
+          }
+        ]
+      },
+      {
+        path: 'inyeccion',
+        component: InyeccionComponent,
+        children: [
+          {
+            path: '',
+            component: AgujasHipoComponent
+          },
+          {
+            path: 'agujas-hipodermicas-s',
+            component: AgujasHipoComponent
+          },
+          {
+            path: 'agujas-dentales',
+            component: AgujasDentComponent
+          },
+          {
+            path: 'jeringas',
+            component: JeringasComponent
           }
         ]
       }
