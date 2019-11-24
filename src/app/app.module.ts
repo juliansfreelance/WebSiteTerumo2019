@@ -103,6 +103,7 @@ import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-
 import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
 import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/banner-infusion/banner-infusion.component';
 import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/videos-infusion/videos-infusion.component';
+import { HeaderInfusionComponent } from './shared/header-infusion/header-infusion.component';
 
 @NgModule({
   declarations: [
@@ -199,7 +200,8 @@ import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis
     SisAvInfusionComponent,
     TerufusionBiSmComponent,
     BannerInfusionComponent,
-    VideosInfusionComponent
+    VideosInfusionComponent,
+    HeaderInfusionComponent
   ],
   imports: [
     BrowserModule,

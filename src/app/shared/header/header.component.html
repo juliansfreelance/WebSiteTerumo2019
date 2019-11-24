@@ -63,13 +63,13 @@
                 <div class="collapsible-body">
                     <ul class="submenu">
                         <li class="divider"></li>
-                        <li><a class="sidenav-close">Intervencionismo</a></li>
+                        <li><a (click)="goTo('cardiologia-intervencionista')" class="sidenav-close">Intervencionismo</a></li>
                         <li class="divider"></li>
                         <li><a (click)="goTo('aortic')" class="sidenav-close">Aortic</a></li>
                         <li class="divider"></li>
                         <li><a (click)="goTo('cardiovascular')" class="sidenav-close">Cardiovascular</a></li>
                         <li class="divider"></li>
-                        <li><a class="sidenav-close">Dispositivo médico de infusión</a></li>
+                        <li><a (click)="goTo('dispositivo-medico-infusion')" class="sidenav-close">Dispositivo médico de infusión</a></li>
                     </ul>
                 </div>
             </li>
@@ -99,5 +99,5 @@
     <li class="divider"></li>
     <li><a (click)="goTo('cardiovascular')">Cardiovascular</a></li>
     <li class="divider"></li>
-    <li><a (click)="goTo('')">Dispositivo médico de infusión</a></li>
+    <li><a (click)="goTo('dispositivo-medico-infusion')">Dispositivo médico de infusión</a></li>
 </ul>

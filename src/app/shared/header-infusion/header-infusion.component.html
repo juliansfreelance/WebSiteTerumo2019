@@ -1,0 +1,179 @@
+<div class="navbar-fixed">
+    <nav class="z-depth-2">
+        <div class="nav-wrapper white">
+            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>infusión</span></a>
+            <ul class="right black-text external-link">
+                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo></a></li>
+                <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i class="material-icons">language</i></a></li>
+            </ul>
+        </div>
+
+        <div class="nav-wrapper terumo lighten">
+            <div class="container-fluid">
+                <a data-target="Cardio-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left" class="Menu-escritorio hide-on-med-and-down">
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <!-- <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li> -->
+                    <li><a (click)="goTo('')" class="terumoOpenBold">OPTIMIZANDO LA CIRUGÍA CARDÍACA</a></li>
+                    <li><a (click)="goTo('')" class="terumoOpenBold">ESTRATEGIA COMERCIAL</a></li>
+                    <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTÁCTENOS</a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <app-buscador class="buscador" [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)"></app-buscador>
+                </li>
+                <li>
+                    <app-buscador-resultados [textoBuscar]="textoHeader" (textoSalida)="emitterResultado($event)"></app-buscador-resultados>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="Cardio-mobile" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class=" background terumo lighten"></div>
+            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span class="white-text">infusión</span></a>
+        </div>
+    </li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul class="collapsible" style="margin-top: 0px;">
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Sistemas avanzados de infusión<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul class="collapsible" style="margin-top: 0px;">
+                                    <li>
+                                        <div class="secundario collapsible-header" style="padding-left: 30px;">Terufusion<i class="material-icons right">arrow_drop_down</i></div>
+                                        <div class="secundario-item navSubmenu collapsible-body">
+                                            <ul>
+                                                <li><a (click)="goTo('/dispositivo-medico-infusion/sistema-avanzado-infusion')" class="sidenav-close" style="margin-left: 10%;">Smart Midpress</a></li>
+                                                <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 10%;">Jeringa Smart</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Acceso I.V.<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul class="collapsible" style="margin-top: 0px;">
+                                    <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 5%;">Surflash</a></li>
+                                    <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 5%;">Surflo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Inyección<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul class="collapsible" style="margin-top: 0px;">
+                                    <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 5%;">Agujas Hipodérmicas de Seguridad</a></li>
+                                    <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 5%;">Agujas Dentales</a></li>
+                                    <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 5%;">Jeringas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <!-- <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">CIRUGÍA OPTIMIZADA</a></li> -->
+
+    <li class="divider"></li>
+
+    <li><a style="padding: 0 16px" (click)="goTo('')" class="principal terumoOpenBold terumo-text sidenav-close">OPTIMIZANDO LA CIRUGÍA CARDÍACA</a></li>
+
+    <li class="divider"></li>
+
+    <li><a style="padding: 0 16px" (click)="goTo('')" class="principal terumoOpenBold terumo-text sidenav-close">ESTRATEGIA COMERCIAL</a></li>
+
+    <li class="divider"></li>
+
+
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">NOSOTROS<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('')" class="sidenav-close terumo-text">Acerca de nosotros</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('red-global')" class="sidenav-close terumo-text">Red Global</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close terumo-text">Responsabilidad corporativa</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li><a style="padding: 0 16px" (click)="goTo('contactanos')" class="principal terumoOpenBold terumo-text sidenav-close">CONTÁCTENOS</a></li>
+    <li class="divider"></li>
+</ul>
+
+<ul id='Productos' class='dropdown-content'>
+    <ul class="collapsible" style="margin-top: 0px;">
+        <!-- <li>
+            <a class="collapsible-header" style="font-weight: bold;">Sistemas avanzados de infusión</a>
+        </li> -->
+        <li>
+            <a class="collapsible-header terumo-text">Sistemas avanzados de infusión<i class="material-icons right" >arrow_drop_down</i></a>
+            <div class="navSubmenu collapsible-body" style="padding: 0rem !important;">
+                <ul class="collapsible" style="margin-top: 0px;">
+                    <li>
+                        <div class="secundario collapsible-header" style="padding-left: 30px;">Terufusion<i class="material-icons right teru">arrow_drop_down</i></div>
+                        <div class="secundario-item navSubmenu collapsible-body">
+                            <ul>
+                                <li><a (click)="goTo('/dispositivo-medico-infusion/sistema-avanzado-infusion')" class="sidenav-close" style="margin-left: 10%;">Smart Midpress</a></li>
+                                <li><a (click)="goTo('')" class="sidenav-close" style="margin-left: 10%;">Jeringa Smart</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a class="collapsible-header terumo-text">Acceso I.V.<i class="material-icons right" >arrow_drop_down</i></a>
+            <div class="navSubmenu collapsible-body">
+                <ul class="collapsible" style="margin-top: 0px;">
+                    <li><a (click)="goTo('')" class="sidenav-close">Surflash</a></li>
+                    <li><a (click)="goTo('')" class="sidenav-close">Surflo</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a class="collapsible-header terumo-text">Inyección<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="navSubmenu collapsible-body">
+                <ul class="collapsible" style="margin-top: 0px;">
+                    <li><a (click)="goTo('')" class="sidenav-close">Agujas Hipodérmicas de Seguridad</a></li>
+                    <li><a (click)="goTo('')" class="sidenav-close">Agujas Dentales</a></li>
+                    <li><a (click)="goTo('')" class="sidenav-close">Jeringas</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</ul>
+
+<ul id='Nosotros' class='dropdown-content'>
+    <li><a (click)="goTo( '') ">Acerca de nosotros</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'red-global') ">Red Global</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'resp-corporativa') ">Responsabilidad corporativa</a></li>
+</ul>
