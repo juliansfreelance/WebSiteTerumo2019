@@ -1,0 +1,59 @@
+<div class="space-between"></div>
+<section>
+    <div class="container">
+        <section>
+            <h5>
+                <b>
+                    Terumo y Terufusion <sup>&reg;</sup>: <br />
+                    tecnología de confianza que garantiza la administración
+                </b>
+            </h5>
+            <div class="progress">
+                <div class="determinate" style="width: 20%"></div>
+            </div>
+            <h5>
+                <b>
+                    Avance al siguiente nivel
+                </b>
+            </h5>
+            <p>
+                Sistemas avanzados de infusión de última generación que van un paso adelante en seguridad para la
+                administración. <br />
+                La más importante misión de las instituciones de salud es administrar de la manera más simple las
+                infusiones con seguridad y precisión.
+            </p>
+        </section>
+        <section>
+            <h5>
+                <b>
+                    Descripción
+                </b>
+            </h5>
+            <div class="progress">
+                <div class="determinate" style="width: 20%"></div>
+            </div>
+            <div [innerHTML]="descripcion"></div>
+        </section>
+        <div class="divider"></div>
+        <section class="center-content">
+            <h3>
+                Videos Tutoriales
+            </h3>
+            <h4 class="black-text">
+                Seleccione un modelo para ver videos:
+            </h4>
+            <div class="buttons-row">
+                <a class="waves-effect waves-light btn terumo center-content"
+                    (click)="goTo('dispositivo-medico-infusion/sistema-avanzado-infusion/videos-infusion', 'LF600')">LF600</a>
+                <a class="waves-effect waves-light btn terumo center-content"
+                    (click)="goTo('dispositivo-medico-infusion/sistema-avanzado-infusion/videos-infusion', 'LF700')">LF700</a>
+                <a class="waves-effect waves-light btn terumo center-content"
+                    (click)="goTo('dispositivo-medico-infusion/sistema-avanzado-infusion/videos-infusion', 'LF800')">LF800</a>
+                <a class="waves-effect waves-light btn terumo center-content"
+                    (click)="goTo('dispositivo-medico-infusion/sistema-avanzado-infusion/videos-infusion', 'SS700')">SS700</a>
+                <a class="waves-effect waves-light btn terumo center-content"
+                    (click)="goTo('dispositivo-medico-infusion/sistema-avanzado-infusion/videos-infusion', 'SS800')">SS800</a>
+            </div>
+        </section>
+    </div>
+</section>

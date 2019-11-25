@@ -1,0 +1,18 @@
+.determinate {
+  background-color: #4358a7;
+}
+/*Table*/
+tr th {
+  text-align: center;
+}
+tr td,
+tr th {
+  border: 2px solid #ececec !important;
+}
+/*@START: Media Queries*/
+@media only screen and (max-width: 992px) {
+  .responsive-row {
+    display: flex;
+  }
+}
+/*@END: Media Queries*/

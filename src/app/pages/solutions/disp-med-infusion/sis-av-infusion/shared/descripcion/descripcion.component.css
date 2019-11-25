@@ -1,0 +1,15 @@
+.space-between {
+  height: 50px;
+}
+
+.space-between::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background-color: #4358a7;
+  transform: skewY(-2deg);
+}
+.determinate {
+  background-color: #4358a7;
+}

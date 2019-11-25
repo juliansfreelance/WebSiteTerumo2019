@@ -1,6 +1,7 @@
+<app-banner-infusion [imagen]="imagen" [descripcion]="descripcion"></app-banner-infusion>
 <div class="section header-videos">
     <h6 class="black-text right-align">
-        <a (click)="goTo('dispositivo-medico-infusion/sistema-avanzado-infusion/terufusion-bomba-infusion-sm')">
+        <a (click)="goBack()">
             Volver
         </a>
     </h6>
@@ -13,7 +14,7 @@
     </div>
 </div>
 <div class="section content-videos">
-    <div class="row" *ngIf="current_videos.length > 0">
+    <div class="row container" *ngIf="current_videos.length > 0">
         <div class="col s12 m6" *ngFor="let video of current_videos[0].videos">
             <div class="container">
                 <p>

@@ -1,25 +1,16 @@
-<div class="linea">
-    <div class="container">
-        <b>
-            <h4>Sistemas Avanzados de Infusión</h4>
-        </b>
-    </div>
-</div>
-<div class="infusion-banner">
+<div class="infusion-banner" [ngStyle]="style">
     <div class="row">
         <div class="col s12 m6 center-content">
-            <h4><b>
-                    Terufusion <sup>
-                        &reg;
-                    </sup>
-                </b></h4>
-            <h5>
-                Bomba de Infusión
-                Smart Midpress
-            </h5>
+            <h3>
+                <b>
+                    <div [innerHTML]="titulo"></div>
+                </b>
+            </h3>
+            <h4>
+                {{ subtitulo }}
+            </h4>
             <p>
-                Exitosa integración de profesionalismo,
-                seguridad y fácil de usar.
+                {{  descripcion }}
             </p>
         </div>
     </div>

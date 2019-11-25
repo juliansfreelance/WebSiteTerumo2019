@@ -104,6 +104,16 @@ import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis
 import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/banner-infusion/banner-infusion.component';
 import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/videos-infusion/videos-infusion.component';
 import { HeaderInfusionComponent } from './shared/header-infusion/header-infusion.component';
+import { TerufusionBjsComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bjs/terufusion-bjs.component';
+import { ContInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/cont-infusion/cont-infusion.component';
+import { SurflashComponent } from './pages/solutions/disp-med-infusion/acceso/surflash/surflash.component';
+import { SurfloComponent } from './pages/solutions/disp-med-infusion/acceso/surflo/surflo.component';
+import { DescripcionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/descripcion/descripcion.component';
+import { AccesoComponent } from './pages/solutions/disp-med-infusion/acceso/acceso/acceso.component';
+import { InyeccionComponent } from './pages/solutions/disp-med-infusion/inyeccion/inyeccion/inyeccion.component';
+import { AgujasHipoComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-hipo/agujas-hipo.component';
+import { AgujasDentComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-dent/agujas-dent.component';
+import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion/jeringas/jeringas.component';
 
 @NgModule({
   declarations: [
@@ -201,7 +211,17 @@ import { HeaderInfusionComponent } from './shared/header-infusion/header-infusio
     TerufusionBiSmComponent,
     BannerInfusionComponent,
     VideosInfusionComponent,
-    HeaderInfusionComponent
+    HeaderInfusionComponent,
+    TerufusionBjsComponent,
+    ContInfusionComponent,
+    SurflashComponent,
+    SurfloComponent,
+    DescripcionComponent,
+    AccesoComponent,
+    InyeccionComponent,
+    AgujasHipoComponent,
+    AgujasDentComponent,
+    JeringasComponent
   ],
   imports: [
     BrowserModule,
