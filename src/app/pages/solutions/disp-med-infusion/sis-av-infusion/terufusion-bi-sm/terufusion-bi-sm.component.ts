@@ -8,12 +8,15 @@ import { Router } from '@angular/router';
 })
 export class TerufusionBiSmComponent implements OnInit {
 
+  imagen: string;
+  descripcion: string;
+  type: string;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
-  }
-  goTo(dir: string, id: string){
-    this.router.navigate([dir, id]);
-    window.scroll(0,0)
+    this.imagen = "terufusion-infusion-pump-smart-midpress-product-image.png";
+    this.descripcion = "Exitosa integración de profesionalismo, seguridad y fácil de usar."
+    this.type = "1";
   }
 }
