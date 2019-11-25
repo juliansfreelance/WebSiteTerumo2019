@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-terufusion-bi-sm',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TerufusionBiSmComponent implements OnInit {
 
-  constructor() { }
+  imagen: string;
+  descripcion: string;
+  type: string;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.imagen = "terufusion-infusion-pump-smart-midpress-product-image.png";
+    this.descripcion = "Exitosa integración de profesionalismo, seguridad y fácil de usar."
+    this.type = "1";
   }
-
 }
