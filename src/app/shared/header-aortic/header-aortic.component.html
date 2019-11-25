@@ -14,14 +14,8 @@
                 <ul class="left" class="Menu-escritorio hide-on-med-and-down">
                     <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>PRODUCTOS<i class="material-icons right">arrow_drop_down</i></a></li>
                     <!-- <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li> -->
-<<<<<<< HEAD
                     <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTÁCTENOS</a></li>
                     <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
-=======
-                    <li><a class="terumoOpenBold">VISITANTES DE (EE.UU.)</a></li>
-                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTÁCTENOS</a></li>
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
                 </ul>
             </div>
             <ul>
@@ -35,7 +29,6 @@
         </div>
     </nav>
 </div>
-
 
 <ul id="Cardio-mobile" class="sidenav">
     <li>
@@ -52,7 +45,6 @@
                     <ul class="collapsible" style="margin-top: 0px;">
                         <li class="divider"></li>
                         <li>
-<<<<<<< HEAD
                             <a class="collapsible-header terumo-text">Endovasculares Abdominales<i class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
@@ -76,24 +68,6 @@
                                             </ul>
                                         </div>
                                     </li>
-=======
-                            <a class="collapsible-header terumo-text">Soluciones Endovasculares Abdominales<i class="material-icons right">arrow_drop_down</i></a>
-                            <div class="navSubmenu collapsible-body">
-                                <ul>
-                                    <li><a (click)="goTo( 'perfusion/capiox-rx') " class="sidenav-close">CAPIOX<sup>®</sup> RX</a></li>
-                                    <li><a (click)="goTo( 'perfusion/capiox-fx') " class="sidenav-close">CAPIOX<sup>®</sup> FX</a></li>
-                                    <li><a (click)="goTo( 'perfusion/capiox-fx-adv') " class="sidenav-close">CAPIOX<sup>®</sup> FX ADVANCE</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="collapsible-header terumo-text">Máquinas corazón y pulmón<i class="material-icons right">arrow_drop_down</i></a>
-                            <div class="navSubmenu collapsible-body">
-                                <ul>
-                                    <li><a (click)="goTo( 'corazon-pulmon/terumo-system') " class="sidenav-close">TerumoSystem 1</a></li>
-                                    <li><a (click)="goTo('corazon-pulmon/terumo-adv-system')" class="sidenav-close">TerumoSystem Advance</a></li>
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
                                 </ul>
                             </div>
                         </li>
@@ -168,57 +142,39 @@
 <ul id='Productos' class='dropdown-content'>
     <ul class="collapsible" style="margin-top: 0px;">
         <li>
-            <a class="collapsible-header">Oxigenadores<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="collapsible-header" style="font-weight: bold;">Soluciones Endovasculares Abdominales</a>
+        </li>
+        <li>
+            <a class="collapsible-header">Soluciones Estándar<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( 'perfusion/capiox-rx') ">CAPIOX<sup>®</sup> RX</a>
-                <a (click)="goTo( 'perfusion/capiox-fx') ">CAPIOX<sup>®</sup> FX</a>
-                <a (click)="goTo( 'perfusion/capiox-fx-adv') ">CAPIOX<sup>®</sup> FX ADVANCE</a>
+                <a (click)="goTo('aortic/soluciones-estandar/anaconda')">Anaconda</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo')">TREO</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo')">TREO AUI</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo/recursos')">(Recursos Adicionales TREO)</a>
             </div>
         </li>
         <li>
-            <a class="collapsible-header">Máquinas corazón y pulmón<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="collapsible-header">Soluciones Personalizadas<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( 'corazon-pulmon/terumo-system') ">TerumoSystem 1</a>
-                <a (click)="goTo('corazon-pulmon/terumo-adv-system')">TerumoSystem Advance</a>
+                <a (click)="goTo('aortic/soluciones-estandar/fenestrated')">Anaconda Fenestrada</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo-abdominal')">TREO Custom (cEVAR)</a>
             </div>
         </li>
         <li>
-            <a class="collapsible-header">Sistemas de Monitoreo<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo( 'sis-monitoreo/cdi' ) ">CDI 550</a>
-            </div>
+            <a class="collapsible-header" style="font-weight: bold;">Soluciones Endovasculares Torácicas</a>
         </li>
         <li>
-            <a class="collapsible-header">Beating Heart<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="collapsible-header">Soluciones Estándar<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( 'beating-heart/assistant' ) ">Assistant</a>
-                <a (click)="goTo( 'beating-heart/hercules' ) ">Hercules</a>
-            </div>
-        </li>
-    </ul>
-    <li><a (click)="goTo( 'bomba-centrifuga/capiox-sp') ">Bomba Centrífuga</a></li>
-    <li class="divider "></li>
-    <li><a (click)="goTo( 'set-tuberias/extracoporea') ">Tubing Pack</a></li>
-    <li class="divider "></li>
-    <ul class="collapsible" style="margin-top: 0px;">
-        <li>
-            <a class="collapsible-header">Dispositivos de protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-<<<<<<< HEAD
                 <a (click)="goTo('aortic/soluciones-estandar/relay-plus')">RelayPlus</a>
                 <a (click)="goTo('')">Recursos Adicionales RelayPlus</a>
                 <a (click)="goTo('aortic/soluciones-estandar/relay-nbs-plus')">RelayNBS Plus</a>
                 <a (click)="goTo('')">(Recursos Adicionales RelayNBS Plus)</a>
-=======
-                <a (click)="goTo( 'miocardia/set-cardioplejia') ">CP 50</a>
-                <a (click)="goTo( 'miocardia/capiox-cp') ">CONDUCER</a>
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
             </div>
         </li>
         <li>
-            <a class="collapsible-header">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="collapsible-header">Soluciones Personalizadas<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-<<<<<<< HEAD
                 <a (click)="goTo('')">Relay Custom (cTEVAR)</a>
             </div>
         </li>
@@ -229,17 +185,6 @@
             <a class="collapsible-header">Arco Aórtico<i class="material-icons right ">arrow_drop_down</i></a>
             <div class="submenu collapsible-body ">
                 <a (click)="goTo('aortic/soluciones-estandar/thoraflex') ">Thoraflex Hybrid</a>
-=======
-                <a (click)="goTo( 'capiox/hemoconcentradores') ">HC05</a>
-                <a (click)="goTo( 'capiox/filtro-arterial') ">HC11</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header">Filtros Arteriales<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo( 'perfusion-pediatrica') ">AF02</a>
-                <a (click)="goTo( 'perfusion-pediatrica') ">AF125</a>
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
             </div>
         </li>
     </ul>

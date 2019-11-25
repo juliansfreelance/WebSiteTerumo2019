@@ -1,0 +1,201 @@
+<div class="navbar-fixed">
+    <nav class="z-depth-2">
+        <div class="nav-wrapper white">
+            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Intervencionismo</span></a>
+            <ul class="right black-text external-link">
+                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo></a></li>
+                <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i class="material-icons">language</i></a></li>
+            </ul>
+        </div>
+
+        <div class="nav-wrapper terumo lighten">
+            <div class="container-fluid">
+                <a data-target="Cardio-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left" class="Menu-escritorio hide-on-med-and-down">
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>CARDIOLOGÍA INTERVENCIONISTA<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>ONCOLOGÍA INTERVENCIONISTA<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>INTERVENCIÓN PERIFÉRICA<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <!-- <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li> -->
+                    <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTÁCTENOS</a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+            <ul>
+                <li>
+                    <app-buscador class="buscador" [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)"></app-buscador>
+                </li>
+                <li>
+                    <app-buscador-resultados [textoBuscar]="textoHeader" (textoSalida)="emitterResultado($event)"></app-buscador-resultados>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul id="Cardio-mobile" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class=" background terumo lighten"></div>
+            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span class="white-text">Intervencionismo</span></a>
+        </div>
+    </li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">SOLUCIONES<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul class="collapsible" style="margin-top: 0px;">
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Endovasculares Abdominales<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul class="collapsible" style="margin-top: 0px;">
+                                    <li>
+                                        <div class="secundario collapsible-header">Soluciones Estándar<i class="material-icons right">arrow_drop_down</i></div>
+                                        <div class="secundario-item navSubmenu collapsible-body">
+                                            <ul>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/anaconda')" class="sidenav-close">Anaconda</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/treo')" class="sidenav-close">TREO</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/treo')" class="sidenav-close">TREO AUI</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/treo/recursos')" class="sidenav-close">(Recursos adicionales TREO)</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="secundario collapsible-header">Soluciones Personalizadas<i class="material-icons right">arrow_drop_down</i></div>
+                                        <div class="secundario-item navSubmenu collapsible-body">
+                                            <ul>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/fenestrated')" class="sidenav-close">Anaconda Fenestrada</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/treo-abdominal')" class="sidenav-close">TREO Custom (cEVAR)</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Endovasculares Torácicas<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul class="collapsible" style="margin-top: 0px;">
+                                    <li>
+                                        <div class="secundario collapsible-header">Soluciones Estándar<i class="material-icons right">arrow_drop_down</i></div>
+                                        <div class="secundario-item navSubmenu collapsible-body">
+                                            <ul>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/relay-plus')" class="sidenav-close">RelayPlus</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/')" class="sidenav-close">(Recursos adicionales RelayPlus)</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/relay-nbs-plus')" class="sidenav-close">RelayNBS Plus</a></li>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/')" class="sidenav-close">(Recursos adicionales RelayNBS Plus)</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="secundario collapsible-header">Soluciones Personalizadas<i class="material-icons right">arrow_drop_down</i></div>
+                                        <div class="secundario-item navSubmenu collapsible-body">
+                                            <ul>
+                                                <li><a (click)="goTo('aortic/soluciones-estandar/relay')" class="sidenav-close">Relay Custom (cTEVAR)</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="collapsible-header terumo-text">Soluciones Híbridas<i class="material-icons right">arrow_drop_down</i></a>
+                            <div class="navSubmenu collapsible-body">
+                                <ul>
+                                    <li><a (click)="goTo('aortic/soluciones-estandar/')" class="sidenav-close">Arco Aórtico</a></li>
+                                    <li><a (click)="goTo('aortic/soluciones-estandar/thoraflex')" class="sidenav-close">Thoraflex Hybrid</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <!-- <li><a (click)="goTo('')" class="terumoOpenBold terumo-text sidenav-close">CIRUGÍA OPTIMIZADA</a></li> -->
+    <li class="divider"></li>
+
+    <li class="divider"></li>
+    <li>
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">NOSOTROS<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('')" class="sidenav-close terumo-text">Acerca de nosotros</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('red-global')" class="sidenav-close terumo-text">Red Global</a></li>
+                        <li class="divider"></li>
+                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close terumo-text">Responsabilidad corporativa</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="divider"></li>
+    <li><a style="padding: 0 16px" (click)="goTo('contactanos')" class="principal terumoOpenBold terumo-text sidenav-close">CONTÁCTENOS</a></li>
+    <li class="divider"></li>
+</ul>
+
+<ul id='Productos' class='dropdown-content'>
+    <ul class="collapsible" style="margin-top: 0px;">
+        <li>
+            <a class="collapsible-header" style="font-weight: bold;">Soluciones Endovasculares Abdominales</a>
+        </li>
+        <li>
+            <a class="collapsible-header">Soluciones Estándar<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo('aortic/soluciones-estandar/anaconda')">Anaconda</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo')">TREO</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo')">TREO AUI</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo/recursos')">(Recursos Adicionales TREO)</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Soluciones Personalizadas<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo('aortic/soluciones-estandar/fenestrated')">Anaconda Fenestrada</a>
+                <a (click)="goTo('aortic/soluciones-estandar/treo-abdominal')">TREO Custom (cEVAR)</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header" style="font-weight: bold;">Soluciones Endovasculares Torácicas</a>
+        </li>
+        <li>
+            <a class="collapsible-header">Soluciones Estándar<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo('aortic/soluciones-estandar/relay-plus')">RelayPlus</a>
+                <a (click)="goTo('')">Recursos Adicionales RelayPlus</a>
+                <a (click)="goTo('aortic/soluciones-estandar/relay-nbs-plus')">RelayNBS Plus</a>
+                <a (click)="goTo('')">(Recursos Adicionales RelayNBS Plus)</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header">Soluciones Personalizadas<i class="material-icons right">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body">
+                <a (click)="goTo('')">Relay Custom (cTEVAR)</a>
+            </div>
+        </li>
+        <li>
+            <a class="collapsible-header" style="font-weight: bold;">Soluciones Hibridas</a>
+        </li>
+        <li>
+            <a class="collapsible-header">Arco Aórtico<i class="material-icons right ">arrow_drop_down</i></a>
+            <div class="submenu collapsible-body ">
+                <a (click)="goTo('aortic/soluciones-estandar/thoraflex') ">Thoraflex Hybrid</a>
+            </div>
+        </li>
+    </ul>
+</ul>
+
+<ul id='Nosotros' class='dropdown-content'>
+    <li><a (click)="goTo( '') ">Acerca de nosotros</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'red-global') ">Red Global</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'resp-corporativa') ">Responsabilidad corporativa</a></li>
+</ul>

@@ -63,35 +63,13 @@ import { RadifocusGwMComponent } from './pages/solutions/intervencionismo/cardio
 import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-ot/radifocus-ot.component';
 import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
 import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
-import { RadifocusGcComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gc/radifocus-gc.component';
-import { TrBandCaComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-comp-art-rad/tr-band-ca/tr-band-ca.component';
-import { AngioSealtCvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/disp-cierre-vasc/angio-sealt-cv/angio-sealt-cv.component';
-import { RadifocusGwAdvComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/alambre-guia/radifocus-gw-adv/radifocus-gw-adv.component';
-import { DestIgpComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor-guia/dest-igp/dest-igp.component';
-import { ProgreatMicrocComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/microcateter/progreat-microc/progreat-microc.component';
-import { RadifocusGwGtComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/guia/radifocus-gw-gt/radifocus-gw-gt.component';
-import { HydropearlMceComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/tratamiento-locorregional/embolizacion-transarterial/hydropearl-mce/hydropearl-mce.component';
-import { LifepearlMeComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/tratamiento-locorregional/microesferas-lib-med/lifepearl-me/lifepearl-me.component';
-import { DispMedInfComponent } from './pages/solutions/disp-med-infusion/disp-med-inf/disp-med-inf.component';
-import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/sis-av-infusion/sis-av-infusion.component';
-import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
-import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/videos-infusion/videos-infusion.component';
-import { TerufusionBjsComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bjs/terufusion-bjs.component';
-import { AccesoComponent } from './pages/solutions/disp-med-infusion/acceso/acceso/acceso.component';
-import { SurflashComponent } from './pages/solutions/disp-med-infusion/acceso/surflash/surflash.component';
-import { SurfloComponent } from './pages/solutions/disp-med-infusion/acceso/surflo/surflo.component';
-import { InyeccionComponent } from './pages/solutions/disp-med-infusion/inyeccion/inyeccion/inyeccion.component';
-import { AgujasHipoComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-hipo/agujas-hipo.component';
-import { AgujasDentComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-dent/agujas-dent.component';
-import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion/jeringas/jeringas.component';
 
 
 const routes: Routes = [
   {
     path: '',
     component: InicioComponent,
-    pathMatch: 'full',
-    outlet: ""
+    pathMatch: 'full'
   },
   {
     path: 'red-global',
@@ -143,11 +121,7 @@ const routes: Routes = [
       // END Avance
     ]
   },
-<<<<<<< HEAD
   // @START Avance 18 de Octubre
-=======
-  //@START Avance 18 de Octubre 
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
   {
     path: 'corazon-pulmon',
     component: CorazonPulmonComponent,
@@ -371,11 +345,7 @@ const routes: Routes = [
       }
     ]
   },
-<<<<<<< HEAD
   // @END Avance 21 de Octubre
-=======
-  //@END Avance 21 de Octubre  
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
   {
     path: 'cardiologia-intervencionista',
     component: CardiologiaIntervencionistaComponent,
@@ -505,12 +475,8 @@ const routes: Routes = [
               {
                 path: 'radifocus-m-coat',
                 component: RadifocusMCoatComponent
-<<<<<<< HEAD
               },
               {
-=======
-              }, {
->>>>>>> 2e3b6c4570701225a6fb6b830cfb3b038135b1a0
                 path: 'glidensheath-slender',
                 component: GlidenshSComponent
               }
@@ -531,200 +497,8 @@ const routes: Routes = [
               {
                 path: 'radifocus-optitorque',
                 component: RadifocusOtComponent
-              },
-              {
-                path: 'radifocus-glidecath',
-                component: RadifocusGcComponent
-              },
-              {
-                path: 'radifocus-guidewire-gt',
-                component: RadifocusGwGtComponent
               }
             ]
-          },
-          {
-            path: 'dispositivo-de-compresion-de-arteria-radial',
-            component: ProdDiagIntroComponent,
-            children: [
-              {
-                path: '',
-                component: TrBandCaComponent
-              },
-              {
-                path: 'tr-band-disp-c-a-r',
-                component: TrBandCaComponent
-              }
-            ]
-          },
-          {
-            path: 'dispositivos-cierre-vascular',
-            component: ProdDiagIntroComponent,
-            children: [
-              {
-                path: '',
-                component: AngioSealtCvComponent
-              },
-              {
-                path: 'angio-seal',
-                component: AngioSealtCvComponent
-              }
-            ]
-          },
-          {
-            path: 'alambre-guia',
-            component: ProdDiagIntroComponent,
-            children: [
-              {
-                path: '',
-                component: RadifocusGwAdvComponent
-              },
-              {
-                path: 'radifocus-glidewire-advantage',
-                component: RadifocusGwAdvComponent
-              }
-            ]
-          },
-          {
-            path: 'introductor-guia',
-            component: ProdDiagIntroComponent,
-            children: [
-              {
-                path: '',
-                component: DestIgpComponent
-              },
-              {
-                path: 'destination-introductor-guia-periferico',
-                component: DestIgpComponent
-              }
-            ]
-          },
-          {
-            path: 'microcateter',
-            component: ProdDiagIntroComponent,
-            children: [
-              {
-                path: '',
-                component: ProgreatMicrocComponent
-              },
-              {
-                path: 'progreat-microcateter',
-                component: ProgreatMicrocComponent
-              }
-            ]
-          }
-        ]
-      },
-      {
-        path: 'tratamiento-locorregional',
-        component: CardiologiaIntervencionistaComponent,
-        children: [
-          {
-            path: '',
-            component: HydropearlMceComponent
-          },
-          {
-            path: 'embolizacion-transarterial',
-            component: CardiologiaIntervencionistaComponent,
-            children: [
-              {
-                path: '',
-                component: HydropearlMceComponent
-              },
-              {
-                path: 'hydropearl-microesferas',
-                component: HydropearlMceComponent
-              }
-            ]
-          },
-          {
-            path: 'microesferas-lib-medi-tace',
-            component: CardiologiaIntervencionistaComponent,
-            children: [
-              {
-                path: '',
-                component: LifepearlMeComponent
-              },
-              {
-                path: 'lifepearl-microesferas',
-                component: LifepearlMeComponent
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    path: 'dispositivo-medico-infusion',
-    component: DispMedInfComponent,
-    children: [
-      {
-        path: '',
-        component: SisAvInfusionComponent
-      },
-      {
-        path: 'sistema-avanzado-infusion',
-        component: SisAvInfusionComponent,
-        children: [
-          {
-            path: '',
-            component: TerufusionBiSmComponent
-          },
-          {
-            path: 'terufusion-bomba-infusion-smart',
-            component: TerufusionBiSmComponent
-          },
-          {
-            path: 'terufusion-bomba-jeringa-smart',
-            component: TerufusionBjsComponent
-          },
-          {
-            path: 'videos-infusion',
-            component: VideosInfusionComponent
-          },
-          {
-            path: 'videos-infusion/:id/:type',
-            component: VideosInfusionComponent
-          }
-        ]
-      },
-      {
-        path: 'acceso-v',
-        component: AccesoComponent,
-        children: [
-          {
-            path: '',
-            component: SurflashComponent
-          },
-          {
-            path: 'surflash',
-            component: SurflashComponent
-          },
-          {
-            path: 'surflo',
-            component: SurfloComponent
-          }
-        ]
-      },
-      {
-        path: 'inyeccion',
-        component: InyeccionComponent,
-        children: [
-          {
-            path: '',
-            component: AgujasHipoComponent
-          },
-          {
-            path: 'agujas-hipodermicas-s',
-            component: AgujasHipoComponent
-          },
-          {
-            path: 'agujas-dentales',
-            component: AgujasDentComponent
-          },
-          {
-            path: 'jeringas',
-            component: JeringasComponent
           }
         ]
       }

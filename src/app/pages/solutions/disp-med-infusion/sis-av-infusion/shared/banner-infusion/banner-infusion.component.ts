@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner-infusion',
@@ -7,20 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BannerInfusionComponent implements OnInit {
 
-  @Input() titulo = "Terufusion <sup>&reg;</sup>";
-  @Input() subtitulo = "Bomba de Infusión Smart Midpress";
-  @Input() descripcion = "";
-  @Input() imagen = "";
-
-  style: any;
-
   constructor() { }
 
   ngOnInit() {
-    this.style = {
-      'background': 'url(../../../../../../../assets/img/solutions/infusion/' + this.imagen + ')'
-    };
-    //+ ', url(../../../../../../assets/img/solutions/intervencionismo/slider-fondo.png)'
   }
 
 }

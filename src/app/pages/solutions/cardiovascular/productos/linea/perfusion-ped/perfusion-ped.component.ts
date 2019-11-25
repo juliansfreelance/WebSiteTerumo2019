@@ -20,7 +20,7 @@ export class PerfusionPedComponent implements OnInit {
   },
   {
     img: 'linea-3-system.jpg',
-    name: 'System 1 Máquina corazón y pulmón',
+    name: 'System 1 Máquina corazón – pulmón',
     desc: 'CAPIOX® RX05 Oxygenators'
   },
   {

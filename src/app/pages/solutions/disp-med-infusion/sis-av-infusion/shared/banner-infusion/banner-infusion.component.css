@@ -1,26 +1,7 @@
-.infusion-banner {
-  /*background: url(../../../../../../../assets/img/solutions/infusion/terufusion-infusion-pump-smart-midpress-product-image.png);*/
-  height: 400px;
-  background-position: right center !important;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
+.linea::after { 
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: cornflowerblue;
+    position: absolute;
 }
-
-.row,
-.row .col {
-  height: inherit;
-  margin-bottom: 0;
-}
-
-.center-content {
-  align-items: flex-start;
-  padding: 0% 5%;
-}
-
-/*@START: Media Queries*/
-@media only screen and (max-width: 815px) {
-  .row {
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.6) 56%, rgba(255, 255, 255, 0) 100%);
-  }
-}
-/*@END: Media Queries*/
