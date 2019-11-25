@@ -83,7 +83,7 @@ const routes: Routes = [
     path: 'contactanos',
     component: ContactoComponent,
   },
-  //16 de Octubre 2019
+  // 16 de Octubre 2019
 
   {
     path: 'cardiovascular',
@@ -101,7 +101,7 @@ const routes: Routes = [
     path: 'perfusion',
     component: PerfusionComponent,
     children: [
-      //Avance 17 de octubre de 2019
+      // Avance 17 de octubre de 2019
       {
         path: '',
         component: CapioxRxComponent,
@@ -118,10 +118,10 @@ const routes: Routes = [
         path: 'capiox-fx-adv',
         component: CapioxFxAdvComponent
       }
-      //END Avance
+      // END Avance
     ]
   },
-  //@START Avance 18 de Octubre
+  // @START Avance 18 de Octubre
   {
     path: 'corazon-pulmon',
     component: CorazonPulmonComponent,
@@ -140,8 +140,8 @@ const routes: Routes = [
       }
     ]
   },
-  //@END Avance 18 de Octubre
-  //@START 19 de Octubre
+  // @END Avance 18 de Octubre
+  // @START 19 de Octubre
   {
     path: 'sis-monitoreo',
     component: SisMonitoreoComponent,
@@ -174,8 +174,8 @@ const routes: Routes = [
       }
     ]
   },
-  //@END 19 de Octubre
-  //@START Avance 20 de Octubre
+  // @END 19 de Octubre
+  // @START Avance 20 de Octubre
   {
     path: 'bomba-centrifuga',
     component: BombCentrifugaComponent,
@@ -204,8 +204,8 @@ const routes: Routes = [
       }
     ]
   },
-  //@END Avance 20 de Octubre
-  //@START Avance 21 de Octubre
+  // @END Avance 20 de Octubre
+  // @START Avance 21 de Octubre
   {
     path: 'miocardia',
     component: MiocardiaComponent,
@@ -345,7 +345,7 @@ const routes: Routes = [
       }
     ]
   },
-  //@END Avance 21 de Octubre
+  // @END Avance 21 de Octubre
   {
     path: 'cardiologia-intervencionista',
     component: CardiologiaIntervencionistaComponent,
@@ -475,7 +475,8 @@ const routes: Routes = [
               {
                 path: 'radifocus-m-coat',
                 component: RadifocusMCoatComponent
-              },{
+              },
+              {
                 path: 'glidensheath-slender',
                 component: GlidenshSComponent
               }

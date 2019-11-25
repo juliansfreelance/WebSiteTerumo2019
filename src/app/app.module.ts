@@ -89,6 +89,7 @@ import { RadifocusOtComponent } from './pages/solutions/intervencionismo/cardiol
 import { GlidenshSComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/introductor/glidensh-s/glidensh-s.component';
 import { ProdDiagIntroComponent } from './pages/solutions/intervencionismo/cardiologia-intervencionista/prod-acceso-diagnostico-introductor/prod-diag-intro/prod-diag-intro.component';
 import { HeaderAorticComponent } from './shared/header-aortic/header-aortic.component';
+import { HeaderIntervencionComponent } from './shared/header-intervencion/header-intervencion.component';
 
 @NgModule({
   declarations: [
@@ -171,7 +172,8 @@ import { HeaderAorticComponent } from './shared/header-aortic/header-aortic.comp
     RadifocusOtComponent,
     GlidenshSComponent,
     ProdDiagIntroComponent,
-    HeaderAorticComponent
+    HeaderAorticComponent,
+    HeaderIntervencionComponent,
   ],
   imports: [
     BrowserModule,
