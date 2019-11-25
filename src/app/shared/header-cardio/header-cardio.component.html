@@ -96,14 +96,15 @@
                             <a class="collapsible-header terumo-text">Protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul>
-                                    <li><a (click)="goTo( 'miocardia/set-cardioplejia') " class="sidenav-close">CONDUCER</a></li>
-                                    <li>
-                                        <a (click)="goTo( 'miocardia/capiox-cp') " class="sidenav-close"></a>CP 50</li>
+                                    <li><a (click)="goTo('miocardia/set-cardioplejia') " class="sidenav-close">CONDUCER</a></li>
+                                    <li><a (click)="goTo('miocardia/capiox-cp') " class="sidenav-close">CP 50</a></li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
+                    <li class="divider "></li>
                     <li><a (click)="goTo('capiox/hemoconcentradores') " class="terumo-text sidenav-close">Hemoconcentradores</a></li>
+                    <li class="divider "></li>
                     <li><a (click)="goTo('capiox/filtro-arterial') " class="terumo-text sidenav-close">Filtros Arteriales</a></li>
                     <!-- <li class="divider"></li>
                         <li>
@@ -203,6 +204,7 @@
         </li>
     </ul>
     <li><a (click)="goTo('capiox/hemoconcentradores') " class="terumo-text sidenav-close">Hemoconcentradores</a></li>
+    <li class="divider"></li>
     <li><a (click)="goTo('capiox/filtro-arterial') " class="terumo-text sidenav-close">Filtros Arteriales</a></li>
     <!-- <li>
             <a class="collapsible-header">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>

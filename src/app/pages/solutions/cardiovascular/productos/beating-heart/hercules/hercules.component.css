@@ -30,6 +30,10 @@
     font-size: 14px !important;
 }
 
+.intro h3 {
+    font-size: 3rem;
+}
+
 ul:not(.browser-default) {
     padding-left: 5%;
 }
@@ -150,6 +154,7 @@ header {
         color: #fff!important;
         text-align: center !important;
         margin-top: -40px;
+        font-size: 2rem;
     }
 }
 

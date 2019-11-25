@@ -42,6 +42,10 @@ header {
     border-bottom: 5px solid #D32B2A;
 }
 
+.intro h3 {
+    font-size: 3rem;
+}
+
 .intro {
     /* background: url(../../../../../../../assets/img/solutions/cardiovascular/sytem1adv_2.png);
     overflow: hidden; */
@@ -97,6 +101,7 @@ header {
         color: #fff!important;
         text-align: center !important;
         margin-top: -40px;
+        font-size: 2rem;
     }
     .row .col {
         padding: 0 4rem;

@@ -17,6 +17,10 @@ header {
     overflow: hidden;
 }
 
+.intro h3 {
+    font-size: 3.5rem;
+}
+
 .container {
     z-index: 9999;
 }
@@ -75,7 +79,7 @@ header {
         background-size: auto, auto 100%;
         background-repeat: no-repeat;
         background-position: 90% center;
-        background-position: right;
+        /* background-position: right; */
     }
     .skyleft {
         -webkit-transform: skewY(3deg);
@@ -109,6 +113,7 @@ header {
         color: #fff!important;
         text-align: center !important;
         margin-top: -40px;
+        font-size: 2.5rem;
     }
     .row .col {
         padding: 0 4rem;
