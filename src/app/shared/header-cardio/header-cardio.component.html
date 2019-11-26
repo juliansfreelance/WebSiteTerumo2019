@@ -1,9 +1,9 @@
 <div class="navbar-fixed">
     <nav class="z-depth-2">
         <div class="nav-wrapper white">
-            <a (click)="goTo('cardiovascular')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Cardio</span></a>
+            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Cardiovascular</span></a>
             <ul class="right black-text external-link">
-                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo >></a></li>
+                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo></a></li>
                 <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i class="material-icons">language</i></a></li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
     <li>
         <div class="user-view">
             <div class=" background terumo lighten"></div>
-            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span class="white-text">Cardio</span></a>
+            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span class="white-text">Cardiovascular</span></a>
         </div>
     </li>
     <li>
@@ -96,12 +96,17 @@
                             <a class="collapsible-header terumo-text">Protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul>
-                                    <li><a (click)="goTo( 'miocardia/set-cardioplejia') " class="sidenav-close">CP 50</a></li>
-                                    <li><a (click)="goTo( 'miocardia/capiox-cp') " class="sidenav-close">CONDUCER</a></li>
+                                    <li><a (click)="goTo('miocardia/set-cardioplejia') " class="sidenav-close">CONDUCER</a></li>
+                                    <li><a (click)="goTo('miocardia/capiox-cp') " class="sidenav-close">CP 50</a></li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="divider"></li>
+                    </ul>
+                    <li class="divider "></li>
+                    <li><a (click)="goTo('capiox/hemoconcentradores') " class="terumo-text sidenav-close">Hemoconcentradores</a></li>
+                    <li class="divider "></li>
+                    <li><a (click)="goTo('capiox/filtro-arterial') " class="terumo-text sidenav-close">Filtros Arteriales</a></li>
+                    <!-- <li class="divider"></li>
                         <li>
                             <a class="collapsible-header terumo-text">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
@@ -121,8 +126,8 @@
                                     <li><a (click)="goTo( 'perfusion-pediatrica') " class="sidenav-close">AF125</a></li>
                                 </ul>
                             </div>
-                        </li>
-                    </ul>
+                        </li> -->
+                    <!-- </ul> -->
                 </div>
             </li>
         </ul>
@@ -191,13 +196,17 @@
     <li class="divider "></li>
     <ul class="collapsible" style="margin-top: 0px;">
         <li>
-            <a class="collapsible-header">Dispositivos de protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
+            <a class="collapsible-header">Protección Miocardica<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
-                <a (click)="goTo( 'miocardia/set-cardioplejia') ">CP 50</a>
-                <a (click)="goTo( 'miocardia/capiox-cp') ">CONDUCER</a>
+                <a (click)="goTo( 'miocardia/set-cardioplejia') ">CONDUCER</a>
+                <a (click)="goTo( 'miocardia/capiox-cp') ">CP 50</a>
             </div>
         </li>
-        <li>
+    </ul>
+    <li><a (click)="goTo('capiox/hemoconcentradores') " class="terumo-text sidenav-close">Hemoconcentradores</a></li>
+    <li class="divider"></li>
+    <li><a (click)="goTo('capiox/filtro-arterial') " class="terumo-text sidenav-close">Filtros Arteriales</a></li>
+    <!-- <li>
             <a class="collapsible-header">Hemoconcentradores<i class="material-icons right">arrow_drop_down</i></a>
             <div class="submenu collapsible-body">
                 <a (click)="goTo( 'capiox/hemoconcentradores') ">HC05</a>
@@ -211,7 +220,7 @@
                 <a (click)="goTo( 'perfusion-pediatrica') ">AF125</a>
             </div>
         </li>
-    </ul>
+    </ul> -->
 </ul>
 
 <ul id='Nosotros' class='dropdown-content'>

@@ -3,13 +3,13 @@ import * as M from '../../../assets/js/materialize.min.js';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-header-cardio',
-  templateUrl: './header-cardio.component.html',
-  styleUrls: ['./header-cardio.component.css']
+  selector: 'app-header-intervencion',
+  templateUrl: './header-intervencion.component.html',
+  styleUrls: ['./header-intervencion.component.css']
 })
-export class HeaderCardioComponent implements OnInit {
+export class HeaderIntervencionComponent implements OnInit {
 
-  textoHeader ='';
+  textoHeader = '';
 
   constructor( private router: Router ) { }
 

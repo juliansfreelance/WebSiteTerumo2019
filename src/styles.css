@@ -115,9 +115,14 @@
 }
 
 * {
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    /* -webkit-user-select: none;
-    user-select: none; */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    user-zoom: none;
+    user-select: none;
     cursor: default;
     scrollbar-width: thin;
     speak: none;
@@ -127,7 +132,7 @@
 
 
 /* html {
-  background: #EBEBEB; 
+  background: #EBEBEB;
 }*/
 
 body {
@@ -419,20 +424,25 @@ li {
     color: #c9cfd4 !important;
 }
 
+
 /*@START: Backgrond table color*/
+
 .bold-tittle-table {
-  border: 1px solid #CECECF;
-  background: #F6F6F6;
+    border: 1px solid #CECECF;
+    background: #F6F6F6;
 }
+
+
 /*@END: Backgrond table color*/
+
 
 /*@START: Spacing*/
 
 .center-content {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-rounded-section {

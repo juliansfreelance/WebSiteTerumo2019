@@ -40,3 +40,17 @@
 .sidenav li>a {
     padding: 0 16px !important;
 }
+
+.collapsible-body {
+    padding: 0rem;
+}
+
+.collapsible-header {
+    display: block;
+}
+
+.teru {
+    height: 0px !important;
+    width: 3rem;
+    line-height: 20px;
+}

@@ -11,10 +11,8 @@ import { BuscadorResultadosComponent } from './shared/buscador-resultados/buscad
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
 import { BuscadorPipe } from './pipes/buscador.pipe';
 import { ParrafoPipe } from './pipes/parrafo.pipe';
 import { EmailService } from './services/email.service';
@@ -103,6 +101,7 @@ import { SisAvInfusionComponent } from './pages/solutions/disp-med-infusion/sis-
 import { TerufusionBiSmComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bi-sm/terufusion-bi-sm.component';
 import { BannerInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/banner-infusion/banner-infusion.component';
 import { VideosInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/videos-infusion/videos-infusion.component';
+import { HeaderInfusionComponent } from './shared/header-infusion/header-infusion.component';
 import { TerufusionBjsComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/terufusion-bjs/terufusion-bjs.component';
 import { ContInfusionComponent } from './pages/solutions/disp-med-infusion/sis-av-infusion/shared/cont-infusion/cont-infusion.component';
 import { SurflashComponent } from './pages/solutions/disp-med-infusion/acceso/surflash/surflash.component';
@@ -113,6 +112,7 @@ import { InyeccionComponent } from './pages/solutions/disp-med-infusion/inyeccio
 import { AgujasHipoComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-hipo/agujas-hipo.component';
 import { AgujasDentComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-dent/agujas-dent.component';
 import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion/jeringas/jeringas.component';
+import { HeaderIntervencionComponent } from './shared/header-intervencion/header-intervencion.component';
 
 @NgModule({
   declarations: [
@@ -210,6 +210,7 @@ import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion
     TerufusionBiSmComponent,
     BannerInfusionComponent,
     VideosInfusionComponent,
+    HeaderInfusionComponent,
     TerufusionBjsComponent,
     ContInfusionComponent,
     SurflashComponent,
@@ -219,7 +220,8 @@ import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion
     InyeccionComponent,
     AgujasHipoComponent,
     AgujasDentComponent,
-    JeringasComponent
+    JeringasComponent,
+    HeaderIntervencionComponent,
   ],
   imports: [
     BrowserModule,

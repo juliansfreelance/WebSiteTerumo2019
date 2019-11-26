@@ -26,7 +26,7 @@
     transform: skewY(4deg);
     -webkit-transform-origin: 100%;
     transform-origin: 100%;
-    border-bottom: 5px solid #D32B2A;
+    border-bottom: solid #D32B2A;
 }
 
 .intro {
