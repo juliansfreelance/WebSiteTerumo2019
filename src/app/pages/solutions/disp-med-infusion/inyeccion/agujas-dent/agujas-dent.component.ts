@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgujasDentComponent implements OnInit {
 
+  titulo: string; 
   imagen: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.titulo = "Agujas Dentales";
     this.imagen = "dental-needles-product-image.png";
   }
 
