@@ -113,6 +113,12 @@ import { AgujasHipoComponent } from './pages/solutions/disp-med-infusion/inyecci
 import { AgujasDentComponent } from './pages/solutions/disp-med-infusion/inyeccion/agujas-dent/agujas-dent.component';
 import { JeringasComponent } from './pages/solutions/disp-med-infusion/inyeccion/jeringas/jeringas.component';
 import { HeaderIntervencionComponent } from './shared/header-intervencion/header-intervencion.component';
+import { ProdIntCorComponent } from './shared/header-intervencion/sub-components/prod-int-cor/prod-int-cor.component';
+import { StentsHeaderComponent } from './shared/header-intervencion/sub-components/stents-header/stents-header.component';
+import { ProdAdUnoComponent } from './shared/header-intervencion/sub-components/prod-ad-uno/prod-ad-uno.component';
+import { ProdAdDosComponent } from './shared/header-intervencion/sub-components/prod-ad-dos/prod-ad-dos.component';
+import { TratLocregHComponent } from './shared/header-intervencion/sub-components/trat-locreg-h/trat-locreg-h.component';
+import { ProdAdTresComponent } from './shared/header-intervencion/sub-components/prod-ad-tres/prod-ad-tres.component';
 
 @NgModule({
   declarations: [
@@ -222,6 +228,12 @@ import { HeaderIntervencionComponent } from './shared/header-intervencion/header
     AgujasDentComponent,
     JeringasComponent,
     HeaderIntervencionComponent,
+    ProdIntCorComponent,
+    StentsHeaderComponent,
+    ProdAdUnoComponent,
+    ProdAdDosComponent,
+    TratLocregHComponent,
+    ProdAdTresComponent,
   ],
   imports: [
     BrowserModule,

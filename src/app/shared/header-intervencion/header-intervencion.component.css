@@ -1,33 +1,39 @@
 .nav-wrapper li {
-    list-style-type: none !important;
+  list-style-type: none !important;
 }
 
 .submenu {
-    padding: 0px;
+  padding: 0px;
 }
 
 .submenu a {
-    padding: 14px 16px 14px 32px;
-    color: #26a69a;
-    border-bottom: 1px solid #ddd;
+  padding: 14px 16px 14px 32px;
+  color: #26a69a;
+  border-bottom: 1px solid #ddd;
 }
 
 .navSubmenu ul li {
-    color: #26a69a;
-    background: #eeeeee;
-    border-bottom: 1px solid #ddd;
+  color: #26a69a;
+  background: #eeeeee;
+  border-bottom: 1px solid #ddd;
 }
 
 .navSubmenu ul li a {
-    color: #26a69a;
-    padding-left: 48px;
+  color: #26a69a;
+  padding-left: 48px;
 }
 
 .submenu a:last-child,
 .navSubmenu ul li:last-child {
-    border: none;
+  border: none;
 }
 
 .navSubmenu ul li:first-child {
-    border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1125px) {
+  .Menu-escritorio li a {
+    font-size: 0.8rem !important;
+  }
 }

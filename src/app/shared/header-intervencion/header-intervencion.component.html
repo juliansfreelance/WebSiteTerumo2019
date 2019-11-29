@@ -1,10 +1,13 @@
 <div class="navbar-fixed">
     <nav class="z-depth-2">
         <div class="nav-wrapper white">
-            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg" style="height: 30px;"><span>Intervencionismo</span></a>
+            <a (click)="goTo('')" class="brand-logo left"> <img src="assets/img/logoColor.svg"
+                    style="height: 30px;"><span>Intervencionismo</span></a>
             <ul class="right black-text external-link">
-                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo Terumo></a></li>
-                <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i class="material-icons">language</i></a></li>
+                <li><a (click)="goTo('red-global')" class="links-text terumo-text terumoOpenBold">Sitios web Grupo
+                        Terumo></a></li>
+                <li><a (click)="goTo('red-global')" class="links-icon terumo-text terumoOpenBold"><i
+                            class="material-icons">language</i></a></li>
             </ul>
         </div>
 
@@ -12,91 +15,168 @@
             <div class="container-fluid">
                 <a data-target="Cardio-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="left" class="Menu-escritorio hide-on-med-and-down">
-                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>CARDIOLOGÍA INTERVENCIONISTA<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos2'>ONCOLOGÍA INTERVENCIONISTA<i class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos3'>INTERVENCIÓN PERIFÉRICA<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos'>CARDIOLOGÍA
+                            INTERVENCIONISTA<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos2'>ONCOLOGÍA INTERVENCIONISTA<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Productos3'>INTERVENCIÓN PERIFÉRICA<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
                     <!-- <li><a (click)="goTo('')" class="terumoOpenBold">CIRUGÍA OPTIMIZADA</a></li> -->
                     <li><a (click)="goTo('contactanos')" class="terumoOpenBold">CONTÁCTENOS</a></li>
-                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger terumoOpenBold" data-target='Nosotros'>NOSOTROS<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
                 </ul>
             </div>
             <ul>
                 <li>
-                    <app-buscador class="buscador" [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)"></app-buscador>
+                    <app-buscador class="buscador" [textoBuscar]="textoHeader" (changeText)="emitterBuscador($event)">
+                    </app-buscador>
                 </li>
                 <li>
-                    <app-buscador-resultados [textoBuscar]="textoHeader" (textoSalida)="emitterResultado($event)"></app-buscador-resultados>
+                    <app-buscador-resultados [textoBuscar]="textoHeader" (textoSalida)="emitterResultado($event)">
+                    </app-buscador-resultados>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 
+
+
+<ul id='Productos' class='dropdown-content'>
+    <ul class="collapsible" style="margin-top: 0px;">
+        <!--Productos de intervencion coronaria-->
+        <app-prod-int-cor></app-prod-int-cor>
+        <!-- Stents -->
+        <app-stents-header></app-stents-header>
+        <!-- Productos de acceso y diagnóstico -->
+        <li>
+            <a class="collapsible-header" style="font-weight: bold;">Productos de acceso y diagnóstico</a>
+        </li>
+        <app-prod-ad-uno></app-prod-ad-uno>
+        <app-prod-ad-dos></app-prod-ad-dos>
+        <li>
+        </li>
+    </ul>
+</ul>
+
+<ul id='Productos2' class='dropdown-content'>
+    <!-- <ul class="collapsible" style="margin-top: 0px;"> -->
+    <li>
+        <a class="collapsible-header" style="font-weight: bold;">Productos de acceso y diagnóstico</a>
+    </li>
+    <app-prod-ad-uno></app-prod-ad-uno>
+    <app-prod-ad-dos></app-prod-ad-dos>
+    <app-prod-ad-tres></app-prod-ad-tres>
+    <app-trat-locreg-h></app-trat-locreg-h>
+    <li>
+    </li>
+    <!-- </ul> -->
+</ul>
+
+<ul id='Productos3' class='dropdown-content'>
+    <!-- <ul class="collapsible" style="margin-top: 0px;"> -->
+    <li>
+        <a class="collapsible-header" style="font-weight: bold;">Productos de acceso y diagnóstico</a>
+    </li>
+    <app-prod-ad-uno></app-prod-ad-uno>
+    <app-prod-ad-dos></app-prod-ad-dos>
+    <app-prod-ad-tres></app-prod-ad-tres>
+    <li>
+    </li>
+    <!-- </ul> -->
+</ul>
+
+<ul id='Nosotros' class='dropdown-content'>
+    <li><a (click)="goTo( '') ">Acerca de nosotros</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'red-global') ">Red Global</a></li>
+    <li class="divider "></li>
+    <li><a (click)="goTo( 'resp-corporativa') ">Responsabilidad corporativa</a></li>
+</ul>
+
 <ul id="Cardio-mobile" class="sidenav">
     <li>
         <div class="user-view">
             <div class=" background terumo lighten"></div>
-            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span class="white-text">Intervencionismo</span></a>
+            <a class="brand-logo"><img src="assets/img/logoColor.svg" width="150px"><span
+                    class="white-text">Intervencionismo</span></a>
         </div>
     </li>
     <li>
         <ul class="collapsible collapsible-accordion">
             <li>
-                <a class="principal collapsible-header terumoOpenBold terumo-text">Productos para intervención<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">Productos para intervención<i
+                        class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul class="collapsible" style="margin-top: 0px;">
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Catéter guía<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Catéter guía<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
                                     <li>
-                                        <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-guia/heartrail-II')">Heartrail® II – catéter guía ACTP</a>
+                                        <a
+                                            (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-guia/heartrail-II')">Heartrail®
+                                            II – catéter guía ACTP</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Guía ACTP<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Guía ACTP<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
                                     <li>
-                                        <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/guia-actp/runthough-ns')">Runthough® NS – guía ACTP</a>
+                                        <a
+                                            (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/guia-actp/runthough-ns')">Runthough®
+                                            NS – guía ACTP</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Microcatéter guía coronario<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Microcatéter guía coronario<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
                                     <li>
-                                        <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/microcateter-guia-coro/finecross-mg')">Finecross® MG</a>
+                                        <a
+                                            (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/microcateter-guia-coro/finecross-mg')">Finecross®
+                                            MG</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Catéter de aspiración<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Catéter de aspiración<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
                                     <li>
-                                        <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-aspiracion/eliminate-tm')">Eliminate™</a>
+                                        <a
+                                            (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-aspiracion/eliminate-tm')">Eliminate™</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Catéter balón ACTP<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Catéter balón ACTP<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
                                     <li>
-                                        <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-balon-actp/ryujin-plus-rx')">Ryujin® Plus RX</a>
-                                        <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-balon-actp/accuforce')">Accuforce®</a>
+                                        <a
+                                            (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-balon-actp/ryujin-plus-rx')">Ryujin®
+                                            Plus RX</a>
+                                        <a
+                                            (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-balon-actp/accuforce')">Accuforce®</a>
                                     </li>
                                 </ul>
                             </div>
@@ -111,13 +191,17 @@
     <li>
         <ul class="collapsible collapsible-accordion">
             <li>
-                <a class="principal collapsible-header terumoOpenBold terumo-text">Stents<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">Stents<i
+                        class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul class="collapsible" style="margin-top: 0px;">
                         <li class="divider"></li>
                         <li>
-                            <a class="terumo-text" (click)="goTo('cardiologia-intervencionista/stents')">Stent liberador de medicamento</a>
-                            <a class="terumo-text" (click)="goTo('cardiologia-intervencionista/stents/ultimaster-tm')">Ultimaster™ Tansei™</a>
+                            <a class="terumo-text" (click)="goTo('cardiologia-intervencionista/stents')">Stent liberador
+                                de medicamento</a>
+                            <a class="terumo-text"
+                                (click)="goTo('cardiologia-intervencionista/stents/ultimaster-tm')">Ultimaster™
+                                Tansei™</a>
                         </li>
                     </ul>
                 </div>
@@ -128,27 +212,40 @@
     <li>
         <ul class="collapsible collapsible-accordion">
             <li>
-                <a class="principal collapsible-header terumoOpenBold terumo-text">Productos de acceso y diagnos<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">Productos de acceso y diagnos<i
+                        class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul class="collapsible" style="margin-top: 0px;">
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Introductor<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Introductor<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
-                                    <li><a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/radifocus')">Radifocus® Introducer II Standard Kit</a></li>
-                                    <li><a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/radifocus-m-coat')">Radifocus® Introducer II M Coat™</a></li>
-                                    <li><a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/glidensheath-slender')">Glidensheath Slender®</a></li>
+                                    <li><a
+                                            (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/radifocus')">Radifocus®
+                                            Introducer II Standard Kit</a></li>
+                                    <li><a
+                                            (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/radifocus-m-coat')">Radifocus®
+                                            Introducer II M Coat™</a></li>
+                                    <li><a
+                                            (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/glidensheath-slender')">Glidensheath
+                                            Slender®</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a class="collapsible-header terumo-text">Guía<i class="material-icons right">arrow_drop_down</i></a>
+                            <a class="collapsible-header terumo-text">Guía<i
+                                    class="material-icons right">arrow_drop_down</i></a>
                             <div class="navSubmenu collapsible-body">
                                 <ul class="collapsible" style="margin-top: 0px;">
-                                    <li><a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/guia/radifocus-guidewire-m')">Radifocus® Guidewire M</a></li>
-                                    <li><a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/guia/radifocus-optitorque')">Radifocus® Optitorque®</a></li>
+                                    <li><a
+                                            (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/guia/radifocus-guidewire-m')">Radifocus®
+                                            Guidewire M</a></li>
+                                    <li><a
+                                            (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/guia/radifocus-optitorque')">Radifocus®
+                                            Optitorque®</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -161,7 +258,8 @@
     <li>
         <ul class="collapsible collapsible-accordion">
             <li>
-                <a class="principal collapsible-header terumoOpenBold terumo-text">NOSOTROS<i class="material-icons right">arrow_drop_down</i></a>
+                <a class="principal collapsible-header terumoOpenBold terumo-text">NOSOTROS<i
+                        class="material-icons right">arrow_drop_down</i></a>
                 <div class="collapsible-body">
                     <ul>
                         <li class="divider"></li>
@@ -169,95 +267,15 @@
                         <li class="divider"></li>
                         <li><a (click)="goTo('red-global')" class="sidenav-close terumo-text">Red Global</a></li>
                         <li class="divider"></li>
-                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close terumo-text">Responsabilidad corporativa</a></li>
+                        <li><a (click)="goTo('resp-corporativa')" class="sidenav-close terumo-text">Responsabilidad
+                                corporativa</a></li>
                     </ul>
                 </div>
             </li>
         </ul>
     </li>
     <li class="divider"></li>
-    <li><a style="padding: 0 16px" (click)="goTo('contactanos')" class="principal terumoOpenBold terumo-text sidenav-close">CONTÁCTENOS</a></li>
+    <li><a style="padding: 0 16px" (click)="goTo('contactanos')"
+            class="principal terumoOpenBold terumo-text sidenav-close">CONTÁCTENOS</a></li>
     <li class="divider"></li>
-</ul>
-
-<ul id='Productos' class='dropdown-content'>
-    <ul class="collapsible" style="margin-top: 0px;">
-        <li>
-            <a class="collapsible-header" style="font-weight: bold;">Productos para intervención coronaria</a>
-        </li>
-        <li>
-            <a class="collapsible-header">Catéter guía<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-guia/heartrail-II')">Heartrail® II – catéter guía ACTP</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header">Guía ACTP<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/guia-actp/runthough-ns')">Runthough® NS – guía ACTP</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header">Microcatéter guía coronario<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/microcateter-guia-coro/finecross-mg')">Finecross® MG – microcatéter guía coronario</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header">Catéter de aspiración<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-aspiracion/eliminate-tm')">Eliminate™ – catéter de aspiración</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header">Catéter balón ACTP<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-balon-actp/ryujin-plus-rx')">Ryujin® Plus RX – catéter balón ACTP semicomplaciente</a>
-                <a (click)="goTo('cardiologia-intervencionista/productos-para-intervencion-coronaria/cateter-balon-actp/accuforce')">Accuforce® - catéter balón ACTP no complaciente</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header" style="font-weight: bold;">Stents</a>
-        </li>
-        <li>
-            <a (click)="goTo('cardiologia-intervencionista/stents')">Stent liberador de medicamento</a>
-            <a (click)="goTo('cardiologia-intervencionista/stents/ultimaster-tm')">Ultimaster™ Tansei™ - stent liberador de medicamento</a>
-        </li>
-        <li>
-            <a class="collapsible-header" style="font-weight: bold;">Productos de acceso y diagnóstico</a>
-        </li>
-        <li>
-            <a class="collapsible-header">Introductor<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/radifocus')">Radifocus® Introducer II Standard Kit - Introductor</a>
-                <a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/radifocus-m-coat')">Radifocus® Introducer II M Coat™ - Introductor</a>
-                <a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/introductor/glidensheath-slender')">Glidensheath Slender® - Introductor transradial</a>
-            </div>
-        </li>
-        <li>
-            <a class="collapsible-header">Guía<i class="material-icons right">arrow_drop_down</i></a>
-            <div class="submenu collapsible-body">
-                <a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/guia/radifocus-guidewire-m')">Radifocus® Guidewire M Standard type – Guía estándar</a>
-                <a (click)="goTo('cardiologia-intervencionista/productos-de-acceso-y-diagnostico/guia/radifocus-optitorque')">Radifocus® Optitorque® Catéter angiográfico – Guía estándar</a>
-            </div>
-        </li>
-    </ul>
-</ul>
-
-<ul id='Productos2' class='dropdown-content'>
-    <ul class="collapsible" style="margin-top: 0px;">
-    </ul>
-</ul>
-
-<ul id='Productos3' class='dropdown-content'>
-    <ul class="collapsible" style="margin-top: 0px;">
-    </ul>
-</ul>
-
-<ul id='Nosotros' class='dropdown-content'>
-    <li><a (click)="goTo( '') ">Acerca de nosotros</a></li>
-    <li class="divider "></li>
-    <li><a (click)="goTo( 'red-global') ">Red Global</a></li>
-    <li class="divider "></li>
-    <li><a (click)="goTo( 'resp-corporativa') ">Responsabilidad corporativa</a></li>
 </ul>

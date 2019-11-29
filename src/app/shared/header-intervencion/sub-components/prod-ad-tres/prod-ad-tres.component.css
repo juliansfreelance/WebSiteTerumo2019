@@ -1,0 +1,11 @@
+.submenu {
+  padding: 0px;
+}
+.submenu a {
+  padding: 14px 16px 14px 32px;
+  color: #26a69a;
+  border-bottom: 1px solid #ddd;
+}
+.submenu a:last-child {
+  border: none;
+}
