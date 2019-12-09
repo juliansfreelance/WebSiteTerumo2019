@@ -36,6 +36,11 @@ ol li {
 ul {
   color: #039be5;
 }
+
+.ul-exception {
+  color: black;
+}
+
 li > * {
   font-weight: normal;
 }

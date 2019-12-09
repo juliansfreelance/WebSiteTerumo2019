@@ -61,6 +61,13 @@ Se repite
     margin-bottom: 6%;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .btn {
+    border-radius: 50px;
+    font-size: x-large;
+  }
+}
 /*@END: Media Queries*/
 
 /*@END: Se repite*/

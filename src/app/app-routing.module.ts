@@ -1,6 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
@@ -604,7 +603,7 @@ const routes: Routes = [
       },
       {
         path: 'tratamiento-locorregional',
-        component: CardiologiaIntervencionistaComponent,
+        component: ProdIntervCoronariaComponent,
         children: [
           {
             path: '',
@@ -612,7 +611,7 @@ const routes: Routes = [
           },
           {
             path: 'embolizacion-transarterial',
-            component: CardiologiaIntervencionistaComponent,
+            component: ProdIntervCoronariaComponent,
             children: [
               {
                 path: '',
@@ -626,7 +625,7 @@ const routes: Routes = [
           },
           {
             path: 'microesferas-lib-medi-tace',
-            component: CardiologiaIntervencionistaComponent,
+            component: ProdIntervCoronariaComponent,
             children: [
               {
                 path: '',

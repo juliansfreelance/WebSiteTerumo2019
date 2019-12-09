@@ -1,0 +1,317 @@
+{
+    "list_videos": [
+        {
+            "id": "LF600",
+            "videos": [
+                {
+                    "titulo": "Encendido, apagado e inserción del set de administración dedicado",
+                    "url": "http://web.archive.org/web/20180830034257im_/http://terumosmartpump.com/asd/2.mp4?_=1"
+                },
+                {
+                    "titulo": "Programación mL-h",
+                    "url": "https://web.archive.org/web/20181107235352im_/http://terumosmartpump.com/asd/4.mp4?_=2"
+                },
+                {
+                    "titulo": "Instalación de bomba en el rack",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/7.mp4?_=3"
+                },
+                {
+                    "titulo": "Purga rápida",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/8.mp4?_=4"
+                },
+                {
+                    "titulo": "Bolo manual",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/9.mp4?_=5"
+                },
+                {
+                    "titulo": "Bolo manual (Rápido)",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/10.mp4?_=6"
+                },
+                {
+                    "titulo": "Bolo automático",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/11.mp4?_=7"
+                },
+                {
+                    "titulo": "Silenciar alarmas",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/12.mp4?_=8"
+                },
+                {
+                    "titulo": "Bloqueo de pantalla",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/13.mp4?_=9"
+                },
+                {
+                    "titulo": "Modo de espera",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/14.mp4?_=10"
+                },
+                {
+                    "titulo": "Niveles de oclusión",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/15.mp4?_=11"
+                },
+                {
+                    "titulo": "Sensibilidad de detección de aire en línea",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/16.mp4?_=12"
+                },
+                {
+                    "titulo": "Ajustes de volumen de sonidos",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/17.mp4?_=13"
+                },
+                {
+                    "titulo": "Brillo de pantalla",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/18.mp4?_=14"
+                }
+            ]
+        },
+        {
+            "id": "LM700",
+            "videos": [
+                {
+                    "titulo": "Encendido, apagado e inserción del set de administración dedicado",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/1.mp4?_=1"
+                },
+                {
+                    "titulo": "Programación mL-h",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/4.mp4?_=2"
+                },
+                {
+                    "titulo": "Instalación de bomba en el rack",
+                    "url": "https://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/7.mp4?_=3"
+                },
+                {
+                    "titulo": "Purga rápida",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/8.mp4?_=4"
+                },
+                {
+                    "titulo": "Bolo manual",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/9.mp4?_=5"
+                },
+                {
+                    "titulo": "Bolo manual (Rápido)",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/10.mp4?_=6"
+                },
+                {
+                    "titulo": "Bolo automático",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/11.mp4?_=7"
+                },
+                {
+                    "titulo": "Silenciar alarmas",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/12.mp4?_=8"
+                },
+                {
+                    "titulo": "Bloqueo de pantalla",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/13.mp4?_=9"
+                },
+                {
+                    "titulo": "Modo de espera",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/14.mp4?_=10"
+                },
+                {
+                    "titulo": "Niveles de oclusión",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/15.mp4?_=11"
+                },
+                {
+                    "titulo": "Sensibilidad de detección de aire en línea",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/16.mp4?_=12"
+                },
+                {
+                    "titulo": "Ajustes de volumen de sonidos",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/17.mp4?_=13"
+                },
+                {
+                    "titulo": "Brillo de pantalla",
+                    "url": "http://web.archive.org/web/20180830021606im_/http://terumosmartpump.com/asd/18.mp4?_=14"
+                }
+            ]
+        },
+        {
+            "id": "LM800",
+            "videos": [
+                {
+                    "titulo": "Encendido, apagado e inserción del set de administración dedicado",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/1.mp4?_=1"
+                },
+                {
+                    "titulo": "Programación mL-h",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/4.mp4?_=2"
+                },
+                {
+                    "titulo": "Modo peso corporal",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/5.mp4?_=3"
+                },
+                {
+                    "titulo": "Programación librería de drogas",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/6.mp4?_=4"
+                },
+                {
+                    "titulo": "Instalación de bomba en el rack",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/7.mp4?_=5"
+                },
+                {
+                    "titulo": "Purga rápida",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/8.mp4?_=6"
+                },
+                {
+                    "titulo": "Bolo manual",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/9.mp4?_=7"
+                },
+                {
+                    "titulo": "Bolo manual (Rápido)",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/10.mp4?_=8"
+                },
+                {
+                    "titulo": "Bolo automático",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/11.mp4?_=9"
+                },
+                {
+                    "titulo": "Silenciar alarmas",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/12.mp4?_=10"
+                },
+                {
+                    "titulo": "Bloqueo de pantalla",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/13.mp4?_=11"
+                },
+                {
+                    "titulo": "Modo de espera",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/14.mp4?_=12"
+                },
+                {
+                    "titulo": "Niveles de oclusión",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/15.mp4?_=13"
+                },
+                {
+                    "titulo": "Sensibilidad de detección de aire en línea",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/16.mp4?_=14"
+                },
+                {
+                    "titulo": "Ajustes de volumen de sonidos",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/17.mp4?_=15"
+                },
+                {
+                    "titulo": "Brillo de pantalla",
+                    "url": "http://web.archive.org/web/20180830030548im_/http://terumosmartpump.com/asd/18.mp4?_=16"
+                }
+            ]
+        },
+        {
+            "id": "SS700",
+            "videos": [
+                {
+                    "titulo": "Encendido, apagado e inserción de Jeringa",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/3.mp4?_=1"
+                },
+                {
+                    "titulo": "Programación mL-h",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/4.mp4?_=2"
+                },
+                {
+                    "titulo": "Instalación de bomba en el rack",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/7.mp4?_=3"
+                },
+                {
+                    "titulo": "Purga rápida",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/8.mp4?_=4"
+                },
+                {
+                    "titulo": "Bolo manual",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/9.mp4?_=5"
+                },
+                {
+                    "titulo": "Bolo manual (Rápido)",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/10.mp4?_=6"
+                },
+                {
+                    "titulo": "Bolo automático",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/11.mp4?_=7"
+                },
+                {
+                    "titulo": "Silenciar alarmas",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/12.mp4?_=8"
+                },
+                {
+                    "titulo": "Bloqueo de pantalla",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/13.mp4?_=9"
+                },
+                {
+                    "titulo": "Modo de espera",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/14.mp4?_=10"
+                },
+                {
+                    "titulo": "Sensibilidad de detección de aire en línea",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/16.mp4?_=11"
+                },
+                {
+                    "titulo": "Ajustes de volumen de sonidos",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/17.mp4?_=12"
+                },
+                {
+                    "titulo": "Brillo de pantalla",
+                    "url": "http://web.archive.org/web/20180830044358im_/http://terumosmartpump.com/asd/18.mp4?_=13"
+                }
+            ]
+        },
+        {
+            "id": "SS800",
+            "videos": [
+                {
+                    "titulo": "Encendido, apagado e inserción de Jeringa",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/3.mp4?_=1"
+                },
+                {
+                    "titulo": "Programación mL-h",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/4.mp4?_=2"
+                },
+                {
+                    "titulo": "Modo peso corporal",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/5.mp4?_=3"
+                },
+                {
+                    "titulo": "Programación librería de drogas",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/6.mp4?_=4"
+                },
+                {
+                    "titulo": "Instalación de bomba en el rack",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/7.mp4?_=5"
+                },
+                {
+                    "titulo": "Purga rápida",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/8.mp4?_=6"
+                },
+                {
+                    "titulo": "Bolo manual",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/9.mp4?_=7"
+                },
+                {
+                    "titulo": "Bolo manual (Rápido)",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/10.mp4?_=8"
+                },
+                {
+                    "titulo": "Bolo automático",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/11.mp4?_=9"
+                },
+                {
+                    "titulo": "Silenciar alarmas",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/12.mp4?_=10"
+                },
+                {
+                    "titulo": "Bloqueo de pantalla",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/13.mp4?_=11"
+                },
+                {
+                    "titulo": "Modo de espera",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/14.mp4?_=12"
+                },
+                {
+                    "titulo": "Sensibilidad de detección de aire en línea",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/16.mp4?_=13"
+                },
+                {
+                    "titulo": "Ajustes de volumen de sonidos",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/17.mp4?_=14"
+                },
+                {
+                    "titulo": "Brillo de pantalla",
+                    "url": "http://web.archive.org/web/20180830054218im_/http://terumosmartpump.com/asd/18.mp4?_=15"
+                }
+            ]
+        }
+    ]
+}

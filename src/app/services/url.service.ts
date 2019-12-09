@@ -23,7 +23,8 @@ export class UrlService {
   }
 
   getCurrentPath(): string {
-    return this.router.url.split('/').reverse()[0];
+    //console.log("Toda la ruta: ", this.router.url.split('/')[1])
+    return (!this.router.url.split('/')[1]) ? this.router.url.split('/').reverse()[0] : this.router.url.split('/')[1];
   }
 
 }

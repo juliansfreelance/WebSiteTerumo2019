@@ -277,6 +277,12 @@ ol li {
     background-size: contain;
   }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1125px) { 
+  .flow-text {
+    font-size: 1.48rem !important;
+  }
+}
 @media only screen and (max-width: 1084px) {
   .thoraflex-section-1 .row .col:hover {
     background-color: transparent;
