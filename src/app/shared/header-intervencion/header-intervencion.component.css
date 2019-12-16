@@ -32,6 +32,10 @@
   border-top: 1px solid #ddd;
 }
 
+.sidenav {
+  width: auto;
+}
+
 @media only screen and (min-width: 993px) and (max-width: 1125px) {
   .Menu-escritorio li a {
     font-size: 0.8rem !important;

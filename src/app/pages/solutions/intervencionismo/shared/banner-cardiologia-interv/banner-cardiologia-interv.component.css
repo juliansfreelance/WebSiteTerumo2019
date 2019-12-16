@@ -22,5 +22,8 @@
   .banner-cardio-interv .row .col {
     background: linear-gradient(to right, rgb(255, 255, 255, 0.3) 95%, rgb(255, 255, 255, 0.5));
   }
+  .tittle-banner {
+    font-size: 3.5rem;
+  }
 }
 /* @END: Media Queries*/

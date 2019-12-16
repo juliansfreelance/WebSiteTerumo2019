@@ -1,3 +1,9 @@
+.collapsible li > * {
+  color: #26a69a;
+}
+.truncate {
+  width: 90%;
+}
 .submenu {
   padding: 0px;
 }

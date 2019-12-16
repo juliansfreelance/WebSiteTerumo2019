@@ -10,15 +10,18 @@ import { Router } from '@angular/router';
 export class HeaderIntervencionComponent implements OnInit {
 
   textoHeader = '';
+  sideInstance = null;
 
-  constructor( private router: Router ) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    M.Sidenav.init( document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true } );
-    M.Collapsible.init( document.querySelectorAll('.collapsible'), {} );
-    M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), { constrainWidth: false, coverTrigger: false, closeOnClick: false } );
+    M.Sidenav.init(document.querySelectorAll('.sidenav'), { draggable: true, preventScrolling: true });
+    this.sideInstance = M.Sidenav.getInstance(document.querySelector('.sidenav'));
+    M.Collapsible.init(document.querySelectorAll('.collapsible'), {});
+    M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), { constrainWidth: false, coverTrigger: false, closeOnClick: false });
   }
   goTo(texto: string) {
+    this.sideInstance.close();
     this.router.navigate([texto]);
     window.scroll(0, 0);
   }

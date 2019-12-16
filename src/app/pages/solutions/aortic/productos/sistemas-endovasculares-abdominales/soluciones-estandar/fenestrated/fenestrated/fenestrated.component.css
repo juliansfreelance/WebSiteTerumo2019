@@ -120,19 +120,33 @@ a {
 /*@END: SECTION 6*/
 
 /*@START: SECTION 7*/
+
 .section-7 {
+  display: flex;
+  width: 100%;
+}
+
+.row-section-7 {
   height: 450px;
+  display: flex;
+  flex-flow: row;
 }
-.section-7 div {
+.row-section-7 div {
   height: inherit;
 }
-.section-7 div img {
+
+.row-section-7 .col-section-7 {
+  width: 50%;
+}
+
+.row-section-7 div img {
   height: inherit;
 }
-.section-7 .right-rounded-section {
+.row-section-7 .right-rounded-section {
   padding-left: 10% !important;
   align-items: flex-start;
 }
+
 /*@END: SECTION 7*/
 
 /*@START: SECTION 9*/
@@ -278,7 +292,26 @@ ol li {
     height: auto;
   }
   /*SECTION 7*/
-  .section-7 .right-rounded-section {
+  .row-section-7 {
+    flex-flow: column-reverse;
+    height: fit-content;
+  }
+
+  .row-section-7 .col-section-7 {
+    width: 100%;
+    padding-right: 6%;
+    min-height: auto;
+    max-height: 450px;
+    height: 450px;
+  }
+
+  .row-section-7 .col-section-7:not(.center-content){
+    height: auto;
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .row-section-7 .right-rounded-section {
     text-align: right;
   }
   /*SECTION 10*/
@@ -342,7 +375,7 @@ ol li {
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   .right-rounded-section {
-    border-radius: 150px 0px 0px 150px;
+    border-radius: 250px 0px 0px 250px;
   }
 
   /*SECTION 11*/
