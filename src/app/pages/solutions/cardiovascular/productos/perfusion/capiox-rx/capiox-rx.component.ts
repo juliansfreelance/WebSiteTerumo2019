@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from 'src/assets/js/materialize.min.js';
+import { general } from 'src/app/constants/general';
 
 @Component({
   selector: 'app-capiox-rx',
@@ -10,7 +11,16 @@ export class CapioxRxComponent implements OnInit {
 
   carousel;
   visibleNav = false;
-  constructor() { }
+  public brochure = [];
+
+  constructor() { 
+    const urls = [ 
+      "Bronson.pdf"];
+
+    urls.map(url => {
+      this.brochure.push(general.document_url + url);
+    });
+  }
 
   ngOnInit() {
     M.Carousel.init(document.querySelectorAll('.carousel.carousel-slider'), {

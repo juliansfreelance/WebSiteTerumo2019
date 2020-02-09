@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from "src/assets/js/materialize.min.js";
+import { general } from 'src/app/constants/general';
 
 @Component({
   selector: 'app-capiox-sp',
@@ -8,7 +9,18 @@ import * as M from "src/assets/js/materialize.min.js";
 })
 export class CapioxSpComponent implements OnInit {
 
-  constructor() { }
+  public brochure = [];
+
+  constructor() { 
+    const urls = [ 
+      "SpecTab_CAPIOXDisposablePump_DEC2014.jpg", 
+      "SpecTab_SarnsDisposablePump_08-08.jpg", 
+      "SpecTab_CAPIOXCP50CardioplegiaSet_02-09.jpg" ];
+
+    urls.map(url => {
+      this.brochure.push(general.document_url + url);
+    });
+  }
 
   ngOnInit() {
     M.Slider.init(document.querySelectorAll('.slider'), { indicators: false });

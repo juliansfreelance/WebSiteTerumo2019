@@ -18,6 +18,7 @@
 
 .material-icons {
   font-size: 35px;
+  font-feature-settings: 'liga';
 }
 
 /*@END: Section 12*/

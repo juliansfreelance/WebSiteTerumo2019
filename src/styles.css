@@ -74,7 +74,9 @@
     font-family: "Material Icons";
     font-style: normal;
     font-weight: 400;
-    src: url("assets/fonts/Material-Icon.woff2") format("woff2");
+    src: url("assets/fonts/Material-Icon.woff2") format("woff2"),
+       url('https://cdn.rawgit.com/google/material-design-icons/a6145e16/iconfont/MaterialIcons-Regular.woff') format('woff'), 
+       url('https://cdn.rawgit.com/google/material-design-icons/a6145e16/iconfont/MaterialIcons-Regular.ttf') format('truetype');
 }
 
 .material-icons {
@@ -91,6 +93,7 @@
     direction: ltr;
     -moz-font-feature-settings: "liga";
     -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
 }
 
 ::-webkit-scrollbar {
