@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BannerInfusionComponent implements OnInit {
 
   @Input() titulo = "Terufusion <sup>&reg;</sup>";
-  @Input() subtitulo = "Bomba de Infusión Smart Midpress";
+  @Input() subtitulo = "";
   @Input() descripcion = "";
   @Input() imagen = "";
 

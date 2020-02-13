@@ -31,10 +31,10 @@ export class VideosInfusionComponent implements OnInit {
 
     if (this.current_type == "1") {
       this.imagen = "terufusion-infusion-pump-smart-midpress-product-image.png";
-      this.descripcion = "Exitosa integración de profesionalismo, seguridad y fácil de usar."
+      this.descripcion = "Exitosa integración de profesionalismo, seguridad y facilidad de uso."
     } else {
       this.imagen = "terufusion-syringe-pump-smart-product-image.png";
-      this.descripcion = "Exitosa integración de profesionalismo, seguridad y fácil de usar."
+      this.descripcion = "Exitosa integración de profesionalismo, seguridad y facilidad de uso."
     }
 
     this.changeVideos();

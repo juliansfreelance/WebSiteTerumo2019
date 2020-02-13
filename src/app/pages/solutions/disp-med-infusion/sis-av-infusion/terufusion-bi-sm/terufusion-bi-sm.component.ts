@@ -16,7 +16,7 @@ export class TerufusionBiSmComponent implements OnInit {
 
   ngOnInit() {
     this.imagen = "terufusion-infusion-pump-smart-midpress-product-image.png";
-    this.descripcion = "Exitosa integración de profesionalismo, seguridad y fácil de usar."
+    this.descripcion = "Exitosa integración de profesionalismo, seguridad y facilidad de uso."
     this.type = "1";
   }
 }

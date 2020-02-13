@@ -19,9 +19,9 @@ export class SurfloComponent implements OnInit {
     this.sub_titulo = "Catéteres Intravenosos";
     this.imagen = "versatus-catheter-product-image.png";
 
-    this.descripcion = "<p> Los catéteres I.V. Surflo<sup>&reg;</sup> están hechos de ETFE de grado médico especial (recto) y FEP (recto,"
+    this.descripcion = "<p> Los catéteres I.V. Surflo<sup>&reg;</sup> están hechos de ETFE de grado médico especial (recto) y FEP (recto, "
       + "mariposa, mariposa con puerto de inyección). <br><br>"
-      + "Los materiales cuidadosamente seleccionados de los catéteres I.V. ETFE/FEP de Terumo están diseñados para"
+      + "Los materiales cuidadosamente seleccionados de los catéteres I.V. ETFE/FEP de Terumo están diseñados para "
       + "garantizar una forma estable (menor riesgo de puntas partidas y desprendimiento) durante punciones en condiciones difíciles.</p>";
   }
 
