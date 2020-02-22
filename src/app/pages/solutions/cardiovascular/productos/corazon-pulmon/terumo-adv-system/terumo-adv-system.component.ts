@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from 'src/assets/js/materialize.min.js';
+import { general } from 'src/app/constants/general';
 
 @Component({
   selector: 'app-terumo-adv-system',
@@ -8,8 +9,17 @@ import * as M from 'src/assets/js/materialize.min.js';
 })
 export class TerumoAdvSystemComponent implements OnInit {
   carousel;
+  public brochure: any[]= [];
   visibleNav = false;
-  constructor() { }
+  constructor() { 
+    const names =  [
+      "886687_Terumo_AdvSystem1_6PgBrochure_PRINT_readers.pdf",
+      "887672_Terumo_System1_Brochure_LowRes_SinglePgs_FINAL.pdf"
+    ];
+    names.map( name => {
+      this.brochure.push(general.document_url + name); 
+    }  ) 
+  }
 
   ngOnInit() {
     M.Carousel.init(document.querySelectorAll('.carousel.carousel-slider'), {

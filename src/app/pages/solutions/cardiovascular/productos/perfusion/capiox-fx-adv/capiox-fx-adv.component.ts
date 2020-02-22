@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as M from 'src/assets/js/materialize.min.js';
 import { Router } from '@angular/router';
+import { general } from 'src/app/constants/general';
 
 @Component({
   selector: 'app-capiox-fx-adv',
@@ -10,7 +11,15 @@ import { Router } from '@angular/router';
 export class CapioxFxAdvComponent implements OnInit {
   carousel;
   visibleNav = false;
-  constructor(private router: Router) { }
+  public brochure = [];
+  constructor(private router: Router) { 
+    const names = [
+      "862048_Prescriptive-Oxygenation-Brochure_MAY2015_FINAL_lowRes.pdf",
+      "863551_CAPIOX-FX-Advance-Brochure_DEC2015_FINAL.pdf"];
+      names.map(name => {
+        this.brochure.push(general.document_url + name);
+      })
+  }
 
   ngOnInit() {
     M.Carousel.init(document.querySelectorAll('.carousel.carousel-slider'), {

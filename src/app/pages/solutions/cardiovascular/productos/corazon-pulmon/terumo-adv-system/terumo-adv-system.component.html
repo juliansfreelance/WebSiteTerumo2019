@@ -51,9 +51,9 @@
                         <dt>Información de producto </dt>
                         <dd><span class="terumo-text terumoOpenBold">Recursos en línea:</span> Cree su propia obra maestra con el Sistema Avanzado de Perfusión Terumo 1 <a href="http://www.terumo-cvgroup.com/masterpiece/" target="_blank"><i class="material-icons terumo-red">picture_as_pdf</i></a></dd>
                         <dd><span class="terumo-text terumoOpenBold">Brochure:</span> Las mejoras en el sistema aumentan la seguridad y reducen el riesgo.
-                            <a href="http://www.terumo-cvs.com/pdfs.aspx?nm=886687_Terumo_AdvSystem1_6PgBrochure_PRINT_readers" target="_blank"><i class="material-icons terumo-red">picture_as_pdf</i></a>
+                            <a [href]="brochure[0]" target="_blank"><i class="material-icons terumo-red">picture_as_pdf</i></a>
                         </dd>
-                        <dd><span class="terumo-text terumoOpenBold">Brochure:</span> Diseño probado, continuamente mejorado para aumentar la seguridad y reducir el riesgo.<a href="http://www.terumo-cvs.com/pdfs.aspx?nm=887672_Terumo_System1_Brochure_LowRes_SinglePgs_FINAL"
+                        <dd><span class="terumo-text terumoOpenBold">Brochure:</span> Diseño probado, continuamente mejorado para aumentar la seguridad y reducir el riesgo.<a [href]="brochure[1]"
                                 target="_blank"><i class="material-icons terumo-red">picture_as_pdf</i></a></dd>
                         <dt>Multimedia</dt>
                         <dd><span class="terumo-text terumoOpenBold">Video:</span> testimonios, perfusionistas hablando del sistema
@@ -90,13 +90,13 @@
                     </div>
                     <div class="cuadro">
                         <i class="material-icons circle">picture_as_pdf</i>
-                        <a href="https://www.terumo-cvs.com/pdfs.aspx?nm=887672_Terumo_System1_Brochure_LowRes_SinglePgs_FINAL" target="_blank" style="color: #008f66 !important;;">
+                        <a [href]="brochure[1]" target="_blank" style="color: #008f66 !important;;">
                             <p class="terumo-text titulo-bold">Descargue el brochure</p>
                         </a>
                     </div>
                     <div class="cuadro">
                         <i class="material-icons circle">picture_as_pdf</i>
-                        <a href="https://www.terumo-cvs.com/pdfs.aspx?nm=886687_Terumo_AdvSystem1_6PgBrochure_PRINT_readers" target="_blank" style="color: #008f66 !important;;">
+                        <a [href]="brochure[0]" target="_blank" style="color: #008f66 !important;;">
                             <p class="terumo-text titulo-bold">Descargue el brochure para TAPS1</p>
                         </a>
                     </div>

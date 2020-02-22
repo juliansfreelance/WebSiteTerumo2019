@@ -14,7 +14,8 @@ export class EstrategiaComercialComponent implements OnInit {
     const names = [
       "862048_Prescriptive-Oxygenation-Brochure_MAY2015_FINAL_lowRes.pdf",
       "863551_CAPIOX-FX-Advance-Brochure_DEC2015_FINAL.pdf",
-      "Bronson.pdf"];
+      "Bronson.pdf",
+      "Baker.pdf"];
     
       names.map(name => {
         this.brochure.push(general.document_url + name);

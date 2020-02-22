@@ -95,6 +95,7 @@ header {
         background: rgba(0, 89, 64, .7), url(../../../../../assets/img/solutions/cardiovascular/estrategia-comercial.jpg);
         background-blend-mode: multiply;
         background-size: 100%, cover;
+        background-repeat: no-repeat;
     }
     .skyleft {
         height: 290px;

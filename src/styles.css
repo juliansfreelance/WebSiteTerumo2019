@@ -439,6 +439,22 @@ li {
 /*@END: Backgrond table color*/
 
 
+/*@START: Submenu styles*/
+.secundario-item > ul {
+    display: flex;
+    flex-flow: column;
+}
+
+.secundario-item > ul > li { 
+    white-space: pre-line;
+}
+
+.secundario-item > ul > li > a{ 
+    line-height: 20px;
+    height: inherit;
+} 
+/*@END: Submenu styles*/
+
 /*@START: Spacing*/
 
 .center-content {

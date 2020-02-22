@@ -175,12 +175,14 @@ strong {
         background-color: rgba(0, 143, 102, 0.2);
         background: #005940, url(../../../assets/img/home-1.jpg);
         background-size: 100%, cover;
+        background-repeat: no-repeat;
     }
     .background-skyleft {
         content: '';
         background-color: rgba(0, 143, 102, 0.2);
         background: #005940, url(../../../assets/img/home-1.jpg);
         background-size: 100%, cover;
+        background-repeat: no-repeat;
     }
     .skyleft {
         height: 290px;

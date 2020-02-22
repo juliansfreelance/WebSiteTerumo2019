@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TerufusionBjsComponent implements OnInit {
 
   imagen: string;
+  subtitulo: string;
   descripcion: string;
 
   descripcion_cont: string;
@@ -18,6 +19,7 @@ export class TerufusionBjsComponent implements OnInit {
   ngOnInit() {
     this.imagen = "terufusion-syringe-pump-smart-product-image.png";
     this.descripcion = "Exitosa integración de profesionalismo, seguridad y facilidad de uso."
+    this.subtitulo = "Bomba Jeringa Smart"
 
     this.descripcion_cont = "<p> Terufusion<sup>&reg;</sup>, el sistema avanzado de infusión de Terumo, ofrece bombas de jeringa más precisas y seguras sin "
       + "ponerle una carga adicional al profesional de la salud. Combinamos tecnologías sofisticadas con la facilidad de uso "

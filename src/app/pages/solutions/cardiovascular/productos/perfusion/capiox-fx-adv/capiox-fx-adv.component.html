@@ -84,7 +84,7 @@
                         <div class="cuadro">
                             <i class="material-icons circle">picture_as_pdf</i>
 
-                            <a href="https://www.terumo-cvs.com/pdfs.aspx?nm=863551_CAPIOX-FX-Advance-Brochure_DEC2015_FINAL" target="_blank" style="color: #008f66 !important;;">
+                            <a [href]="brochure[1]" target="_blank" style="color: #008f66 !important;;">
                                 <p class="terumo-text titulo-bold">Descargue el brochure para Capiox<sup>®</sup> FX advance</p>
                             </a>
                         </div>
@@ -145,8 +145,8 @@
                     <div class="col s12 m6">
                         <dl>
                             <dt>Información de producto</dt>
-                            <dd>Brochure: oxigenación prescriptiva <a href="http://www.terumo-cvs.com/pdfs.aspx?nm=862048_Prescriptive-Oxygenation-Brochure_MAY2015_FINAL_lowRes" target="_blank" style="color: #000000de;"><i class="material-icons terumo-red">picture_as_pdf</i></a></dd>
-                            <dd>Brochure: Capiox<sup>®</sup> oxigenador avanzado <a href="http://www.terumo-cvs.com/pdfs.aspx?nm=863551_CAPIOX-FX-Advance-Brochure_DEC2015_FINAL" target="_blank" style="color: #000000de;"><i class="material-icons terumo-red">picture_as_pdf</i></a></dd>
+                            <dd>Brochure: oxigenación prescriptiva <a [href]="brochure[0]" target="_blank" style="color: #000000de;"><i class="material-icons terumo-red">picture_as_pdf</i></a></dd>
+                            <dd>Brochure: Capiox<sup>®</sup> oxigenador avanzado <a [href]="brochure[1]" target="_blank" style="color: #000000de;"><i class="material-icons terumo-red">picture_as_pdf</i></a></dd>
                         </dl>
                         <dl>
                             <dt>Multimedia</dt>
@@ -172,7 +172,7 @@
                         <p class="terumoP">CAPIOX FX Advance Oxygenator</p>
                     </a>
                     <h6 class="titulo-bold">BROCHURE</h6>
-                    <a href="http://www.terumo-cvs.com/doc/863551_CAPIOX-FX-Advance-Brochure_DEC2015_FINAL.pdf" target="_blank" style="color: #000000de;">
+                    <a [href]="brochure[1]" target="_blank" style="color: #000000de;">
                         <p class="terumoP">Prescriptive Oxygenation</p>
                     </a>
                     <h6 class="titulo-bold">Estudios clínicos</h6>
